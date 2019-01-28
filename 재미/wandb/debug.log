@@ -1,0 +1,16 @@
+2019-01-28 15:21:05,047 DEBUG   MainThread:14648 [wandb_config.py:_load_defaults():64] no defaults not found in config-defaults.yaml
+2019-01-28 15:21:05,056 DEBUG   MainThread:14648 [run_manager.py:__init__():452] Initialized sync for None/qontb8k2
+2019-01-28 15:21:05,058 DEBUG   MainThread:14648 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2019-01-28 15:21:05,602 DEBUG   MainThread:14648 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 29581
+2019-01-28 15:21:05,653 DEBUG   MainThread:14648 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-01-28 15:21:06,050 INFO    Thread-2  :14648 [run_manager.py:_on_file_created():577] file/dir created: ./wandb/run-20190128_062105-qontb8k2\wandb-metadata.json
+2019-01-28 15:21:06,145 DEBUG   MainThread:14648 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 363
+2019-01-28 15:21:08,050 INFO    MainThread:14648 [run_manager.py:_on_file_modified():588] file/dir modified: ./wandb/run-20190128_062105-qontb8k2\wandb-metadata.json
+2019-01-28 15:21:08,050 INFO    MainThread:14648 [run_manager.py:_on_file_created():577] file/dir created: ./wandb/run-20190128_062105-qontb8k2\wandb-events.jsonl
+2019-01-28 15:21:09,054 DEBUG   Thread-6  :14648 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-01-28 15:21:09,055 DEBUG   Thread-14 :14648 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-01-28 15:21:09,474 DEBUG   Thread-14 :14648 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 784
+2019-01-28 15:21:09,477 DEBUG   Thread-14 :14648 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-01-28 15:21:09,494 DEBUG   Thread-6  :14648 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/uncategorized/qontb8k2/file_stream HTTP/1.1" 200 312
+2019-01-28 15:21:09,783 DEBUG   Thread-6  :14648 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/uncategorized/qontb8k2/file_stream HTTP/1.1" 200 309
+2019-01-28 15:21:10,089 DEBUG   Thread-14 :14648 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/uncategorized/qontb8k2/wandb-metadata.json?Expires=1548656528&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=diMEYQLbhZTvG3T%2BBIElSnkr5oxfql0TAc8AuomqVhFp2seY1jK0AjrZIY9WwPpKBvsoMQM4VYor5QuF%2BYdcHBW%2FN5Vox4U319opA%2B1x4EePT914MPFyyeDu2icBG17yErdAGuHu26FyKgrUn9mYsnbz%2FFF%2F768AfodJdEoDaRW%2F4DNUNdN%2BGsgVVeTyhcRV2I%2BZBLDvRldH23Wcso81Yq%2FVD6Z2maQH254qmux6fG9qYSzzgFraa8UyGY%2FfZlY1Ct8DtuGqCT9jKgfa%2B1xzF6MeDEyhdlW%2BKHP5hFRQMLzmuctyy1VWlNoriQgkinPH4mLFBHF388DIjIEudsa%2BTA%3D%3D HTTP/1.1" 200 0

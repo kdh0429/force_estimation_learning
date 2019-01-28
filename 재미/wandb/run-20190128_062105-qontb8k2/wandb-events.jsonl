@@ -1,0 +1,1 @@
+{"system.network.recv": 47384, "system.proc.memory.availableMB": 8953.73, "system.memory": 45.1, "_timestamp": 1548656467, "_runtime": 3, "system.network.sent": 16818, "system.gpu.0.gpu": 9.5, "system.gpu.0.temp": 54.5, "system.gpu.0.memory": 6.0, "system.disk": 15.5, "_wandb": true, "system.gpu.0.memory_allocated": 25.83, "system.cpu": 20.1}

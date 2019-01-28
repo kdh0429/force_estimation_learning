@@ -1,0 +1,12 @@
+{
+    "root": "D:\\OneDrive - SNU\\\ub450\uc0b0\uacfc\uc81c\\\uc7ac\ubbf8",
+    "exitcode": 0,
+    "startedAt": "2019-01-28T06:21:04.092169",
+    "jobType": null,
+    "host": "DESKTOP-IHEHE31",
+    "username": "\uae40\ub3d9\ud604",
+    "heartbeatAt": "2019-01-28T06:21:07.652691",
+    "state": "finished",
+    "mode": "clirun",
+    "program": "ee_force_estimation_7dof_nn.py"
+}
