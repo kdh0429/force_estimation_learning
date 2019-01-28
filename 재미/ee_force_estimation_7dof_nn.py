@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn import preprocessing
 import time
 import wandb
+import os
 
 start_time = time.time()
 wandb.init(project="dusan_ws", tensorboard=False)
@@ -95,7 +96,7 @@ class Model:
 
 # input/output number
 num_input = 28
-num_output = 1 #7
+num_output = 7
 output_idx = num_input + num_output
 # loading testing data
 f = open('testing_data_.csv', 'r', encoding='utf-8')
@@ -137,6 +138,13 @@ batch_size = 100
 total_batch = int(np.shape(x_data_test)[0]/batch_size*5)
 drop_out = 1.0
 
+wandb.config.epoch = training_epochs
+wandb.config.batch_size = batch_size
+wandb.config.learning_rate = learning_rate
+wandb.config.drop_out = drop_out
+wandb.config.num_input = num_input
+wandb.config.num_output = num_output
+
 
 
 # initialize
@@ -160,13 +168,13 @@ for epoch in range(training_epochs):
         avg_cost += c / total_batch
 
     print('Epoch:', '%04d' % (epoch + 1), 'cost =', '{:.9f}'.format(avg_cost))
-    wandb.log({'Epoch': epoch+1, 'cost': avg_cost})
 
     [cost, hypo, x_test, y_test] = m1.get_mean_error_hypothesis(x_data_val, y_data_val)
     print('Validation cost:', '{:.9f}'.format(cost))
-
+    
     train_mse[epoch] = avg_cost
     validation_mse[epoch] = cost
+    wandb.log({'training cost': avg_cost, 'validation cost': cost})
 
 print('Learning Finished!')
 
@@ -177,7 +185,7 @@ print('Test Error: ', error)
 
 saver = tf.train.Saver()
 saver.save(sess,'model/model.ckpt')
-#saver.save(sess, os.path.join(wandb.run.dir, "model.ckpt"))
+saver.save(sess, os.path.join(wandb.run.dir, "model/model.ckpt"))
 
 elapsed_time = time.time() - start_time
 print(elapsed_time)

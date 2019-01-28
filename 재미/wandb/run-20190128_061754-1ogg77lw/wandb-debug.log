@@ -1,3 +1,0 @@
-2019-01-28 15:17:55,908 INFO    Thread-2  :14096 [run_manager.py:_on_file_created():577] file/dir created: ./wandb/run-20190128_061754-1ogg77lw\wandb-metadata.json
-2019-01-28 15:17:57,908 INFO    MainThread:14096 [run_manager.py:_on_file_modified():588] file/dir modified: ./wandb/run-20190128_061754-1ogg77lw\wandb-metadata.json
-2019-01-28 15:17:57,909 INFO    MainThread:14096 [run_manager.py:_on_file_created():577] file/dir created: ./wandb/run-20190128_061754-1ogg77lw\wandb-events.jsonl
