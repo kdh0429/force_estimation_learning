@@ -28,7 +28,7 @@ class Model:
             # weights & bias for nn layers
             # http://stackoverflow.com/questions/33640581/how-to-do-xavier-initialization-on-tensorflow
             W1 = tf.get_variable("W1", shape=[num_input, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b1 = tf.Variable(tf.random_normal([10]))
+            b1 = tf.Variable(tf.random_normal([10]), name= 'b1')
             L1 = tf.matmul(self.X, W1) +b1
             #L1 = tf.layers.batch_normalization(L1, center=True, scale=True, training=1)
             L1 = tf.nn.relu(L1)
@@ -36,7 +36,7 @@ class Model:
             L1 = tf.nn.dropout(L1, keep_prob=self.keep_prob)
 
             W2 = tf.get_variable("W2", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b2 = tf.Variable(tf.random_normal([10]))
+            b2 = tf.Variable(tf.random_normal([10]), name= 'b2')
             L2 = tf.matmul(L1, W2) +b2
             #L2 = tf.layers.batch_normalization(L2, center=True, scale=True, training=1)
             L2 = tf.nn.relu(L2)
@@ -44,7 +44,7 @@ class Model:
             L2 = tf.nn.dropout(L2, keep_prob=self.keep_prob)
 
             W3 = tf.get_variable("W3", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b3 = tf.Variable(tf.random_normal([10]))
+            b3 = tf.Variable(tf.random_normal([10]), name= 'b3')
             L3 = tf.matmul(L2, W3) +b3
             #L3 = tf.layers.batch_normalization(L3, center=True, scale=True, training=1)
             L3 = tf.nn.relu(L3)
@@ -52,7 +52,7 @@ class Model:
             L3 = tf.nn.dropout(L3, keep_prob=self.keep_prob)
 
             W4 = tf.get_variable("W4", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b4 = tf.Variable(tf.random_normal([10]))
+            b4 = tf.Variable(tf.random_normal([10]), name= 'b4')
             L4 = tf.matmul(L3, W4) +b4
             #L4 = tf.layers.batch_normalization(L4, center=True, scale=True, training=1)
             L4 = tf.nn.relu(L4)
@@ -60,7 +60,7 @@ class Model:
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
 
             W5 = tf.get_variable("W6", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
-            b5 = tf.Variable(tf.random_normal([num_output]))
+            b5 = tf.Variable(tf.random_normal([num_output]), name= 'b5')
             self.hypothesis = tf.matmul(L4, W5) + b5
             self.hypothesis = tf.identity(self.hypothesis, "hypothesis")
 
@@ -176,6 +176,11 @@ for epoch in range(training_epochs):
     validation_mse[epoch] = cost
     wandb.log({'training cost': avg_cost, 'validation cost': cost})
 
+    if epoch % 20 ==0:
+        for var in tf.trainable_variables():
+            name = var.name
+            wandb.log({name: sess.run(var)})
+
 print('Learning Finished!')
 
 
@@ -183,12 +188,13 @@ print('Learning Finished!')
 # print('Error: ', error,"\n x_data: ", x_test,"\nHypothesis: ", hypo, "\n y_data: ", y_test)
 print('Test Error: ', error)
 
-saver = tf.train.Saver()
-saver.save(sess,'model/model.ckpt')
-saver.save(sess, os.path.join(wandb.run.dir, "model/model.ckpt"))
-
 elapsed_time = time.time() - start_time
 print(elapsed_time)
+
+saver = tf.train.Saver()
+saver.save(sess,'model/model.ckpt')
+wandb.save(os.path.join(wandb.run.dir, 'model/model.ckpt'))
+wandb.config.elapsed_time = elapsed_time
 
 epoch = np.arange(training_epochs)
 plt.plot(epoch, train_mse, 'r', label='train')

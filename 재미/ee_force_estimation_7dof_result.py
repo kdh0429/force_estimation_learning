@@ -45,7 +45,7 @@ hypo = sess.run(hypothesis, feed_dict={x: x_data_raw, keep_prob: 1.0})
 res_idx = 0
 mean_error = np.mean(np.abs(y_data_raw[:,res_idx]-hypo[:,res_idx]))
 print("Mean error : %f" % mean_error)
- 
+
 
 plt.subplot(7,1,1)
 plt.plot(t,y_data_raw[:,0], 'r', label='real')
