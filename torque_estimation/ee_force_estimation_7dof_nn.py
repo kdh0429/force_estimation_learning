@@ -7,8 +7,10 @@ import time
 import wandb
 import os
 
+wandb_use = False
 start_time = time.time()
-wandb.init(project="dusan_ws", tensorboard=False)
+if wandb_use == True:
+    wandb.init(project="dusan_ws", tensorboard=False)
 
 class Model:
 
@@ -30,36 +32,36 @@ class Model:
             W1 = tf.get_variable("W1", shape=[num_input, 10], initializer=tf.contrib.layers.xavier_initializer())
             b1 = tf.Variable(tf.random_normal([10]), name= 'b1')
             L1 = tf.matmul(self.X, W1) +b1
-            #L1 = tf.layers.batch_normalization(L1, center=True, scale=True, training=1)
             L1 = tf.nn.relu(L1)
-            #L1 = tf.nn.sigmoid(tf.matmul(self.X, W1) + b1)
             L1 = tf.nn.dropout(L1, keep_prob=self.keep_prob)
 
             W2 = tf.get_variable("W2", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b2 = tf.Variable(tf.random_normal([10]), name= 'b2')
             L2 = tf.matmul(L1, W2) +b2
-            #L2 = tf.layers.batch_normalization(L2, center=True, scale=True, training=1)
             L2 = tf.nn.relu(L2)
-            #L2 = tf.nn.sigmoid(tf.matmul(L1, W2) + b2)
             L2 = tf.nn.dropout(L2, keep_prob=self.keep_prob)
 
             W3 = tf.get_variable("W3", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b3 = tf.Variable(tf.random_normal([10]), name= 'b3')
             L3 = tf.matmul(L2, W3) +b3
-            #L3 = tf.layers.batch_normalization(L3, center=True, scale=True, training=1)
             L3 = tf.nn.relu(L3)
-            #L3 = tf.nn.relu(tf.sigmoid(L2, W3) + b3)
             L3 = tf.nn.dropout(L3, keep_prob=self.keep_prob)
 
             W4 = tf.get_variable("W4", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b4 = tf.Variable(tf.random_normal([10]), name= 'b4')
             L4 = tf.matmul(L3, W4) +b4
-            #L4 = tf.layers.batch_normalization(L4, center=True, scale=True, training=1)
             L4 = tf.nn.relu(L4)
-            #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
 
-            W5 = tf.get_variable("W6", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
+            # W5 = tf.get_variable("W5", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
+            # b5 = tf.Variable(tf.random_normal([10]), name= 'b5')
+            # L5 = tf.matmul(L4, W5) +b5
+            # #L4 = tf.layers.batch_normalization(L4, center=True, scale=True, training=1)
+            # L5 = tf.nn.relu(L5)
+            # #L5 = tf.nn.sigmoid(tf.matmul(L4, W5) + b5)
+            # L5 = tf.nn.dropout(L5, keep_prob=self.keep_prob)
+
+            W5 = tf.get_variable("W5", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
             b5 = tf.Variable(tf.random_normal([num_output]), name= 'b5')
             self.hypothesis = tf.matmul(L4, W5) + b5
             self.hypothesis = tf.identity(self.hypothesis, "hypothesis")
@@ -84,9 +86,13 @@ class Model:
         i = 0
         for line in data:
             line = [float(i) for i in line]
-            x_batch.append(line[1:num_input+1])
-            y_batch.append(line[num_input+1:output_idx+1])
-            #y_batch.append(line[-output_idx])
+            x_batch.append(line[1+output_idx])
+            x_batch.append(line[8+output_idx])
+            x_batch.append(line[15+output_idx])
+            x_batch.append(line[22+output_idx])
+            y_batch.append(line[29+output_idx])
+            #x_batch.append(line[1:num_input+1])
+            #y_batch.append(line[num_input+1:output_idx+1])
             i = i+1
 
             if i == num:
@@ -95,9 +101,9 @@ class Model:
 
 
 # input/output number
-num_input = 28
-num_output = 7
-output_idx = num_input + num_output
+num_input = 4
+num_output = 1
+output_idx = 0  #num_input + num_output
 
 # loading testing data
 f = open('testing_data_.csv', 'r', encoding='utf-8')
@@ -109,13 +115,16 @@ y_data_test = []
 for line in rdr:
     line = [float(i) for i in line]
     t.append(line[0])
-    x_data_test.append(line[1:num_input+1])
-    y_data_test.append(line[num_input+1:output_idx+1])
-    #y_data_test.append(line[-output_idx])
+    x_data_test.append(line[1+output_idx])
+    x_data_test.append(line[8+output_idx])
+    x_data_test.append(line[15+output_idx])
+    x_data_test.append(line[22+output_idx])
+    y_data_test.append(line[29+output_idx])
+    #x_data_test.append(line[1:num_input+1])
+    #y_data_test.append(line[num_input+1:output_idx+1])
 
 t = np.reshape(t,(-1,1))
 x_data_test = np.reshape(x_data_test, (-1, num_input))
-#x_data_test = preprocessing.scale(x_data_test)
 y_data_test = np.reshape(y_data_test, (-1, num_output))
 
 # load validation data
@@ -125,20 +134,23 @@ x_data_val = []
 y_data_val = []
 for line in rdr:
     line = [float(i) for i in line]
-    x_data_val.append(line[1:num_input+1])
-    y_data_val.append(line[num_input+1:output_idx+1])
-    #y_data_val.append(line[-output_idx])
+    x_data_val.append(line[1+output_idx])
+    x_data_val.append(line[8+output_idx])
+    x_data_val.append(line[15+output_idx])
+    x_data_val.append(line[22+output_idx])
+    y_data_val.append(line[29+output_idx])
+    #x_data_val.append(line[1:num_input+1])
+    #y_data_val.append(line[num_input+1:output_idx+1])
 x_data_val = np.reshape(x_data_val, (-1, num_input))
-#x_data_val = preprocessing.scale(x_data_val)
 y_data_val = np.reshape(y_data_val, (-1, num_output))
 
 # parameters
 learning_rate = 0.005
-training_epochs = 1000
+training_epochs = 500
 batch_size = 100
 total_batch = int(np.shape(x_data_test)[0]/batch_size*5)
 drop_out = 1.0
-wandb_use = True
+
 
 if wandb_use == True:
     wandb.config.epoch = training_epochs
@@ -166,7 +178,6 @@ for epoch in range(training_epochs):
 
     for i in range(total_batch):
         batch_xs, batch_ys = m1.next_batch(batch_size, rdr)
-        #batch_xs = preprocessing.scale(batch_xs)
         c, _ = m1.train(batch_xs, batch_ys, drop_out)
         avg_cost += c / total_batch
 
@@ -190,7 +201,6 @@ print('Learning Finished!')
 
 
 [error, hypo, x_test, y_test] = m1.get_mean_error_hypothesis(x_data_test, y_data_test)
-# print('Error: ', error,"\n x_data: ", x_test,"\nHypothesis: ", hypo, "\n y_data: ", y_test)
 print('Test Error: ', error)
 
 elapsed_time = time.time() - start_time
