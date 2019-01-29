@@ -98,6 +98,7 @@ class Model:
 num_input = 28
 num_output = 7
 output_idx = num_input + num_output
+
 # loading testing data
 f = open('testing_data_.csv', 'r', encoding='utf-8')
 rdr = csv.reader(f)
@@ -137,13 +138,15 @@ training_epochs = 1000
 batch_size = 100
 total_batch = int(np.shape(x_data_test)[0]/batch_size*5)
 drop_out = 1.0
+wandb_use = True
 
-wandb.config.epoch = training_epochs
-wandb.config.batch_size = batch_size
-wandb.config.learning_rate = learning_rate
-wandb.config.drop_out = drop_out
-wandb.config.num_input = num_input
-wandb.config.num_output = num_output
+if wandb_use == True:
+    wandb.config.epoch = training_epochs
+    wandb.config.batch_size = batch_size
+    wandb.config.learning_rate = learning_rate
+    wandb.config.drop_out = drop_out
+    wandb.config.num_input = num_input
+    wandb.config.num_output = num_output
 
 
 
@@ -174,12 +177,14 @@ for epoch in range(training_epochs):
     
     train_mse[epoch] = avg_cost
     validation_mse[epoch] = cost
-    wandb.log({'training cost': avg_cost, 'validation cost': cost})
 
-    if epoch % 20 ==0:
-        for var in tf.trainable_variables():
-            name = var.name
-            wandb.log({name: sess.run(var)})
+    if wandb_use == True:
+        wandb.log({'training cost': avg_cost, 'validation cost': cost})
+
+        if epoch % 20 ==0:
+            for var in tf.trainable_variables():
+                name = var.name
+                wandb.log({name: sess.run(var)})
 
 print('Learning Finished!')
 
@@ -193,8 +198,10 @@ print(elapsed_time)
 
 saver = tf.train.Saver()
 saver.save(sess,'model/model.ckpt')
-wandb.save(os.path.join(wandb.run.dir, 'model/model.ckpt'))
-wandb.config.elapsed_time = elapsed_time
+
+if wandb_use == True:
+    wandb.save(os.path.join(wandb.run.dir, 'model/model.ckpt'))
+    wandb.config.elapsed_time = elapsed_time
 
 epoch = np.arange(training_epochs)
 plt.plot(epoch, train_mse, 'r', label='train')
