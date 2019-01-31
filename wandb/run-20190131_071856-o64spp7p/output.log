@@ -1,0 +1,4014 @@
+2019-01-31 16:19:12.982406: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-01-31 16:19:13.061425: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-01-31 16:19:13.061847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 1060 3GB major: 6 minor: 1 memoryClockRate(GHz): 1.7845
+pciBusID: 0000:01:00.0
+totalMemory: 2.95GiB freeMemory: 2.23GiB
+2019-01-31 16:19:13.061868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2019-01-31 16:19:13.242721: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-31 16:19:13.242749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2019-01-31 16:19:13.242754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2019-01-31 16:19:13.242868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1916 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 3GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Epoch: 0001 cost = 0.656076558
+Validation cost: 0.618075490
+Epoch: 0002 cost = 0.558163642
+Validation cost: 0.579451978
+Epoch: 0003 cost = 0.481001472
+Validation cost: 0.501036823
+Epoch: 0004 cost = 0.442284745
+Validation cost: 0.481600523
+Epoch: 0005 cost = 0.423563453
+Validation cost: 0.449371636
+Epoch: 0006 cost = 0.403644066
+Validation cost: 0.426092714
+Epoch: 0007 cost = 0.380647888
+Validation cost: 0.403021812
+Epoch: 0008 cost = 0.361794642
+Validation cost: 0.379192889
+Epoch: 0009 cost = 0.346102401
+Validation cost: 0.370792300
+Epoch: 0010 cost = 0.331357465
+Validation cost: 0.354056180
+Epoch: 0011 cost = 0.326341474
+Validation cost: 0.364998400
+Epoch: 0012 cost = 0.314629261
+Validation cost: 0.326440752
+Epoch: 0013 cost = 0.306067612
+Validation cost: 0.320855319
+Epoch: 0014 cost = 0.300675907
+Validation cost: 0.332931608
+Epoch: 0015 cost = 0.296375659
+Validation cost: 0.306805938
+Epoch: 0016 cost = 0.290256091
+Validation cost: 0.298489422
+Epoch: 0017 cost = 0.285597390
+Validation cost: 0.295646191
+Epoch: 0018 cost = 0.279046382
+Validation cost: 0.283034056
+Epoch: 0019 cost = 0.271781523
+Validation cost: 0.285265237
+Epoch: 0020 cost = 0.263074479
+Validation cost: 0.277738005
+Epoch: 0021 cost = 0.257747003
+Validation cost: 0.274522185
+Epoch: 0022 cost = 0.248029711
+Validation cost: 0.269507855
+Epoch: 0023 cost = 0.242187274
+Validation cost: 0.254080743
+Epoch: 0024 cost = 0.235916882
+Validation cost: 0.259870201
+Epoch: 0025 cost = 0.232650936
+Validation cost: 0.249485567
+Epoch: 0026 cost = 0.228868740
+Validation cost: 0.256674647
+Epoch: 0027 cost = 0.227611443
+Validation cost: 0.249502614
+Epoch: 0028 cost = 0.230409646
+Validation cost: 0.265771121
+Epoch: 0029 cost = 0.220345353
+Validation cost: 0.230167657
+Epoch: 0030 cost = 0.218335583
+Validation cost: 0.233577594
+Epoch: 0031 cost = 0.216668830
+Validation cost: 0.231048286
+Epoch: 0032 cost = 0.215815933
+Validation cost: 0.243881360
+Epoch: 0033 cost = 0.213516711
+Validation cost: 0.226933405
+Epoch: 0034 cost = 0.212945885
+Validation cost: 0.228634372
+Epoch: 0035 cost = 0.209199968
+Validation cost: 0.218562990
+Epoch: 0036 cost = 0.208773873
+Validation cost: 0.218719959
+Epoch: 0037 cost = 0.205970053
+Validation cost: 0.219046816
+Epoch: 0038 cost = 0.204364276
+Validation cost: 0.210358456
+Epoch: 0039 cost = 0.203669509
+Validation cost: 0.215994284
+Epoch: 0040 cost = 0.201982021
+Validation cost: 0.213143334
+Epoch: 0041 cost = 0.200249925
+Validation cost: 0.210897058
+Epoch: 0042 cost = 0.199178280
+Validation cost: 0.203680843
+Epoch: 0043 cost = 0.197240844
+Validation cost: 0.201011106
+Epoch: 0044 cost = 0.198954383
+Validation cost: 0.203721970
+Epoch: 0045 cost = 0.195736016
+Validation cost: 0.204772100
+Epoch: 0046 cost = 0.190787157
+Validation cost: 0.196507454
+Epoch: 0047 cost = 0.190731071
+Validation cost: 0.197110981
+Epoch: 0048 cost = 0.190300416
+Validation cost: 0.187385574
+Epoch: 0049 cost = 0.189872645
+Validation cost: 0.210795969
+Epoch: 0050 cost = 0.190520270
+Validation cost: 0.193628684
+Epoch: 0051 cost = 0.187583843
+Validation cost: 0.192025274
+Epoch: 0052 cost = 0.190065164
+Validation cost: 0.199659199
+Epoch: 0053 cost = 0.188334442
+Validation cost: 0.198145568
+Epoch: 0054 cost = 0.187209898
+Validation cost: 0.190997139
+Epoch: 0055 cost = 0.184673431
+Validation cost: 0.185160935
+Epoch: 0056 cost = 0.185593850
+Validation cost: 0.192235202
+Epoch: 0057 cost = 0.186826854
+Validation cost: 0.188590214
+Epoch: 0058 cost = 0.183313758
+Validation cost: 0.184817448
+Epoch: 0059 cost = 0.183406223
+Validation cost: 0.186728805
+Epoch: 0060 cost = 0.185174232
+Validation cost: 0.190616816
+Epoch: 0061 cost = 0.185606395
+Validation cost: 0.185357496
+Epoch: 0062 cost = 0.184299381
+Validation cost: 0.193516538
+Epoch: 0063 cost = 0.187351180
+Validation cost: 0.186846301
+Epoch: 0064 cost = 0.183077625
+Validation cost: 0.183783844
+Epoch: 0065 cost = 0.181676739
+Validation cost: 0.190649897
+Epoch: 0066 cost = 0.184249932
+Validation cost: 0.188471079
+Epoch: 0067 cost = 0.181505709
+Validation cost: 0.183502138
+Epoch: 0068 cost = 0.180334932
+Validation cost: 0.184948340
+Epoch: 0069 cost = 0.182084443
+Validation cost: 0.182117298
+Epoch: 0070 cost = 0.180602220
+Validation cost: 0.187986687
+Epoch: 0071 cost = 0.180073342
+Validation cost: 0.182743222
+Epoch: 0072 cost = 0.180237509
+Validation cost: 0.183977202
+Epoch: 0073 cost = 0.179173458
+Validation cost: 0.185297146
+Epoch: 0074 cost = 0.179501917
+Validation cost: 0.179615840
+Epoch: 0075 cost = 0.179110933
+Validation cost: 0.181868717
+Epoch: 0076 cost = 0.179282833
+Validation cost: 0.189046606
+Epoch: 0077 cost = 0.178537371
+Validation cost: 0.185559943
+Epoch: 0078 cost = 0.177057359
+Validation cost: 0.182725474
+Epoch: 0079 cost = 0.177094922
+Validation cost: 0.184605345
+Epoch: 0080 cost = 0.181097180
+Validation cost: 0.179349422
+Epoch: 0081 cost = 0.178814218
+Validation cost: 0.177633390
+Epoch: 0082 cost = 0.179516225
+Validation cost: 0.184608296
+Epoch: 0083 cost = 0.176626148
+Validation cost: 0.191200554
+Epoch: 0084 cost = 0.175604406
+Validation cost: 0.182754964
+Epoch: 0085 cost = 0.175275345
+Validation cost: 0.168959096
+Epoch: 0086 cost = 0.174430980
+Validation cost: 0.187976778
+Epoch: 0087 cost = 0.174791343
+Validation cost: 0.185243592
+Epoch: 0088 cost = 0.175311214
+Validation cost: 0.184988409
+Epoch: 0089 cost = 0.174898797
+Validation cost: 0.179933533
+Epoch: 0090 cost = 0.176526107
+Validation cost: 0.182782218
+Epoch: 0091 cost = 0.177333715
+Validation cost: 0.183837101
+Epoch: 0092 cost = 0.174420025
+Validation cost: 0.177709118
+Epoch: 0093 cost = 0.173519506
+Validation cost: 0.186360136
+Epoch: 0094 cost = 0.175776829
+Validation cost: 0.182096243
+Epoch: 0095 cost = 0.177086814
+Validation cost: 0.174718887
+Epoch: 0096 cost = 0.173597426
+Validation cost: 0.176567480
+Epoch: 0097 cost = 0.172547580
+Validation cost: 0.183574900
+Epoch: 0098 cost = 0.172969649
+Validation cost: 0.183325246
+Epoch: 0099 cost = 0.172662131
+Validation cost: 0.184516475
+Epoch: 0100 cost = 0.170850314
+Validation cost: 0.176440299
+Epoch: 0101 cost = 0.173863324
+Validation cost: 0.173075676
+Epoch: 0102 cost = 0.169113222
+Validation cost: 0.180772200
+Epoch: 0103 cost = 0.171528455
+Validation cost: 0.183800876
+Epoch: 0104 cost = 0.170887314
+Validation cost: 0.180460006
+Epoch: 0105 cost = 0.171219750
+Validation cost: 0.188402757
+Epoch: 0106 cost = 0.170634508
+Validation cost: 0.179505363
+Epoch: 0107 cost = 0.169661529
+Validation cost: 0.185087219
+Epoch: 0108 cost = 0.170479926
+Validation cost: 0.186460719
+Epoch: 0109 cost = 0.170025969
+Validation cost: 0.180172712
+Epoch: 0110 cost = 0.168743119
+Validation cost: 0.176917449
+Epoch: 0111 cost = 0.169992985
+Validation cost: 0.176470429
+Epoch: 0112 cost = 0.170594800
+Validation cost: 0.178126618
+Epoch: 0113 cost = 0.167943757
+Validation cost: 0.170449480
+Epoch: 0114 cost = 0.169232992
+Validation cost: 0.172739908
+Epoch: 0115 cost = 0.167879666
+Validation cost: 0.178382054
+Epoch: 0116 cost = 0.169586353
+Validation cost: 0.180703744
+Epoch: 0117 cost = 0.169094157
+Validation cost: 0.179979950
+Epoch: 0118 cost = 0.168339651
+Validation cost: 0.193020880
+Epoch: 0119 cost = 0.168492168
+Validation cost: 0.175531507
+Epoch: 0120 cost = 0.166622968
+Validation cost: 0.173546836
+Epoch: 0121 cost = 0.168871889
+Validation cost: 0.180506930
+Epoch: 0122 cost = 0.169739555
+Validation cost: 0.175613254
+Epoch: 0123 cost = 0.167966217
+Validation cost: 0.176662132
+Epoch: 0124 cost = 0.165766177
+Validation cost: 0.172221452
+Epoch: 0125 cost = 0.169736056
+Validation cost: 0.171746641
+Epoch: 0126 cost = 0.166636601
+Validation cost: 0.183978304
+Epoch: 0127 cost = 0.167125569
+Validation cost: 0.175633103
+Epoch: 0128 cost = 0.166819052
+Validation cost: 0.172312543
+Epoch: 0129 cost = 0.167552662
+Validation cost: 0.173312545
+Epoch: 0130 cost = 0.166311198
+Validation cost: 0.174963966
+Epoch: 0131 cost = 0.166972970
+Validation cost: 0.175292403
+Epoch: 0132 cost = 0.166869399
+Validation cost: 0.170769304
+Epoch: 0133 cost = 0.167049418
+Validation cost: 0.178829283
+Epoch: 0134 cost = 0.166799564
+Validation cost: 0.177997768
+Epoch: 0135 cost = 0.169182534
+Validation cost: 0.167540848
+Epoch: 0136 cost = 0.165748430
+Validation cost: 0.168966845
+Epoch: 0137 cost = 0.168195236
+Validation cost: 0.167750895
+Epoch: 0138 cost = 0.167110042
+Validation cost: 0.171737328
+Epoch: 0139 cost = 0.166205301
+Validation cost: 0.174128234
+Epoch: 0140 cost = 0.167904421
+Validation cost: 0.168870598
+Epoch: 0141 cost = 0.168384454
+Validation cost: 0.173732147
+Epoch: 0142 cost = 0.164995010
+Validation cost: 0.173339471
+Epoch: 0143 cost = 0.166161957
+Validation cost: 0.169017330
+Epoch: 0144 cost = 0.166064196
+Validation cost: 0.168799818
+Epoch: 0145 cost = 0.166115200
+Validation cost: 0.181788206
+Epoch: 0146 cost = 0.168216302
+Validation cost: 0.181220561
+Epoch: 0147 cost = 0.166172154
+Validation cost: 0.169343665
+Epoch: 0148 cost = 0.165256668
+Validation cost: 0.174102187
+Epoch: 0149 cost = 0.165313783
+Validation cost: 0.176996931
+Epoch: 0150 cost = 0.165544838
+Validation cost: 0.174210325
+Epoch: 0151 cost = 0.166092793
+Validation cost: 0.176453441
+Epoch: 0152 cost = 0.166186382
+Validation cost: 0.171561018
+Epoch: 0153 cost = 0.165900491
+Validation cost: 0.171922579
+Epoch: 0154 cost = 0.166867714
+Validation cost: 0.172605857
+Epoch: 0155 cost = 0.167297181
+Validation cost: 0.170324668
+Epoch: 0156 cost = 0.164763305
+Validation cost: 0.169141635
+Epoch: 0157 cost = 0.164925648
+Validation cost: 0.170960099
+Epoch: 0158 cost = 0.165983295
+Validation cost: 0.171546906
+Epoch: 0159 cost = 0.165000107
+Validation cost: 0.173129112
+Epoch: 0160 cost = 0.163684704
+Validation cost: 0.173651010
+Epoch: 0161 cost = 0.165467458
+Validation cost: 0.168394178
+Epoch: 0162 cost = 0.164617704
+Validation cost: 0.169191092
+Epoch: 0163 cost = 0.164706392
+Validation cost: 0.173531264
+Epoch: 0164 cost = 0.164415729
+Validation cost: 0.175760046
+Epoch: 0165 cost = 0.165864492
+Validation cost: 0.175208598
+Epoch: 0166 cost = 0.165136164
+Validation cost: 0.170597345
+Epoch: 0167 cost = 0.164411549
+Validation cost: 0.172962502
+Epoch: 0168 cost = 0.165198470
+Validation cost: 0.165626734
+Epoch: 0169 cost = 0.164844786
+Validation cost: 0.170877650
+Epoch: 0170 cost = 0.163720073
+Validation cost: 0.166691408
+Epoch: 0171 cost = 0.164019522
+Validation cost: 0.167913541
+Epoch: 0172 cost = 0.164614125
+Validation cost: 0.168363214
+Epoch: 0173 cost = 0.163836172
+Validation cost: 0.169107914
+Epoch: 0174 cost = 0.164903920
+Validation cost: 0.168066755
+Epoch: 0175 cost = 0.163540051
+Validation cost: 0.170276314
+Epoch: 0176 cost = 0.164650166
+Validation cost: 0.169912249
+Epoch: 0177 cost = 0.164534314
+Validation cost: 0.174273297
+Epoch: 0178 cost = 0.164902623
+Validation cost: 0.170624092
+Epoch: 0179 cost = 0.163484900
+Validation cost: 0.174503624
+Epoch: 0180 cost = 0.163636658
+Validation cost: 0.170556009
+Epoch: 0181 cost = 0.162916263
+Validation cost: 0.170874834
+Epoch: 0182 cost = 0.162825466
+Validation cost: 0.170748085
+Epoch: 0183 cost = 0.163215262
+Validation cost: 0.166422173
+Epoch: 0184 cost = 0.165126576
+Validation cost: 0.177209631
+Epoch: 0185 cost = 0.165272069
+Validation cost: 0.169231743
+Epoch: 0186 cost = 0.164286018
+Validation cost: 0.174441576
+Epoch: 0187 cost = 0.162772772
+Validation cost: 0.173036769
+Epoch: 0188 cost = 0.164208479
+Validation cost: 0.169019878
+Epoch: 0189 cost = 0.163054630
+Validation cost: 0.166288763
+Epoch: 0190 cost = 0.164526337
+Validation cost: 0.169467866
+Epoch: 0191 cost = 0.163036292
+Validation cost: 0.167530656
+Epoch: 0192 cost = 0.164308583
+Validation cost: 0.176320046
+Epoch: 0193 cost = 0.165007331
+Validation cost: 0.172459200
+Epoch: 0194 cost = 0.166216955
+Validation cost: 0.186771393
+Epoch: 0195 cost = 0.166164314
+Validation cost: 0.170497000
+Epoch: 0196 cost = 0.163374386
+Validation cost: 0.168291345
+Epoch: 0197 cost = 0.163419799
+Validation cost: 0.165841624
+Epoch: 0198 cost = 0.162691508
+Validation cost: 0.173707664
+Epoch: 0199 cost = 0.162391479
+Validation cost: 0.167487815
+Epoch: 0200 cost = 0.162203729
+Validation cost: 0.174277350
+Epoch: 0201 cost = 0.162890613
+Validation cost: 0.171066210
+Epoch: 0202 cost = 0.163540480
+Validation cost: 0.163361430
+Epoch: 0203 cost = 0.162800941
+Validation cost: 0.165750921
+Epoch: 0204 cost = 0.164326091
+Validation cost: 0.170225829
+Epoch: 0205 cost = 0.162553173
+Validation cost: 0.164618209
+Epoch: 0206 cost = 0.163706122
+Validation cost: 0.170080543
+Epoch: 0207 cost = 0.162411287
+Validation cost: 0.163868517
+Epoch: 0208 cost = 0.161767057
+Validation cost: 0.166844040
+Epoch: 0209 cost = 0.162749599
+Validation cost: 0.179357350
+Epoch: 0210 cost = 0.162482607
+Validation cost: 0.169182256
+Epoch: 0211 cost = 0.163603001
+Validation cost: 0.170173302
+Epoch: 0212 cost = 0.163080611
+Validation cost: 0.165331826
+Epoch: 0213 cost = 0.161427174
+Validation cost: 0.170145199
+Epoch: 0214 cost = 0.162796158
+Validation cost: 0.165591478
+Epoch: 0215 cost = 0.163356104
+Validation cost: 0.164556623
+Epoch: 0216 cost = 0.161604984
+Validation cost: 0.166847840
+Epoch: 0217 cost = 0.162811652
+Validation cost: 0.169234559
+Epoch: 0218 cost = 0.164439352
+Validation cost: 0.171183556
+Epoch: 0219 cost = 0.162636383
+Validation cost: 0.175242886
+Epoch: 0220 cost = 0.161495066
+Validation cost: 0.167951047
+Epoch: 0221 cost = 0.162017522
+Validation cost: 0.173384860
+Epoch: 0222 cost = 0.161954489
+Validation cost: 0.166680679
+Epoch: 0223 cost = 0.163604356
+Validation cost: 0.167202935
+Epoch: 0224 cost = 0.163679788
+Validation cost: 0.167829469
+Epoch: 0225 cost = 0.161518204
+Validation cost: 0.173911676
+Epoch: 0226 cost = 0.162365636
+Validation cost: 0.170781180
+Epoch: 0227 cost = 0.162353089
+Validation cost: 0.167647988
+Epoch: 0228 cost = 0.161780189
+Validation cost: 0.163933069
+Epoch: 0229 cost = 0.162033506
+Validation cost: 0.168828562
+Epoch: 0230 cost = 0.160907599
+Validation cost: 0.162349567
+Epoch: 0231 cost = 0.161668736
+Validation cost: 0.165705368
+Epoch: 0232 cost = 0.161648611
+Validation cost: 0.167097136
+Epoch: 0233 cost = 0.160171270
+Validation cost: 0.166562587
+Epoch: 0234 cost = 0.160360054
+Validation cost: 0.164419055
+Epoch: 0235 cost = 0.160651359
+Validation cost: 0.165476024
+Epoch: 0236 cost = 0.161031042
+Validation cost: 0.173887953
+Epoch: 0237 cost = 0.161400652
+Validation cost: 0.168669730
+Epoch: 0238 cost = 0.159830336
+Validation cost: 0.165144622
+Epoch: 0239 cost = 0.161281969
+Validation cost: 0.172319070
+Epoch: 0240 cost = 0.161295433
+Validation cost: 0.170933709
+Epoch: 0241 cost = 0.162040695
+Validation cost: 0.169729739
+Epoch: 0242 cost = 0.165023710
+Validation cost: 0.167896122
+Epoch: 0243 cost = 0.159641017
+Validation cost: 0.163453043
+Epoch: 0244 cost = 0.161627275
+Validation cost: 0.165109098
+Epoch: 0245 cost = 0.161199982
+Validation cost: 0.172551677
+Epoch: 0246 cost = 0.159748773
+Validation cost: 0.164568961
+Epoch: 0247 cost = 0.159566321
+Validation cost: 0.174432889
+Epoch: 0248 cost = 0.160122787
+Validation cost: 0.165141866
+Epoch: 0249 cost = 0.160470981
+Validation cost: 0.167738676
+Epoch: 0250 cost = 0.160545438
+Validation cost: 0.160323873
+Epoch: 0251 cost = 0.159173173
+Validation cost: 0.163218945
+Epoch: 0252 cost = 0.161048857
+Validation cost: 0.158693314
+Epoch: 0253 cost = 0.160591413
+Validation cost: 0.164997295
+Epoch: 0254 cost = 0.159764636
+Validation cost: 0.162917256
+Epoch: 0255 cost = 0.159110820
+Validation cost: 0.162555695
+Epoch: 0256 cost = 0.161343325
+Validation cost: 0.166003034
+Epoch: 0257 cost = 0.158017616
+Validation cost: 0.160209775
+Epoch: 0258 cost = 0.159823356
+Validation cost: 0.158246696
+Epoch: 0259 cost = 0.160311060
+Validation cost: 0.163125098
+Epoch: 0260 cost = 0.158724820
+Validation cost: 0.160862446
+Epoch: 0261 cost = 0.158635183
+Validation cost: 0.165198296
+Epoch: 0262 cost = 0.160243627
+Validation cost: 0.163748741
+Epoch: 0263 cost = 0.159725593
+Validation cost: 0.165308744
+Epoch: 0264 cost = 0.160079135
+Validation cost: 0.163641572
+Epoch: 0265 cost = 0.159887275
+Validation cost: 0.163555369
+Epoch: 0266 cost = 0.160659312
+Validation cost: 0.166370451
+Epoch: 0267 cost = 0.161216538
+Validation cost: 0.165118933
+Epoch: 0268 cost = 0.158140183
+Validation cost: 0.159841135
+Epoch: 0269 cost = 0.159351638
+Validation cost: 0.162217960
+Epoch: 0270 cost = 0.157871614
+Validation cost: 0.160557538
+Epoch: 0271 cost = 0.158491577
+Validation cost: 0.156049833
+Epoch: 0272 cost = 0.160043617
+Validation cost: 0.162652045
+Epoch: 0273 cost = 0.160144131
+Validation cost: 0.164260209
+Epoch: 0274 cost = 0.162121746
+Validation cost: 0.159747094
+Epoch: 0275 cost = 0.160816796
+Validation cost: 0.160816625
+Epoch: 0276 cost = 0.158494511
+Validation cost: 0.155823901
+Epoch: 0277 cost = 0.157684072
+Validation cost: 0.160737380
+Epoch: 0278 cost = 0.159724927
+Validation cost: 0.161113679
+Epoch: 0279 cost = 0.161248582
+Validation cost: 0.159733430
+Epoch: 0280 cost = 0.157839834
+Validation cost: 0.154982746
+Epoch: 0281 cost = 0.160849777
+Validation cost: 0.157356620
+Epoch: 0282 cost = 0.156804040
+Validation cost: 0.167528436
+Epoch: 0283 cost = 0.158883305
+Validation cost: 0.167396948
+Epoch: 0284 cost = 0.158022126
+Validation cost: 0.160445049
+Epoch: 0285 cost = 0.158467041
+Validation cost: 0.158564299
+Epoch: 0286 cost = 0.157754618
+Validation cost: 0.154228017
+Epoch: 0287 cost = 0.158379378
+Validation cost: 0.159720302
+Epoch: 0288 cost = 0.158400120
+Validation cost: 0.157149449
+Epoch: 0289 cost = 0.157755722
+Validation cost: 0.161519468
+Epoch: 0290 cost = 0.156040329
+Validation cost: 0.170057371
+Epoch: 0291 cost = 0.158886965
+Validation cost: 0.153856710
+Epoch: 0292 cost = 0.159253410
+Validation cost: 0.165762439
+Epoch: 0293 cost = 0.159184647
+Validation cost: 0.154066369
+Epoch: 0294 cost = 0.157681089
+Validation cost: 0.158464670
+Epoch: 0295 cost = 0.158450723
+Validation cost: 0.153789863
+Epoch: 0296 cost = 0.155975435
+Validation cost: 0.159899130
+Epoch: 0297 cost = 0.156848647
+Validation cost: 0.156906679
+Epoch: 0298 cost = 0.157561424
+Validation cost: 0.154904842
+Epoch: 0299 cost = 0.157737232
+Validation cost: 0.160048053
+Epoch: 0300 cost = 0.156673111
+Validation cost: 0.161672711
+Epoch: 0301 cost = 0.157162709
+Validation cost: 0.153848067
+Epoch: 0302 cost = 0.157798219
+Validation cost: 0.159726709
+Epoch: 0303 cost = 0.156486175
+Validation cost: 0.153308675
+Epoch: 0304 cost = 0.157317779
+Validation cost: 0.155480802
+Epoch: 0305 cost = 0.160283267
+Validation cost: 0.166307390
+Epoch: 0306 cost = 0.158409568
+Validation cost: 0.167203978
+Epoch: 0307 cost = 0.157983756
+Validation cost: 0.163355783
+Epoch: 0308 cost = 0.158318941
+Validation cost: 0.151208028
+Epoch: 0309 cost = 0.156483608
+Validation cost: 0.155762732
+Epoch: 0310 cost = 0.158239279
+Validation cost: 0.159613296
+Epoch: 0311 cost = 0.156767477
+Validation cost: 0.160064563
+Epoch: 0312 cost = 0.157353248
+Validation cost: 0.160962746
+Epoch: 0313 cost = 0.156120157
+Validation cost: 0.153817832
+Epoch: 0314 cost = 0.155635986
+Validation cost: 0.160362422
+Epoch: 0315 cost = 0.157898449
+Validation cost: 0.160962075
+Epoch: 0316 cost = 0.156509185
+Validation cost: 0.160847470
+Epoch: 0317 cost = 0.156110787
+Validation cost: 0.162279069
+Epoch: 0318 cost = 0.156340517
+Validation cost: 0.157810166
+Epoch: 0319 cost = 0.156541528
+Validation cost: 0.164266184
+Epoch: 0320 cost = 0.156517575
+Validation cost: 0.158414319
+Epoch: 0321 cost = 0.157304927
+Validation cost: 0.156540170
+Epoch: 0322 cost = 0.156927412
+Validation cost: 0.166704208
+Epoch: 0323 cost = 0.157242416
+Validation cost: 0.161847547
+Epoch: 0324 cost = 0.154768548
+Validation cost: 0.164252669
+Epoch: 0325 cost = 0.156431313
+Validation cost: 0.159235224
+Epoch: 0326 cost = 0.161564991
+Validation cost: 0.159368649
+Epoch: 0327 cost = 0.156269427
+Validation cost: 0.164045036
+Epoch: 0328 cost = 0.157479596
+Validation cost: 0.164359733
+Epoch: 0329 cost = 0.156979393
+Validation cost: 0.159123078
+Epoch: 0330 cost = 0.157172686
+Validation cost: 0.154252604
+Epoch: 0331 cost = 0.156262592
+Validation cost: 0.158256546
+Epoch: 0332 cost = 0.154761586
+Validation cost: 0.160052657
+Epoch: 0333 cost = 0.156081579
+Validation cost: 0.168786153
+Epoch: 0334 cost = 0.155679245
+Validation cost: 0.167060852
+Epoch: 0335 cost = 0.158496231
+Validation cost: 0.167323053
+Epoch: 0336 cost = 0.157615227
+Validation cost: 0.159878939
+Epoch: 0337 cost = 0.156351026
+Validation cost: 0.166490406
+Epoch: 0338 cost = 0.156333977
+Validation cost: 0.158692271
+Epoch: 0339 cost = 0.156137354
+Validation cost: 0.163309336
+Epoch: 0340 cost = 0.157079570
+Validation cost: 0.156221271
+Epoch: 0341 cost = 0.155313597
+Validation cost: 0.165425360
+Epoch: 0342 cost = 0.155182538
+Validation cost: 0.159652695
+Epoch: 0343 cost = 0.154897999
+Validation cost: 0.162525550
+Epoch: 0344 cost = 0.156996718
+Validation cost: 0.161785141
+Epoch: 0345 cost = 0.156052368
+Validation cost: 0.168856040
+Epoch: 0346 cost = 0.155775881
+Validation cost: 0.155666873
+Epoch: 0347 cost = 0.154821811
+Validation cost: 0.155865297
+Epoch: 0348 cost = 0.157882064
+Validation cost: 0.166489184
+Epoch: 0349 cost = 0.159942523
+Validation cost: 0.164298996
+Epoch: 0350 cost = 0.155260628
+Validation cost: 0.162526116
+Epoch: 0351 cost = 0.157434262
+Validation cost: 0.160375178
+Epoch: 0352 cost = 0.155394884
+Validation cost: 0.168086037
+Epoch: 0353 cost = 0.155436333
+Validation cost: 0.167552009
+Epoch: 0354 cost = 0.156517560
+Validation cost: 0.164662912
+Epoch: 0355 cost = 0.154884124
+Validation cost: 0.155303121
+Epoch: 0356 cost = 0.156860184
+Validation cost: 0.160704523
+Epoch: 0357 cost = 0.156623182
+Validation cost: 0.168508902
+Epoch: 0358 cost = 0.155268448
+Validation cost: 0.160191193
+Epoch: 0359 cost = 0.155252086
+Validation cost: 0.160007149
+Epoch: 0360 cost = 0.155999838
+Validation cost: 0.160172671
+Epoch: 0361 cost = 0.157023635
+Validation cost: 0.168271959
+Epoch: 0362 cost = 0.156009432
+Validation cost: 0.159589604
+Epoch: 0363 cost = 0.154083983
+Validation cost: 0.157403007
+Epoch: 0364 cost = 0.156084890
+Validation cost: 0.159319028
+Epoch: 0365 cost = 0.155153655
+Validation cost: 0.163570300
+Epoch: 0366 cost = 0.156119309
+Validation cost: 0.162908182
+Epoch: 0367 cost = 0.155072258
+Validation cost: 0.155410379
+Epoch: 0368 cost = 0.155661893
+Validation cost: 0.158528179
+Epoch: 0369 cost = 0.155355803
+Validation cost: 0.159552559
+Epoch: 0370 cost = 0.156197146
+Validation cost: 0.154876396
+Epoch: 0371 cost = 0.156194406
+Validation cost: 0.157064453
+Epoch: 0372 cost = 0.154020451
+Validation cost: 0.168244883
+Epoch: 0373 cost = 0.154799338
+Validation cost: 0.159108162
+Epoch: 0374 cost = 0.156334614
+Validation cost: 0.159792110
+Epoch: 0375 cost = 0.156142415
+Validation cost: 0.150865257
+Epoch: 0376 cost = 0.154943124
+Validation cost: 0.162712291
+Epoch: 0377 cost = 0.155691730
+Validation cost: 0.160769701
+Epoch: 0378 cost = 0.155918949
+Validation cost: 0.158501580
+Epoch: 0379 cost = 0.154568990
+Validation cost: 0.157074228
+Epoch: 0380 cost = 0.155678959
+Validation cost: 0.153698459
+Epoch: 0381 cost = 0.154588567
+Validation cost: 0.153018326
+Epoch: 0382 cost = 0.156397797
+Validation cost: 0.153167397
+Epoch: 0383 cost = 0.155423843
+Validation cost: 0.153001115
+Epoch: 0384 cost = 0.154935879
+Validation cost: 0.153491512
+Epoch: 0385 cost = 0.153711613
+Validation cost: 0.153557003
+Epoch: 0386 cost = 0.154971393
+Validation cost: 0.161210537
+Epoch: 0387 cost = 0.155417627
+Validation cost: 0.166484192
+Epoch: 0388 cost = 0.155272996
+Validation cost: 0.160164297
+Epoch: 0389 cost = 0.154182904
+Validation cost: 0.155132651
+Epoch: 0390 cost = 0.155906009
+Validation cost: 0.160977557
+Epoch: 0391 cost = 0.154764890
+Validation cost: 0.151487201
+Epoch: 0392 cost = 0.154315608
+Validation cost: 0.153061882
+Epoch: 0393 cost = 0.155154753
+Validation cost: 0.158995152
+Epoch: 0394 cost = 0.155559549
+Validation cost: 0.163930833
+Epoch: 0395 cost = 0.156644098
+Validation cost: 0.158470109
+Epoch: 0396 cost = 0.155139724
+Validation cost: 0.157114282
+Epoch: 0397 cost = 0.154741547
+Validation cost: 0.153014854
+Epoch: 0398 cost = 0.153230529
+Validation cost: 0.156845689
+Epoch: 0399 cost = 0.154294260
+Validation cost: 0.154127941
+Epoch: 0400 cost = 0.155188507
+Validation cost: 0.156817079
+Epoch: 0401 cost = 0.155300986
+Validation cost: 0.152172923
+Epoch: 0402 cost = 0.153469314
+Validation cost: 0.155872747
+Epoch: 0403 cost = 0.153586682
+Validation cost: 0.154372200
+Epoch: 0404 cost = 0.155031461
+Validation cost: 0.158295602
+Epoch: 0405 cost = 0.155496622
+Validation cost: 0.154240623
+Epoch: 0406 cost = 0.154696745
+Validation cost: 0.157387272
+Epoch: 0407 cost = 0.155528994
+Validation cost: 0.154294699
+Epoch: 0408 cost = 0.155015906
+Validation cost: 0.150323480
+Epoch: 0409 cost = 0.154824853
+Validation cost: 0.155176193
+Epoch: 0410 cost = 0.156110145
+Validation cost: 0.166767940
+Epoch: 0411 cost = 0.155085967
+Validation cost: 0.159695983
+Epoch: 0412 cost = 0.154216244
+Validation cost: 0.151817262
+Epoch: 0413 cost = 0.154101562
+Validation cost: 0.155525476
+Epoch: 0414 cost = 0.154111700
+Validation cost: 0.153262734
+Epoch: 0415 cost = 0.154978586
+Validation cost: 0.154249385
+Epoch: 0416 cost = 0.154279148
+Validation cost: 0.156775028
+Epoch: 0417 cost = 0.153326112
+Validation cost: 0.162759885
+Epoch: 0418 cost = 0.154245193
+Validation cost: 0.153545618
+Epoch: 0419 cost = 0.155462337
+Validation cost: 0.162405714
+Epoch: 0420 cost = 0.156583640
+Validation cost: 0.156450614
+Epoch: 0421 cost = 0.153665150
+Validation cost: 0.157687277
+Epoch: 0422 cost = 0.153293913
+Validation cost: 0.154868215
+Epoch: 0423 cost = 0.154306108
+Validation cost: 0.158544376
+Epoch: 0424 cost = 0.155242748
+Validation cost: 0.156868547
+Epoch: 0425 cost = 0.154089442
+Validation cost: 0.152641624
+Epoch: 0426 cost = 0.153975527
+Validation cost: 0.156162143
+Epoch: 0427 cost = 0.153447621
+Validation cost: 0.160254523
+Epoch: 0428 cost = 0.155048967
+Validation cost: 0.166695416
+Epoch: 0429 cost = 0.154373309
+Validation cost: 0.159371167
+Epoch: 0430 cost = 0.153930582
+Validation cost: 0.158843815
+Epoch: 0431 cost = 0.153697032
+Validation cost: 0.158803090
+Epoch: 0432 cost = 0.153670915
+Validation cost: 0.155479252
+Epoch: 0433 cost = 0.154915230
+Validation cost: 0.154695913
+Epoch: 0434 cost = 0.153684635
+Validation cost: 0.158596262
+Epoch: 0435 cost = 0.153330230
+Validation cost: 0.159815386
+Epoch: 0436 cost = 0.153261910
+Validation cost: 0.156077072
+Epoch: 0437 cost = 0.153394045
+Validation cost: 0.157717988
+Epoch: 0438 cost = 0.154453233
+Validation cost: 0.152709752
+Epoch: 0439 cost = 0.152480337
+Validation cost: 0.157113269
+Epoch: 0440 cost = 0.153066847
+Validation cost: 0.157740250
+Epoch: 0441 cost = 0.155578072
+Validation cost: 0.163794950
+Epoch: 0442 cost = 0.153623465
+Validation cost: 0.169299945
+Epoch: 0443 cost = 0.155613511
+Validation cost: 0.152599677
+Epoch: 0444 cost = 0.152248976
+Validation cost: 0.151739359
+Epoch: 0445 cost = 0.152299545
+Validation cost: 0.153861135
+Epoch: 0446 cost = 0.153620586
+Validation cost: 0.151579976
+Epoch: 0447 cost = 0.153924507
+Validation cost: 0.158448234
+Epoch: 0448 cost = 0.151898019
+Validation cost: 0.155040413
+Epoch: 0449 cost = 0.153662415
+Validation cost: 0.152928069
+Epoch: 0450 cost = 0.154434389
+Validation cost: 0.153357506
+Epoch: 0451 cost = 0.153703042
+Validation cost: 0.154886886
+Epoch: 0452 cost = 0.153693020
+Validation cost: 0.155540422
+Epoch: 0453 cost = 0.153979471
+Validation cost: 0.152743846
+Epoch: 0454 cost = 0.152773574
+Validation cost: 0.159668252
+Epoch: 0455 cost = 0.155485226
+Validation cost: 0.156264737
+Epoch: 0456 cost = 0.153398546
+Validation cost: 0.154975608
+Epoch: 0457 cost = 0.153285473
+Validation cost: 0.150543004
+Epoch: 0458 cost = 0.154035136
+Validation cost: 0.156104416
+Epoch: 0459 cost = 0.152752211
+Validation cost: 0.149260327
+Epoch: 0460 cost = 0.154277460
+Validation cost: 0.153321594
+Epoch: 0461 cost = 0.154193440
+Validation cost: 0.157035083
+Epoch: 0462 cost = 0.153042731
+Validation cost: 0.150342345
+Epoch: 0463 cost = 0.152109289
+Validation cost: 0.154511720
+Epoch: 0464 cost = 0.153916359
+Validation cost: 0.153742030
+Epoch: 0465 cost = 0.152497272
+Validation cost: 0.152626604
+Epoch: 0466 cost = 0.152116660
+Validation cost: 0.150877863
+Epoch: 0467 cost = 0.152271957
+Validation cost: 0.153704911
+Epoch: 0468 cost = 0.152094446
+Validation cost: 0.156874806
+Epoch: 0469 cost = 0.152156386
+Validation cost: 0.155365810
+Epoch: 0470 cost = 0.154883196
+Validation cost: 0.160806179
+Epoch: 0471 cost = 0.153647334
+Validation cost: 0.152482495
+Epoch: 0472 cost = 0.152692846
+Validation cost: 0.153964564
+Epoch: 0473 cost = 0.153333909
+Validation cost: 0.156266242
+Epoch: 0474 cost = 0.153813031
+Validation cost: 0.154242381
+Epoch: 0475 cost = 0.153171414
+Validation cost: 0.157777667
+Epoch: 0476 cost = 0.156501116
+Validation cost: 0.159725964
+Epoch: 0477 cost = 0.153601481
+Validation cost: 0.152808771
+Epoch: 0478 cost = 0.152568097
+Validation cost: 0.148352966
+Epoch: 0479 cost = 0.152720780
+Validation cost: 0.156031415
+Epoch: 0480 cost = 0.152948667
+Validation cost: 0.154188216
+Epoch: 0481 cost = 0.154814514
+Validation cost: 0.150156036
+Epoch: 0482 cost = 0.152746820
+Validation cost: 0.146130562
+Epoch: 0483 cost = 0.153568270
+Validation cost: 0.148972094
+Epoch: 0484 cost = 0.152413495
+Validation cost: 0.154242486
+Epoch: 0485 cost = 0.153904413
+Validation cost: 0.153063402
+Epoch: 0486 cost = 0.154774681
+Validation cost: 0.153346106
+Epoch: 0487 cost = 0.156015780
+Validation cost: 0.151157379
+Epoch: 0488 cost = 0.153076691
+Validation cost: 0.156461030
+Epoch: 0489 cost = 0.154516170
+Validation cost: 0.152161732
+Epoch: 0490 cost = 0.152626695
+Validation cost: 0.154569224
+Epoch: 0491 cost = 0.152966332
+Validation cost: 0.155341923
+Epoch: 0492 cost = 0.153931529
+Validation cost: 0.153464109
+Epoch: 0493 cost = 0.152253105
+Validation cost: 0.150548533
+Epoch: 0494 cost = 0.155584187
+Validation cost: 0.157530934
+Epoch: 0495 cost = 0.153162902
+Validation cost: 0.152911693
+Epoch: 0496 cost = 0.152278448
+Validation cost: 0.156877011
+Epoch: 0497 cost = 0.151070507
+Validation cost: 0.156417027
+Epoch: 0498 cost = 0.153463387
+Validation cost: 0.156494722
+Epoch: 0499 cost = 0.152727348
+Validation cost: 0.151799098
+Epoch: 0500 cost = 0.152933883
+Validation cost: 0.154388309
+Epoch: 0501 cost = 0.152912324
+Validation cost: 0.148780808
+Epoch: 0502 cost = 0.152062943
+Validation cost: 0.154943630
+Epoch: 0503 cost = 0.153868102
+Validation cost: 0.149242803
+Epoch: 0504 cost = 0.153343862
+Validation cost: 0.161180943
+Epoch: 0505 cost = 0.154603775
+Validation cost: 0.153876841
+Epoch: 0506 cost = 0.152138884
+Validation cost: 0.153193116
+Epoch: 0507 cost = 0.151870268
+Validation cost: 0.156055972
+Epoch: 0508 cost = 0.157250260
+Validation cost: 0.152987748
+Epoch: 0509 cost = 0.151487704
+Validation cost: 0.149812818
+Epoch: 0510 cost = 0.152625822
+Validation cost: 0.160514235
+Epoch: 0511 cost = 0.151504136
+Validation cost: 0.154553324
+Epoch: 0512 cost = 0.151166872
+Validation cost: 0.154378235
+Epoch: 0513 cost = 0.152118917
+Validation cost: 0.144162193
+Epoch: 0514 cost = 0.151364148
+Validation cost: 0.154373243
+Epoch: 0515 cost = 0.151972071
+Validation cost: 0.151433200
+Epoch: 0516 cost = 0.152102799
+Validation cost: 0.150671199
+Epoch: 0517 cost = 0.152305923
+Validation cost: 0.150343925
+Epoch: 0518 cost = 0.152501344
+Validation cost: 0.150378019
+Epoch: 0519 cost = 0.151784082
+Validation cost: 0.145788923
+Epoch: 0520 cost = 0.151201758
+Validation cost: 0.147491828
+Epoch: 0521 cost = 0.151739776
+Validation cost: 0.151405707
+Epoch: 0522 cost = 0.151839703
+Validation cost: 0.150080577
+Epoch: 0523 cost = 0.152156116
+Validation cost: 0.152292773
+Epoch: 0524 cost = 0.153775414
+Validation cost: 0.155800253
+Epoch: 0525 cost = 0.151898605
+Validation cost: 0.144764066
+Epoch: 0526 cost = 0.150912976
+Validation cost: 0.152443305
+Epoch: 0527 cost = 0.151626423
+Validation cost: 0.154743478
+Epoch: 0528 cost = 0.151353101
+Validation cost: 0.150714889
+Epoch: 0529 cost = 0.153167575
+Validation cost: 0.149754956
+Epoch: 0530 cost = 0.151536492
+Validation cost: 0.151761085
+Epoch: 0531 cost = 0.154014993
+Validation cost: 0.152427360
+Epoch: 0532 cost = 0.152276176
+Validation cost: 0.151684880
+Epoch: 0533 cost = 0.156653343
+Validation cost: 0.152586535
+Epoch: 0534 cost = 0.152030799
+Validation cost: 0.147604227
+Epoch: 0535 cost = 0.150583454
+Validation cost: 0.149509713
+Epoch: 0536 cost = 0.150964274
+Validation cost: 0.145381421
+Epoch: 0537 cost = 0.149904116
+Validation cost: 0.145436406
+Epoch: 0538 cost = 0.153532355
+Validation cost: 0.148488984
+Epoch: 0539 cost = 0.151546367
+Validation cost: 0.158348769
+Epoch: 0540 cost = 0.153012437
+Validation cost: 0.154909790
+Epoch: 0541 cost = 0.151431994
+Validation cost: 0.148840338
+Epoch: 0542 cost = 0.151967912
+Validation cost: 0.149902090
+Epoch: 0543 cost = 0.152284848
+Validation cost: 0.145841360
+Epoch: 0544 cost = 0.152461503
+Validation cost: 0.152106091
+Epoch: 0545 cost = 0.152648856
+Validation cost: 0.148950487
+Epoch: 0546 cost = 0.150353741
+Validation cost: 0.146130413
+Epoch: 0547 cost = 0.151197883
+Validation cost: 0.147579521
+Epoch: 0548 cost = 0.151530828
+Validation cost: 0.150190353
+Epoch: 0549 cost = 0.151427690
+Validation cost: 0.146567851
+Epoch: 0550 cost = 0.151485799
+Validation cost: 0.151275709
+Epoch: 0551 cost = 0.152569400
+Validation cost: 0.152017936
+Epoch: 0552 cost = 0.152056143
+Validation cost: 0.153926402
+Epoch: 0553 cost = 0.153665941
+Validation cost: 0.148405850
+Epoch: 0554 cost = 0.152392303
+Validation cost: 0.152577132
+Epoch: 0555 cost = 0.152796444
+Validation cost: 0.147800356
+Epoch: 0556 cost = 0.150824605
+Validation cost: 0.151178584
+Epoch: 0557 cost = 0.154884607
+Validation cost: 0.153315246
+Epoch: 0558 cost = 0.151120119
+Validation cost: 0.148312390
+Epoch: 0559 cost = 0.150094088
+Validation cost: 0.154290065
+Epoch: 0560 cost = 0.150326201
+Validation cost: 0.147475168
+Epoch: 0561 cost = 0.152492246
+Validation cost: 0.154389828
+Epoch: 0562 cost = 0.150822114
+Validation cost: 0.144021377
+Epoch: 0563 cost = 0.152607557
+Validation cost: 0.143560648
+Epoch: 0564 cost = 0.150370351
+Validation cost: 0.148723304
+Epoch: 0565 cost = 0.150255024
+Validation cost: 0.147529855
+Epoch: 0566 cost = 0.150182802
+Validation cost: 0.150892764
+Epoch: 0567 cost = 0.150872545
+Validation cost: 0.152587458
+Epoch: 0568 cost = 0.152994881
+Validation cost: 0.148296401
+Epoch: 0569 cost = 0.151045858
+Validation cost: 0.148904741
+Epoch: 0570 cost = 0.153560264
+Validation cost: 0.151128128
+Epoch: 0571 cost = 0.152431956
+Validation cost: 0.151739478
+Epoch: 0572 cost = 0.152375704
+Validation cost: 0.151529074
+Epoch: 0573 cost = 0.151280848
+Validation cost: 0.147063568
+Epoch: 0574 cost = 0.152294975
+Validation cost: 0.151780888
+Epoch: 0575 cost = 0.150889313
+Validation cost: 0.160129800
+Epoch: 0576 cost = 0.151042009
+Validation cost: 0.148975685
+Epoch: 0577 cost = 0.150044409
+Validation cost: 0.149921224
+Epoch: 0578 cost = 0.150718764
+Validation cost: 0.149473652
+Epoch: 0579 cost = 0.150673743
+Validation cost: 0.146760926
+Epoch: 0580 cost = 0.150143866
+Validation cost: 0.151274577
+Epoch: 0581 cost = 0.149998707
+Validation cost: 0.144679844
+Epoch: 0582 cost = 0.151398657
+Validation cost: 0.145724565
+Epoch: 0583 cost = 0.151745393
+Validation cost: 0.151411101
+Epoch: 0584 cost = 0.150121484
+Validation cost: 0.145048499
+Epoch: 0585 cost = 0.152482091
+Validation cost: 0.154436156
+Epoch: 0586 cost = 0.151831772
+Validation cost: 0.150896683
+Epoch: 0587 cost = 0.149527648
+Validation cost: 0.156849757
+Epoch: 0588 cost = 0.153277327
+Validation cost: 0.150375411
+Epoch: 0589 cost = 0.150826775
+Validation cost: 0.145765036
+Epoch: 0590 cost = 0.150611905
+Validation cost: 0.145668000
+Epoch: 0591 cost = 0.150613601
+Validation cost: 0.143436998
+Epoch: 0592 cost = 0.151369327
+Validation cost: 0.149053097
+Epoch: 0593 cost = 0.149987132
+Validation cost: 0.148040175
+Epoch: 0594 cost = 0.149699900
+Validation cost: 0.148299217
+Epoch: 0595 cost = 0.155673413
+Validation cost: 0.146403894
+Epoch: 0596 cost = 0.149891092
+Validation cost: 0.146941364
+Epoch: 0597 cost = 0.151236489
+Validation cost: 0.150625661
+Epoch: 0598 cost = 0.151149870
+Validation cost: 0.148226112
+Epoch: 0599 cost = 0.149859380
+Validation cost: 0.148413956
+Epoch: 0600 cost = 0.149804364
+Validation cost: 0.144577011
+Epoch: 0601 cost = 0.153229557
+Validation cost: 0.165822566
+Epoch: 0602 cost = 0.153157775
+Validation cost: 0.148997590
+Epoch: 0603 cost = 0.152285505
+Validation cost: 0.148335189
+Epoch: 0604 cost = 0.151432996
+Validation cost: 0.147742897
+Epoch: 0605 cost = 0.148923482
+Validation cost: 0.145519406
+Epoch: 0606 cost = 0.155212071
+Validation cost: 0.151527733
+Epoch: 0607 cost = 0.150228875
+Validation cost: 0.148328960
+Epoch: 0608 cost = 0.149682870
+Validation cost: 0.147968993
+Epoch: 0609 cost = 0.149892210
+Validation cost: 0.143443525
+Epoch: 0610 cost = 0.150054749
+Validation cost: 0.152413189
+Epoch: 0611 cost = 0.152447674
+Validation cost: 0.147884458
+Epoch: 0612 cost = 0.148924096
+Validation cost: 0.149067879
+Epoch: 0613 cost = 0.150597325
+Validation cost: 0.146736518
+Epoch: 0614 cost = 0.151673125
+Validation cost: 0.153522536
+Epoch: 0615 cost = 0.150323232
+Validation cost: 0.148273885
+Epoch: 0616 cost = 0.150981711
+Validation cost: 0.146641269
+Epoch: 0617 cost = 0.150806325
+Validation cost: 0.148040548
+Epoch: 0618 cost = 0.149836747
+Validation cost: 0.148522153
+Epoch: 0619 cost = 0.152389620
+Validation cost: 0.147308871
+Epoch: 0620 cost = 0.154099498
+Validation cost: 0.162374601
+Epoch: 0621 cost = 0.150445110
+Validation cost: 0.150240436
+Epoch: 0622 cost = 0.149625744
+Validation cost: 0.148137912
+Epoch: 0623 cost = 0.151296228
+Validation cost: 0.146856487
+Epoch: 0624 cost = 0.150827158
+Validation cost: 0.146538734
+Epoch: 0625 cost = 0.152827175
+Validation cost: 0.149027795
+Epoch: 0626 cost = 0.150491139
+Validation cost: 0.149241105
+Epoch: 0627 cost = 0.149967410
+Validation cost: 0.148035064
+Epoch: 0628 cost = 0.150716641
+Validation cost: 0.153421953
+Epoch: 0629 cost = 0.150501599
+Validation cost: 0.145645261
+Epoch: 0630 cost = 0.150770962
+Validation cost: 0.147275999
+Epoch: 0631 cost = 0.150659483
+Validation cost: 0.143001273
+Epoch: 0632 cost = 0.150410912
+Validation cost: 0.146856636
+Epoch: 0633 cost = 0.150808874
+Validation cost: 0.146780670
+Epoch: 0634 cost = 0.149986844
+Validation cost: 0.149372488
+Epoch: 0635 cost = 0.153369855
+Validation cost: 0.151824221
+Epoch: 0636 cost = 0.152558597
+Validation cost: 0.150909439
+Epoch: 0637 cost = 0.149521030
+Validation cost: 0.144903898
+Epoch: 0638 cost = 0.149617375
+Validation cost: 0.148288831
+Epoch: 0639 cost = 0.151348381
+Validation cost: 0.141202956
+Epoch: 0640 cost = 0.149584896
+Validation cost: 0.145662934
+Epoch: 0641 cost = 0.150990450
+Validation cost: 0.146809787
+Epoch: 0642 cost = 0.150145861
+Validation cost: 0.147568733
+Epoch: 0643 cost = 0.150478879
+Validation cost: 0.147152632
+Epoch: 0644 cost = 0.150753839
+Validation cost: 0.145641193
+Epoch: 0645 cost = 0.150534004
+Validation cost: 0.147350058
+Epoch: 0646 cost = 0.152544238
+Validation cost: 0.147168323
+Epoch: 0647 cost = 0.150901123
+Validation cost: 0.146701157
+Epoch: 0648 cost = 0.151688808
+Validation cost: 0.146685749
+Epoch: 0649 cost = 0.148742812
+Validation cost: 0.153831646
+Epoch: 0650 cost = 0.151476139
+Validation cost: 0.151436090
+Epoch: 0651 cost = 0.149046501
+Validation cost: 0.147915527
+Epoch: 0652 cost = 0.151514945
+Validation cost: 0.150911212
+Epoch: 0653 cost = 0.153306245
+Validation cost: 0.146392509
+Epoch: 0654 cost = 0.149168045
+Validation cost: 0.152460292
+Epoch: 0655 cost = 0.150858709
+Validation cost: 0.149059176
+Epoch: 0656 cost = 0.151092728
+Validation cost: 0.150362521
+Epoch: 0657 cost = 0.149088399
+Validation cost: 0.144422203
+Epoch: 0658 cost = 0.149753008
+Validation cost: 0.151381820
+Epoch: 0659 cost = 0.152185607
+Validation cost: 0.150632903
+Epoch: 0660 cost = 0.149971541
+Validation cost: 0.151417777
+Epoch: 0661 cost = 0.154281836
+Validation cost: 0.159060761
+Epoch: 0662 cost = 0.150329264
+Validation cost: 0.150202319
+Epoch: 0663 cost = 0.149542532
+Validation cost: 0.145629317
+Epoch: 0664 cost = 0.149297789
+Validation cost: 0.151341930
+Epoch: 0665 cost = 0.149417287
+Validation cost: 0.149468333
+Epoch: 0666 cost = 0.150651457
+Validation cost: 0.149963483
+Epoch: 0667 cost = 0.150270000
+Validation cost: 0.149123996
+Epoch: 0668 cost = 0.149423640
+Validation cost: 0.150237784
+Epoch: 0669 cost = 0.149697486
+Validation cost: 0.153393999
+Epoch: 0670 cost = 0.149727589
+Validation cost: 0.150245711
+Epoch: 0671 cost = 0.150080788
+Validation cost: 0.149647087
+Epoch: 0672 cost = 0.151069694
+Validation cost: 0.152463943
+Epoch: 0673 cost = 0.153265410
+Validation cost: 0.149930149
+Epoch: 0674 cost = 0.151702643
+Validation cost: 0.153254002
+Epoch: 0675 cost = 0.152313918
+Validation cost: 0.154855013
+Epoch: 0676 cost = 0.149423437
+Validation cost: 0.148094133
+Epoch: 0677 cost = 0.148324108
+Validation cost: 0.146772772
+Epoch: 0678 cost = 0.149665402
+Validation cost: 0.152113959
+Epoch: 0679 cost = 0.151409982
+Validation cost: 0.148334756
+Epoch: 0680 cost = 0.149915143
+Validation cost: 0.144149795
+Epoch: 0681 cost = 0.151175234
+Validation cost: 0.149493098
+Epoch: 0682 cost = 0.148548512
+Validation cost: 0.146186605
+Epoch: 0683 cost = 0.148921399
+Validation cost: 0.142455921
+Epoch: 0684 cost = 0.150027179
+Validation cost: 0.150578558
+Epoch: 0685 cost = 0.149894673
+Validation cost: 0.152299091
+Epoch: 0686 cost = 0.151050071
+Validation cost: 0.148033991
+Epoch: 0687 cost = 0.148769274
+Validation cost: 0.149937913
+Epoch: 0688 cost = 0.150920935
+Validation cost: 0.150556192
+Epoch: 0689 cost = 0.149227413
+Validation cost: 0.146480739
+Epoch: 0690 cost = 0.149395710
+Validation cost: 0.147447407
+Epoch: 0691 cost = 0.152984099
+Validation cost: 0.150325507
+Epoch: 0692 cost = 0.150052069
+Validation cost: 0.149528593
+Epoch: 0693 cost = 0.152329048
+Validation cost: 0.152191579
+Epoch: 0694 cost = 0.150440893
+Validation cost: 0.147526816
+Epoch: 0695 cost = 0.149553150
+Validation cost: 0.149805501
+Epoch: 0696 cost = 0.151947823
+Validation cost: 0.155168846
+Epoch: 0697 cost = 0.150045245
+Validation cost: 0.155025840
+Epoch: 0698 cost = 0.150766087
+Validation cost: 0.150206625
+Epoch: 0699 cost = 0.149065073
+Validation cost: 0.145116925
+Epoch: 0700 cost = 0.149491466
+Validation cost: 0.149797812
+Epoch: 0701 cost = 0.150249034
+Validation cost: 0.146979958
+Epoch: 0702 cost = 0.151968256
+Validation cost: 0.151640922
+Epoch: 0703 cost = 0.150381184
+Validation cost: 0.152417958
+Epoch: 0704 cost = 0.150341733
+Validation cost: 0.148679033
+Epoch: 0705 cost = 0.149906995
+Validation cost: 0.146967992
+Epoch: 0706 cost = 0.150578763
+Validation cost: 0.147339672
+Epoch: 0707 cost = 0.148778067
+Validation cost: 0.147522181
+Epoch: 0708 cost = 0.149967584
+Validation cost: 0.150290728
+Epoch: 0709 cost = 0.150044456
+Validation cost: 0.151722178
+Epoch: 0710 cost = 0.148493996
+Validation cost: 0.145553172
+Epoch: 0711 cost = 0.150869159
+Validation cost: 0.145482466
+Epoch: 0712 cost = 0.150934910
+Validation cost: 0.150579795
+Epoch: 0713 cost = 0.150165683
+Validation cost: 0.146727934
+Epoch: 0714 cost = 0.149844504
+Validation cost: 0.151280895
+Epoch: 0715 cost = 0.152448435
+Validation cost: 0.148252323
+Epoch: 0716 cost = 0.150705555
+Validation cost: 0.155796245
+Epoch: 0717 cost = 0.150054834
+Validation cost: 0.154164135
+Epoch: 0718 cost = 0.150288938
+Validation cost: 0.147298247
+Epoch: 0719 cost = 0.148318361
+Validation cost: 0.145709723
+Epoch: 0720 cost = 0.148248230
+Validation cost: 0.144828409
+Epoch: 0721 cost = 0.150242743
+Validation cost: 0.149368882
+Epoch: 0722 cost = 0.149931748
+Validation cost: 0.144606128
+Epoch: 0723 cost = 0.149884229
+Validation cost: 0.147468209
+Epoch: 0724 cost = 0.150947209
+Validation cost: 0.152840853
+Epoch: 0725 cost = 0.150200369
+Validation cost: 0.149700031
+Epoch: 0726 cost = 0.149796492
+Validation cost: 0.154900074
+Epoch: 0727 cost = 0.150620547
+Validation cost: 0.145237833
+Epoch: 0728 cost = 0.149049028
+Validation cost: 0.144832134
+Epoch: 0729 cost = 0.152532086
+Validation cost: 0.156069756
+Epoch: 0730 cost = 0.149500724
+Validation cost: 0.150847867
+Epoch: 0731 cost = 0.150113904
+Validation cost: 0.156077608
+Epoch: 0732 cost = 0.151148298
+Validation cost: 0.144400939
+Epoch: 0733 cost = 0.148988504
+Validation cost: 0.147144511
+Epoch: 0734 cost = 0.150750952
+Validation cost: 0.148866639
+Epoch: 0735 cost = 0.151363260
+Validation cost: 0.152801469
+Epoch: 0736 cost = 0.149446526
+Validation cost: 0.149437189
+Epoch: 0737 cost = 0.149500212
+Validation cost: 0.148743883
+Epoch: 0738 cost = 0.149053742
+Validation cost: 0.147988290
+Epoch: 0739 cost = 0.149848101
+Validation cost: 0.155299619
+Epoch: 0740 cost = 0.151728925
+Validation cost: 0.161785856
+Epoch: 0741 cost = 0.151732956
+Validation cost: 0.151021376
+Epoch: 0742 cost = 0.149132777
+Validation cost: 0.146823719
+Epoch: 0743 cost = 0.149626917
+Validation cost: 0.146217465
+Epoch: 0744 cost = 0.151473829
+Validation cost: 0.152151436
+Epoch: 0745 cost = 0.151280431
+Validation cost: 0.151762530
+Epoch: 0746 cost = 0.150482379
+Validation cost: 0.151261836
+Epoch: 0747 cost = 0.149984486
+Validation cost: 0.150102004
+Epoch: 0748 cost = 0.149884329
+Validation cost: 0.150286093
+Epoch: 0749 cost = 0.152857568
+Validation cost: 0.152137831
+Epoch: 0750 cost = 0.149290402
+Validation cost: 0.146861479
+Epoch: 0751 cost = 0.149884435
+Validation cost: 0.149145380
+Epoch: 0752 cost = 0.149912177
+Validation cost: 0.153059334
+Epoch: 0753 cost = 0.149453601
+Validation cost: 0.146208271
+Epoch: 0754 cost = 0.149792753
+Validation cost: 0.146594167
+Epoch: 0755 cost = 0.149711051
+Validation cost: 0.152849898
+Epoch: 0756 cost = 0.150144947
+Validation cost: 0.151411802
+Epoch: 0757 cost = 0.149813635
+Validation cost: 0.148962483
+Epoch: 0758 cost = 0.149965125
+Validation cost: 0.148614943
+Epoch: 0759 cost = 0.149285058
+Validation cost: 0.149840608
+Epoch: 0760 cost = 0.149305108
+Validation cost: 0.147075370
+Epoch: 0761 cost = 0.149428284
+Validation cost: 0.149851874
+Epoch: 0762 cost = 0.150523279
+Validation cost: 0.146575019
+Epoch: 0763 cost = 0.149100306
+Validation cost: 0.150882676
+Epoch: 0764 cost = 0.149729929
+Validation cost: 0.145475090
+Epoch: 0765 cost = 0.151317144
+Validation cost: 0.148997754
+Epoch: 0766 cost = 0.150976776
+Validation cost: 0.146737412
+Epoch: 0767 cost = 0.150876180
+Validation cost: 0.152417019
+Epoch: 0768 cost = 0.152251095
+Validation cost: 0.151346102
+Epoch: 0769 cost = 0.150310007
+Validation cost: 0.153422624
+Epoch: 0770 cost = 0.150359069
+Validation cost: 0.152448490
+Epoch: 0771 cost = 0.150046110
+Validation cost: 0.148343414
+Epoch: 0772 cost = 0.153437357
+Validation cost: 0.150541425
+Epoch: 0773 cost = 0.148888311
+Validation cost: 0.151022553
+Epoch: 0774 cost = 0.149236514
+Validation cost: 0.149737448
+Epoch: 0775 cost = 0.149549004
+Validation cost: 0.147225648
+Epoch: 0776 cost = 0.150261199
+Validation cost: 0.150641784
+Epoch: 0777 cost = 0.149092458
+Validation cost: 0.147130549
+Epoch: 0778 cost = 0.152096244
+Validation cost: 0.146946877
+Epoch: 0779 cost = 0.149791270
+Validation cost: 0.149287060
+Epoch: 0780 cost = 0.149922773
+Validation cost: 0.152292430
+Epoch: 0781 cost = 0.150374740
+Validation cost: 0.153166443
+Epoch: 0782 cost = 0.149570866
+Validation cost: 0.148296207
+Epoch: 0783 cost = 0.148319192
+Validation cost: 0.147808895
+Epoch: 0784 cost = 0.148324291
+Validation cost: 0.145983055
+Epoch: 0785 cost = 0.149417726
+Validation cost: 0.150525227
+Epoch: 0786 cost = 0.148780024
+Validation cost: 0.149939895
+Epoch: 0787 cost = 0.150963881
+Validation cost: 0.145254582
+Epoch: 0788 cost = 0.149579196
+Validation cost: 0.145031974
+Epoch: 0789 cost = 0.150487812
+Validation cost: 0.150672704
+Epoch: 0790 cost = 0.149803799
+Validation cost: 0.148811936
+Epoch: 0791 cost = 0.150121534
+Validation cost: 0.150445715
+Epoch: 0792 cost = 0.147935651
+Validation cost: 0.147210523
+Epoch: 0793 cost = 0.150449347
+Validation cost: 0.151939169
+Epoch: 0794 cost = 0.150647506
+Validation cost: 0.145452663
+Epoch: 0795 cost = 0.151742388
+Validation cost: 0.149754614
+Epoch: 0796 cost = 0.148767563
+Validation cost: 0.149001896
+Epoch: 0797 cost = 0.150835781
+Validation cost: 0.150174364
+Epoch: 0798 cost = 0.149468696
+Validation cost: 0.148877650
+Epoch: 0799 cost = 0.148752930
+Validation cost: 0.149923831
+Epoch: 0800 cost = 0.149090849
+Validation cost: 0.148050576
+Epoch: 0801 cost = 0.149320405
+Validation cost: 0.154367283
+Epoch: 0802 cost = 0.148212015
+Validation cost: 0.149256960
+Epoch: 0803 cost = 0.148761404
+Validation cost: 0.145476356
+Epoch: 0804 cost = 0.149266608
+Validation cost: 0.146783918
+Epoch: 0805 cost = 0.149193276
+Validation cost: 0.153313875
+Epoch: 0806 cost = 0.150289894
+Validation cost: 0.150323614
+Epoch: 0807 cost = 0.150430049
+Validation cost: 0.149215013
+Epoch: 0808 cost = 0.150660996
+Validation cost: 0.152383968
+Epoch: 0809 cost = 0.147908087
+Validation cost: 0.152089849
+Epoch: 0810 cost = 0.150949744
+Validation cost: 0.146196976
+Epoch: 0811 cost = 0.148046773
+Validation cost: 0.143741667
+Epoch: 0812 cost = 0.148896921
+Validation cost: 0.151256397
+Epoch: 0813 cost = 0.148222353
+Validation cost: 0.147464126
+Epoch: 0814 cost = 0.149988946
+Validation cost: 0.148161456
+Epoch: 0815 cost = 0.150126584
+Validation cost: 0.155216008
+Epoch: 0816 cost = 0.151221707
+Validation cost: 0.150404200
+Epoch: 0817 cost = 0.149428193
+Validation cost: 0.147648826
+Epoch: 0818 cost = 0.147050453
+Validation cost: 0.146173671
+Epoch: 0819 cost = 0.147451629
+Validation cost: 0.149731264
+Epoch: 0820 cost = 0.151047920
+Validation cost: 0.148811609
+Epoch: 0821 cost = 0.147962023
+Validation cost: 0.146186531
+Epoch: 0822 cost = 0.148765417
+Validation cost: 0.148320302
+Epoch: 0823 cost = 0.148422581
+Validation cost: 0.151012927
+Epoch: 0824 cost = 0.150877426
+Validation cost: 0.157161593
+Epoch: 0825 cost = 0.151153625
+Validation cost: 0.156128064
+Epoch: 0826 cost = 0.148550653
+Validation cost: 0.147751823
+Epoch: 0827 cost = 0.150191719
+Validation cost: 0.143777490
+Epoch: 0828 cost = 0.149079507
+Validation cost: 0.148024276
+Epoch: 0829 cost = 0.148922169
+Validation cost: 0.152786538
+Epoch: 0830 cost = 0.149167632
+Validation cost: 0.148376197
+Epoch: 0831 cost = 0.149127179
+Validation cost: 0.150292486
+Epoch: 0832 cost = 0.150510187
+Validation cost: 0.151659518
+Epoch: 0833 cost = 0.149951722
+Validation cost: 0.147893906
+Epoch: 0834 cost = 0.147843661
+Validation cost: 0.147228807
+Epoch: 0835 cost = 0.149433871
+Validation cost: 0.144145444
+Epoch: 0836 cost = 0.149434426
+Validation cost: 0.147874162
+Epoch: 0837 cost = 0.148728914
+Validation cost: 0.147011280
+Epoch: 0838 cost = 0.148842923
+Validation cost: 0.147997543
+Epoch: 0839 cost = 0.149978073
+Validation cost: 0.151594803
+Epoch: 0840 cost = 0.148901456
+Validation cost: 0.146993116
+Epoch: 0841 cost = 0.148595589
+Validation cost: 0.148395717
+Epoch: 0842 cost = 0.147901575
+Validation cost: 0.145190403
+Epoch: 0843 cost = 0.150560992
+Validation cost: 0.148882642
+Epoch: 0844 cost = 0.149425140
+Validation cost: 0.151767522
+Epoch: 0845 cost = 0.149932714
+Validation cost: 0.150481388
+Epoch: 0846 cost = 0.149245400
+Validation cost: 0.148900092
+Epoch: 0847 cost = 0.148439611
+Validation cost: 0.149137452
+Epoch: 0848 cost = 0.147799790
+Validation cost: 0.144758120
+Epoch: 0849 cost = 0.148992729
+Validation cost: 0.148547441
+Epoch: 0850 cost = 0.150538192
+Validation cost: 0.150188997
+Epoch: 0851 cost = 0.149129804
+Validation cost: 0.152191266
+Epoch: 0852 cost = 0.148777233
+Validation cost: 0.150658548
+Epoch: 0853 cost = 0.151744390
+Validation cost: 0.150380820
+Epoch: 0854 cost = 0.150603735
+Validation cost: 0.146245256
+Epoch: 0855 cost = 0.151864911
+Validation cost: 0.149341360
+Epoch: 0856 cost = 0.147646883
+Validation cost: 0.146015301
+Epoch: 0857 cost = 0.149417949
+Validation cost: 0.145887032
+Epoch: 0858 cost = 0.150404861
+Validation cost: 0.144641012
+Epoch: 0859 cost = 0.148430520
+Validation cost: 0.146633640
+Epoch: 0860 cost = 0.148502778
+Validation cost: 0.154363662
+Epoch: 0861 cost = 0.148146303
+Validation cost: 0.147448763
+Epoch: 0862 cost = 0.147914881
+Validation cost: 0.146065056
+Epoch: 0863 cost = 0.149060016
+Validation cost: 0.146361768
+Epoch: 0864 cost = 0.149186924
+Validation cost: 0.147078633
+Epoch: 0865 cost = 0.150172157
+Validation cost: 0.145763829
+Epoch: 0866 cost = 0.149956200
+Validation cost: 0.148408547
+Epoch: 0867 cost = 0.150210045
+Validation cost: 0.152256414
+Epoch: 0868 cost = 0.152366945
+Validation cost: 0.152949899
+Epoch: 0869 cost = 0.151361274
+Validation cost: 0.151080176
+Epoch: 0870 cost = 0.150124692
+Validation cost: 0.151852489
+Epoch: 0871 cost = 0.149994549
+Validation cost: 0.145979300
+Epoch: 0872 cost = 0.148617714
+Validation cost: 0.147307158
+Epoch: 0873 cost = 0.149561997
+Validation cost: 0.151609644
+Epoch: 0874 cost = 0.149341898
+Validation cost: 0.145404175
+Epoch: 0875 cost = 0.149146032
+Validation cost: 0.150724292
+Epoch: 0876 cost = 0.148449468
+Validation cost: 0.147580042
+Epoch: 0877 cost = 0.148990478
+Validation cost: 0.153408751
+Epoch: 0878 cost = 0.150711338
+Validation cost: 0.151696637
+Epoch: 0879 cost = 0.149182919
+Validation cost: 0.147638455
+Epoch: 0880 cost = 0.148160001
+Validation cost: 0.146307692
+Epoch: 0881 cost = 0.148730099
+Validation cost: 0.153816119
+Epoch: 0882 cost = 0.150783480
+Validation cost: 0.151485980
+Epoch: 0883 cost = 0.148717358
+Validation cost: 0.148096427
+Epoch: 0884 cost = 0.151272100
+Validation cost: 0.146195963
+Epoch: 0885 cost = 0.148709797
+Validation cost: 0.149407431
+Epoch: 0886 cost = 0.148548074
+Validation cost: 0.144092947
+Epoch: 0887 cost = 0.149536711
+Validation cost: 0.149469540
+Epoch: 0888 cost = 0.148657774
+Validation cost: 0.153312385
+Epoch: 0889 cost = 0.153034025
+Validation cost: 0.150237128
+Epoch: 0890 cost = 0.149896447
+Validation cost: 0.156915486
+Epoch: 0891 cost = 0.149764227
+Validation cost: 0.146106437
+Epoch: 0892 cost = 0.147914573
+Validation cost: 0.149327353
+Epoch: 0893 cost = 0.148804675
+Validation cost: 0.149016634
+Epoch: 0894 cost = 0.148480033
+Validation cost: 0.147765383
+Epoch: 0895 cost = 0.149472243
+Validation cost: 0.145395398
+Epoch: 0896 cost = 0.149185689
+Validation cost: 0.146665514
+Epoch: 0897 cost = 0.148883361
+Validation cost: 0.155604526
+Epoch: 0898 cost = 0.151029469
+Validation cost: 0.149000809
+Epoch: 0899 cost = 0.148854864
+Validation cost: 0.148535475
+Epoch: 0900 cost = 0.149062410
+Validation cost: 0.150053218
+Epoch: 0901 cost = 0.148642801
+Validation cost: 0.148943424
+Epoch: 0902 cost = 0.149550713
+Validation cost: 0.145740703
+Epoch: 0903 cost = 0.149287411
+Validation cost: 0.147691056
+Epoch: 0904 cost = 0.151889422
+Validation cost: 0.154498309
+Epoch: 0905 cost = 0.151344281
+Validation cost: 0.150914147
+Epoch: 0906 cost = 0.148517191
+Validation cost: 0.152028278
+Epoch: 0907 cost = 0.148922615
+Validation cost: 0.146524861
+Epoch: 0908 cost = 0.148105270
+Validation cost: 0.148355812
+Epoch: 0909 cost = 0.151482704
+Validation cost: 0.147548869
+Epoch: 0910 cost = 0.151123052
+Validation cost: 0.148987114
+Epoch: 0911 cost = 0.149082657
+Validation cost: 0.149912775
+Epoch: 0912 cost = 0.148204225
+Validation cost: 0.146016836
+Epoch: 0913 cost = 0.149307859
+Validation cost: 0.150541782
+Epoch: 0914 cost = 0.149450470
+Validation cost: 0.153426692
+Epoch: 0915 cost = 0.148658243
+Validation cost: 0.147149324
+Epoch: 0916 cost = 0.147903318
+Validation cost: 0.147106484
+Epoch: 0917 cost = 0.148959457
+Validation cost: 0.146115929
+Epoch: 0918 cost = 0.149572696
+Validation cost: 0.149172112
+Epoch: 0919 cost = 0.149680685
+Validation cost: 0.147670612
+Epoch: 0920 cost = 0.149339285
+Validation cost: 0.150602639
+Epoch: 0921 cost = 0.150334010
+Validation cost: 0.169832796
+Epoch: 0922 cost = 0.151525505
+Validation cost: 0.153669149
+Epoch: 0923 cost = 0.148725771
+Validation cost: 0.147682950
+Epoch: 0924 cost = 0.148164442
+Validation cost: 0.151960865
+Epoch: 0925 cost = 0.148157621
+Validation cost: 0.148111865
+Epoch: 0926 cost = 0.148158466
+Validation cost: 0.149641559
+Epoch: 0927 cost = 0.148756450
+Validation cost: 0.150112197
+Epoch: 0928 cost = 0.147836656
+Validation cost: 0.146554470
+Epoch: 0929 cost = 0.148720985
+Validation cost: 0.151404634
+Epoch: 0930 cost = 0.151080409
+Validation cost: 0.164396137
+Epoch: 0931 cost = 0.151065492
+Validation cost: 0.151272535
+Epoch: 0932 cost = 0.147697943
+Validation cost: 0.145503432
+Epoch: 0933 cost = 0.148488815
+Validation cost: 0.149408862
+Epoch: 0934 cost = 0.149317228
+Validation cost: 0.145810753
+Epoch: 0935 cost = 0.148885091
+Validation cost: 0.151354313
+Epoch: 0936 cost = 0.150084065
+Validation cost: 0.146973491
+Epoch: 0937 cost = 0.158372034
+Validation cost: 0.154047206
+Epoch: 0938 cost = 0.150352058
+Validation cost: 0.150517583
+Epoch: 0939 cost = 0.149650089
+Validation cost: 0.148152277
+Epoch: 0940 cost = 0.148237656
+Validation cost: 0.148938358
+Epoch: 0941 cost = 0.149604515
+Validation cost: 0.151891097
+Epoch: 0942 cost = 0.148804548
+Validation cost: 0.147457421
+Epoch: 0943 cost = 0.147614902
+Validation cost: 0.154571265
+Epoch: 0944 cost = 0.151918248
+Validation cost: 0.147180960
+Epoch: 0945 cost = 0.147061803
+Validation cost: 0.146667391
+Epoch: 0946 cost = 0.149095481
+Validation cost: 0.150911555
+Epoch: 0947 cost = 0.148896144
+Validation cost: 0.146142900
+Epoch: 0948 cost = 0.149308174
+Validation cost: 0.149597853
+Epoch: 0949 cost = 0.147917994
+Validation cost: 0.149545729
+Epoch: 0950 cost = 0.148837293
+Validation cost: 0.150294289
+Epoch: 0951 cost = 0.151043328
+Validation cost: 0.154498696
+Epoch: 0952 cost = 0.151997844
+Validation cost: 0.150325507
+Epoch: 0953 cost = 0.148101213
+Validation cost: 0.154519558
+Epoch: 0954 cost = 0.148067555
+Validation cost: 0.155466929
+Epoch: 0955 cost = 0.149523406
+Validation cost: 0.154053956
+Epoch: 0956 cost = 0.147857182
+Validation cost: 0.150595531
+Epoch: 0957 cost = 0.146842523
+Validation cost: 0.149738938
+Epoch: 0958 cost = 0.148982605
+Validation cost: 0.149966657
+Epoch: 0959 cost = 0.147618432
+Validation cost: 0.154612646
+Epoch: 0960 cost = 0.148181228
+Validation cost: 0.149146974
+Epoch: 0961 cost = 0.149096197
+Validation cost: 0.147491783
+Epoch: 0962 cost = 0.150096823
+Validation cost: 0.151477844
+Epoch: 0963 cost = 0.147284496
+Validation cost: 0.142877206
+Epoch: 0964 cost = 0.149946258
+Validation cost: 0.150986627
+Epoch: 0965 cost = 0.147193596
+Validation cost: 0.147863790
+Epoch: 0966 cost = 0.147630427
+Validation cost: 0.147229031
+Epoch: 0967 cost = 0.148605541
+Validation cost: 0.147353724
+Epoch: 0968 cost = 0.149821254
+Validation cost: 0.156258613
+Epoch: 0969 cost = 0.153109934
+Validation cost: 0.156371206
+Epoch: 0970 cost = 0.152402643
+Validation cost: 0.151184335
+Epoch: 0971 cost = 0.147789852
+Validation cost: 0.145066574
+Epoch: 0972 cost = 0.149546248
+Validation cost: 0.146875128
+Epoch: 0973 cost = 0.148970186
+Validation cost: 0.148872986
+Epoch: 0974 cost = 0.147735645
+Validation cost: 0.152155906
+Epoch: 0975 cost = 0.149269329
+Validation cost: 0.148398504
+Epoch: 0976 cost = 0.149938005
+Validation cost: 0.147905275
+Epoch: 0977 cost = 0.148007220
+Validation cost: 0.152951062
+Epoch: 0978 cost = 0.153271673
+Validation cost: 0.156999603
+Epoch: 0979 cost = 0.152027679
+Validation cost: 0.151016623
+Epoch: 0980 cost = 0.148127839
+Validation cost: 0.149088949
+Epoch: 0981 cost = 0.150401333
+Validation cost: 0.147879541
+Epoch: 0982 cost = 0.149626154
+Validation cost: 0.147388384
+Epoch: 0983 cost = 0.147751176
+Validation cost: 0.148643792
+Epoch: 0984 cost = 0.147282021
+Validation cost: 0.151989117
+Epoch: 0985 cost = 0.148077600
+Validation cost: 0.149228185
+Epoch: 0986 cost = 0.148721546
+Validation cost: 0.151131645
+Epoch: 0987 cost = 0.153158294
+Validation cost: 0.152674034
+Epoch: 0988 cost = 0.148747193
+Validation cost: 0.150322214
+Epoch: 0989 cost = 0.147888524
+Validation cost: 0.151368514
+Epoch: 0990 cost = 0.148062716
+Validation cost: 0.147686779
+Epoch: 0991 cost = 0.151630521
+Validation cost: 0.148796320
+Epoch: 0992 cost = 0.146408417
+Validation cost: 0.152223274
+Epoch: 0993 cost = 0.149330022
+Validation cost: 0.150090367
+Epoch: 0994 cost = 0.149143751
+Validation cost: 0.146838397
+Epoch: 0995 cost = 0.150212607
+Validation cost: 0.152652606
+Epoch: 0996 cost = 0.148937280
+Validation cost: 0.155229703
+Epoch: 0997 cost = 0.151274195
+Validation cost: 0.147316024
+Epoch: 0998 cost = 0.149230095
+Validation cost: 0.149846330
+Epoch: 0999 cost = 0.147471885
+Validation cost: 0.146076977
+Epoch: 1000 cost = 0.148355084
+Validation cost: 0.148719624
+Epoch: 1001 cost = 0.147367499
+Validation cost: 0.146529883
+Epoch: 1002 cost = 0.148298102
+Validation cost: 0.148021370
+Epoch: 1003 cost = 0.147700959
+Validation cost: 0.152449816
+Epoch: 1004 cost = 0.147620423
+Validation cost: 0.149637550
+Epoch: 1005 cost = 0.148072571
+Validation cost: 0.158214748
+Epoch: 1006 cost = 0.150069157
+Validation cost: 0.147736728
+Epoch: 1007 cost = 0.148079678
+Validation cost: 0.155487373
+Epoch: 1008 cost = 0.149229715
+Validation cost: 0.157249257
+Epoch: 1009 cost = 0.149228755
+Validation cost: 0.146447629
+Epoch: 1010 cost = 0.147648812
+Validation cost: 0.147147745
+Epoch: 1011 cost = 0.146881958
+Validation cost: 0.150188223
+Epoch: 1012 cost = 0.149572256
+Validation cost: 0.147708908
+Epoch: 1013 cost = 0.148134160
+Validation cost: 0.156885207
+Epoch: 1014 cost = 0.150124516
+Validation cost: 0.150182366
+Epoch: 1015 cost = 0.148672342
+Validation cost: 0.145639986
+Epoch: 1016 cost = 0.149239693
+Validation cost: 0.149553314
+Epoch: 1017 cost = 0.148653648
+Validation cost: 0.150239915
+Epoch: 1018 cost = 0.152410017
+Validation cost: 0.158123970
+Epoch: 1019 cost = 0.151777456
+Validation cost: 0.150826469
+Epoch: 1020 cost = 0.155129381
+Validation cost: 0.151434556
+Epoch: 1021 cost = 0.146676644
+Validation cost: 0.153684914
+Epoch: 1022 cost = 0.149415447
+Validation cost: 0.150979474
+Epoch: 1023 cost = 0.148137109
+Validation cost: 0.153123096
+Epoch: 1024 cost = 0.147046318
+Validation cost: 0.151632667
+Epoch: 1025 cost = 0.148403733
+Validation cost: 0.151077718
+Epoch: 1026 cost = 0.148624124
+Validation cost: 0.154888570
+Epoch: 1027 cost = 0.147517223
+Validation cost: 0.149394751
+Epoch: 1028 cost = 0.150458161
+Validation cost: 0.152484655
+Epoch: 1029 cost = 0.146973406
+Validation cost: 0.148068026
+Epoch: 1030 cost = 0.148928849
+Validation cost: 0.146750450
+Epoch: 1031 cost = 0.147903238
+Validation cost: 0.152885363
+Epoch: 1032 cost = 0.149868624
+Validation cost: 0.148012355
+Epoch: 1033 cost = 0.149131170
+Validation cost: 0.153004631
+Epoch: 1034 cost = 0.149474657
+Validation cost: 0.155079514
+Epoch: 1035 cost = 0.152616796
+Validation cost: 0.149453491
+Epoch: 1036 cost = 0.150563724
+Validation cost: 0.147302076
+Epoch: 1037 cost = 0.149923244
+Validation cost: 0.150935605
+Epoch: 1038 cost = 0.150110299
+Validation cost: 0.147750393
+Epoch: 1039 cost = 0.148967988
+Validation cost: 0.151440352
+Epoch: 1040 cost = 0.148879834
+Validation cost: 0.146732762
+Epoch: 1041 cost = 0.148275753
+Validation cost: 0.154848665
+Epoch: 1042 cost = 0.147323939
+Validation cost: 0.150076017
+Epoch: 1043 cost = 0.146690685
+Validation cost: 0.152050912
+Epoch: 1044 cost = 0.149908980
+Validation cost: 0.148256078
+Epoch: 1045 cost = 0.148568928
+Validation cost: 0.148330405
+Epoch: 1046 cost = 0.148840816
+Validation cost: 0.146665379
+Epoch: 1047 cost = 0.149055769
+Validation cost: 0.149700984
+Epoch: 1048 cost = 0.149339590
+Validation cost: 0.148259446
+Epoch: 1049 cost = 0.147483289
+Validation cost: 0.145359531
+Epoch: 1050 cost = 0.148447904
+Validation cost: 0.149668232
+Epoch: 1051 cost = 0.147057958
+Validation cost: 0.147039324
+Epoch: 1052 cost = 0.147685460
+Validation cost: 0.152271003
+Epoch: 1053 cost = 0.148572265
+Validation cost: 0.148890436
+Epoch: 1054 cost = 0.150725362
+Validation cost: 0.150253698
+Epoch: 1055 cost = 0.149350769
+Validation cost: 0.148413450
+Epoch: 1056 cost = 0.148463714
+Validation cost: 0.146651551
+Epoch: 1057 cost = 0.150169528
+Validation cost: 0.148808971
+Epoch: 1058 cost = 0.147958247
+Validation cost: 0.156571314
+Epoch: 1059 cost = 0.147824859
+Validation cost: 0.144566730
+Epoch: 1060 cost = 0.148308260
+Validation cost: 0.151048467
+Epoch: 1061 cost = 0.147987875
+Validation cost: 0.145716041
+Epoch: 1062 cost = 0.148653841
+Validation cost: 0.146836147
+Epoch: 1063 cost = 0.149458392
+Validation cost: 0.165540814
+Epoch: 1064 cost = 0.150687759
+Validation cost: 0.147678539
+Epoch: 1065 cost = 0.148468880
+Validation cost: 0.146827906
+Epoch: 1066 cost = 0.148426277
+Validation cost: 0.147553787
+Epoch: 1067 cost = 0.147672038
+Validation cost: 0.148851901
+Epoch: 1068 cost = 0.148907364
+Validation cost: 0.154477254
+Epoch: 1069 cost = 0.149109762
+Validation cost: 0.156091496
+Epoch: 1070 cost = 0.149149872
+Validation cost: 0.146988779
+Epoch: 1071 cost = 0.149037225
+Validation cost: 0.149034157
+Epoch: 1072 cost = 0.147153149
+Validation cost: 0.147464186
+Epoch: 1073 cost = 0.147543201
+Validation cost: 0.147407293
+Epoch: 1074 cost = 0.148171880
+Validation cost: 0.146783546
+Epoch: 1075 cost = 0.149741210
+Validation cost: 0.147244841
+Epoch: 1076 cost = 0.147712882
+Validation cost: 0.150166646
+Epoch: 1077 cost = 0.148182482
+Validation cost: 0.153947935
+Epoch: 1078 cost = 0.148036454
+Validation cost: 0.147105858
+Epoch: 1079 cost = 0.148660356
+Validation cost: 0.147254303
+Epoch: 1080 cost = 0.150427559
+Validation cost: 0.149595350
+Epoch: 1081 cost = 0.146958185
+Validation cost: 0.152035698
+Epoch: 1082 cost = 0.149289846
+Validation cost: 0.148433059
+Epoch: 1083 cost = 0.148469429
+Validation cost: 0.149730250
+Epoch: 1084 cost = 0.148492818
+Validation cost: 0.149867818
+Epoch: 1085 cost = 0.149553150
+Validation cost: 0.151369303
+Epoch: 1086 cost = 0.148454095
+Validation cost: 0.149450928
+Epoch: 1087 cost = 0.149343149
+Validation cost: 0.150363371
+Epoch: 1088 cost = 0.148645193
+Validation cost: 0.151969209
+Epoch: 1089 cost = 0.148056232
+Validation cost: 0.149521321
+Epoch: 1090 cost = 0.149529417
+Validation cost: 0.150773108
+Epoch: 1091 cost = 0.146739084
+Validation cost: 0.150516286
+Epoch: 1092 cost = 0.148910750
+Validation cost: 0.154845089
+Epoch: 1093 cost = 0.149939957
+Validation cost: 0.148389444
+Epoch: 1094 cost = 0.147465960
+Validation cost: 0.147057295
+Epoch: 1095 cost = 0.152127451
+Validation cost: 0.149251252
+Epoch: 1096 cost = 0.147231700
+Validation cost: 0.149892583
+Epoch: 1097 cost = 0.147568729
+Validation cost: 0.152058423
+Epoch: 1098 cost = 0.147417709
+Validation cost: 0.156436160
+Epoch: 1099 cost = 0.150431022
+Validation cost: 0.147947460
+Epoch: 1100 cost = 0.149416028
+Validation cost: 0.148593605
+Epoch: 1101 cost = 0.148020480
+Validation cost: 0.145656228
+Epoch: 1102 cost = 0.148367185
+Validation cost: 0.147252992
+Epoch: 1103 cost = 0.147371667
+Validation cost: 0.150098532
+Epoch: 1104 cost = 0.147929507
+Validation cost: 0.152665734
+Epoch: 1105 cost = 0.147729071
+Validation cost: 0.151532158
+Epoch: 1106 cost = 0.147933863
+Validation cost: 0.154440165
+Epoch: 1107 cost = 0.148166588
+Validation cost: 0.153566733
+Epoch: 1108 cost = 0.147311958
+Validation cost: 0.149946734
+Epoch: 1109 cost = 0.153746159
+Validation cost: 0.151178002
+Epoch: 1110 cost = 0.148156919
+Validation cost: 0.150286779
+Epoch: 1111 cost = 0.148697196
+Validation cost: 0.146379709
+Epoch: 1112 cost = 0.150393425
+Validation cost: 0.155206800
+Epoch: 1113 cost = 0.147220479
+Validation cost: 0.149923623
+Epoch: 1114 cost = 0.148123550
+Validation cost: 0.152722552
+Epoch: 1115 cost = 0.150746006
+Validation cost: 0.155773580
+Epoch: 1116 cost = 0.148159029
+Validation cost: 0.152585730
+Epoch: 1117 cost = 0.151926710
+Validation cost: 0.150480345
+Epoch: 1118 cost = 0.149161607
+Validation cost: 0.150511667
+Epoch: 1119 cost = 0.147110596
+Validation cost: 0.149405912
+Epoch: 1120 cost = 0.147863050
+Validation cost: 0.148101628
+Epoch: 1121 cost = 0.148483741
+Validation cost: 0.154832095
+Epoch: 1122 cost = 0.148043973
+Validation cost: 0.148354053
+Epoch: 1123 cost = 0.149940433
+Validation cost: 0.153176486
+Epoch: 1124 cost = 0.148320539
+Validation cost: 0.149996474
+Epoch: 1125 cost = 0.146950714
+Validation cost: 0.154259369
+Epoch: 1126 cost = 0.146683885
+Validation cost: 0.149395287
+Epoch: 1127 cost = 0.146967778
+Validation cost: 0.148421958
+Epoch: 1128 cost = 0.147792616
+Validation cost: 0.149954125
+Epoch: 1129 cost = 0.149336530
+Validation cost: 0.150782913
+Epoch: 1130 cost = 0.148286441
+Validation cost: 0.154119715
+Epoch: 1131 cost = 0.146812598
+Validation cost: 0.151052952
+Epoch: 1132 cost = 0.148819906
+Validation cost: 0.155780673
+Epoch: 1133 cost = 0.149479225
+Validation cost: 0.149289161
+Epoch: 1134 cost = 0.147989773
+Validation cost: 0.152459472
+Epoch: 1135 cost = 0.147140538
+Validation cost: 0.148643881
+Epoch: 1136 cost = 0.148153468
+Validation cost: 0.145662889
+Epoch: 1137 cost = 0.148743720
+Validation cost: 0.151285261
+Epoch: 1138 cost = 0.148291414
+Validation cost: 0.153345272
+Epoch: 1139 cost = 0.147665167
+Validation cost: 0.147060424
+Epoch: 1140 cost = 0.150852158
+Validation cost: 0.148361117
+Epoch: 1141 cost = 0.148566425
+Validation cost: 0.148195535
+Epoch: 1142 cost = 0.146766241
+Validation cost: 0.150426745
+Epoch: 1143 cost = 0.148562837
+Validation cost: 0.146802604
+Epoch: 1144 cost = 0.147144382
+Validation cost: 0.151762366
+Epoch: 1145 cost = 0.155892863
+Validation cost: 0.151207462
+Epoch: 1146 cost = 0.150399096
+Validation cost: 0.153150558
+Epoch: 1147 cost = 0.150910530
+Validation cost: 0.147781879
+Epoch: 1148 cost = 0.146534087
+Validation cost: 0.147489950
+Epoch: 1149 cost = 0.148627934
+Validation cost: 0.149992958
+Epoch: 1150 cost = 0.147554558
+Validation cost: 0.150806904
+Epoch: 1151 cost = 0.147228964
+Validation cost: 0.147617891
+Epoch: 1152 cost = 0.148262911
+Validation cost: 0.148731247
+Epoch: 1153 cost = 0.148455227
+Validation cost: 0.156065390
+Epoch: 1154 cost = 0.148263414
+Validation cost: 0.150324583
+Epoch: 1155 cost = 0.151810287
+Validation cost: 0.153132811
+Epoch: 1156 cost = 0.147604477
+Validation cost: 0.151288629
+Epoch: 1157 cost = 0.147962280
+Validation cost: 0.150883704
+Epoch: 1158 cost = 0.151206484
+Validation cost: 0.151356190
+Epoch: 1159 cost = 0.148618578
+Validation cost: 0.146479174
+Epoch: 1160 cost = 0.147345934
+Validation cost: 0.149472862
+Epoch: 1161 cost = 0.147503085
+Validation cost: 0.151883990
+Epoch: 1162 cost = 0.149367724
+Validation cost: 0.149953991
+Epoch: 1163 cost = 0.146653882
+Validation cost: 0.148261145
+Epoch: 1164 cost = 0.147676782
+Validation cost: 0.149488494
+Epoch: 1165 cost = 0.147499511
+Validation cost: 0.148139715
+Epoch: 1166 cost = 0.147376460
+Validation cost: 0.148694217
+Epoch: 1167 cost = 0.148237112
+Validation cost: 0.144533724
+Epoch: 1168 cost = 0.149815257
+Validation cost: 0.152144760
+Epoch: 1169 cost = 0.147234903
+Validation cost: 0.149438024
+Epoch: 1170 cost = 0.147120360
+Validation cost: 0.151345447
+Epoch: 1171 cost = 0.148333465
+Validation cost: 0.146996737
+Epoch: 1172 cost = 0.146818956
+Validation cost: 0.152528346
+Epoch: 1173 cost = 0.146461494
+Validation cost: 0.147497818
+Epoch: 1174 cost = 0.148133790
+Validation cost: 0.150645554
+Epoch: 1175 cost = 0.156045387
+Validation cost: 0.153959394
+Epoch: 1176 cost = 0.147569598
+Validation cost: 0.150674418
+Epoch: 1177 cost = 0.146913436
+Validation cost: 0.149814337
+Epoch: 1178 cost = 0.148438353
+Validation cost: 0.159030840
+Epoch: 1179 cost = 0.149039593
+Validation cost: 0.148609415
+Epoch: 1180 cost = 0.146403879
+Validation cost: 0.148814231
+Epoch: 1181 cost = 0.147838101
+Validation cost: 0.146281511
+Epoch: 1182 cost = 0.148285485
+Validation cost: 0.149711266
+Epoch: 1183 cost = 0.148224361
+Validation cost: 0.152815387
+Epoch: 1184 cost = 0.148453104
+Validation cost: 0.149096340
+Epoch: 1185 cost = 0.147733405
+Validation cost: 0.150058165
+Epoch: 1186 cost = 0.147451684
+Validation cost: 0.152418852
+Epoch: 1187 cost = 0.145638132
+Validation cost: 0.150152877
+Epoch: 1188 cost = 0.147313351
+Validation cost: 0.154911175
+Epoch: 1189 cost = 0.148754974
+Validation cost: 0.146503508
+Epoch: 1190 cost = 0.147741511
+Validation cost: 0.144906580
+Epoch: 1191 cost = 0.147267446
+Validation cost: 0.149638593
+Epoch: 1192 cost = 0.146392703
+Validation cost: 0.150448427
+Epoch: 1193 cost = 0.148242723
+Validation cost: 0.149252683
+Epoch: 1194 cost = 0.148338622
+Validation cost: 0.145335808
+Epoch: 1195 cost = 0.152406088
+Validation cost: 0.147105649
+Epoch: 1196 cost = 0.148720327
+Validation cost: 0.148129836
+Epoch: 1197 cost = 0.147956738
+Validation cost: 0.151189670
+Epoch: 1198 cost = 0.148162561
+Validation cost: 0.153634250
+Epoch: 1199 cost = 0.151300712
+Validation cost: 0.156483456
+Epoch: 1200 cost = 0.151389048
+Validation cost: 0.146959513
+Epoch: 1201 cost = 0.147230742
+Validation cost: 0.148583665
+Epoch: 1202 cost = 0.147906281
+Validation cost: 0.149504706
+Epoch: 1203 cost = 0.147664322
+Validation cost: 0.149727821
+Epoch: 1204 cost = 0.146797255
+Validation cost: 0.151289269
+Epoch: 1205 cost = 0.153208439
+Validation cost: 0.153076038
+Epoch: 1206 cost = 0.150117217
+Validation cost: 0.154682368
+Epoch: 1207 cost = 0.149897864
+Validation cost: 0.150317088
+Epoch: 1208 cost = 0.146041444
+Validation cost: 0.144224167
+Epoch: 1209 cost = 0.149318427
+Validation cost: 0.148007482
+Epoch: 1210 cost = 0.146450651
+Validation cost: 0.148691714
+Epoch: 1211 cost = 0.148103464
+Validation cost: 0.153501317
+Epoch: 1212 cost = 0.148852514
+Validation cost: 0.148966447
+Epoch: 1213 cost = 0.146674092
+Validation cost: 0.144776389
+Epoch: 1214 cost = 0.147250610
+Validation cost: 0.147051364
+Epoch: 1215 cost = 0.148343496
+Validation cost: 0.153249756
+Epoch: 1216 cost = 0.149075013
+Validation cost: 0.152088091
+Epoch: 1217 cost = 0.148283541
+Validation cost: 0.155465513
+Epoch: 1218 cost = 0.150664002
+Validation cost: 0.151832417
+Epoch: 1219 cost = 0.148505801
+Validation cost: 0.154586375
+Epoch: 1220 cost = 0.148706369
+Validation cost: 0.151302934
+Epoch: 1221 cost = 0.147273092
+Validation cost: 0.149833053
+Epoch: 1222 cost = 0.146802525
+Validation cost: 0.148422375
+Epoch: 1223 cost = 0.146129373
+Validation cost: 0.149271920
+Epoch: 1224 cost = 0.148105229
+Validation cost: 0.151798874
+Epoch: 1225 cost = 0.148595883
+Validation cost: 0.146680683
+Epoch: 1226 cost = 0.147086430
+Validation cost: 0.149983466
+Epoch: 1227 cost = 0.149334802
+Validation cost: 0.153943673
+Epoch: 1228 cost = 0.146522028
+Validation cost: 0.148129120
+Epoch: 1229 cost = 0.148062791
+Validation cost: 0.149700850
+Epoch: 1230 cost = 0.146184537
+Validation cost: 0.143586919
+Epoch: 1231 cost = 0.147530983
+Validation cost: 0.149455756
+Epoch: 1232 cost = 0.147146736
+Validation cost: 0.157785758
+Epoch: 1233 cost = 0.150445117
+Validation cost: 0.145971671
+Epoch: 1234 cost = 0.148035796
+Validation cost: 0.148320720
+Epoch: 1235 cost = 0.146912819
+Validation cost: 0.148820803
+Epoch: 1236 cost = 0.147801688
+Validation cost: 0.148571104
+Epoch: 1237 cost = 0.153360685
+Validation cost: 0.155573472
+Epoch: 1238 cost = 0.151836994
+Validation cost: 0.146806106
+Epoch: 1239 cost = 0.147858215
+Validation cost: 0.152763322
+Epoch: 1240 cost = 0.147110425
+Validation cost: 0.148595706
+Epoch: 1241 cost = 0.146407019
+Validation cost: 0.150443912
+Epoch: 1242 cost = 0.149657611
+Validation cost: 0.153516382
+Epoch: 1243 cost = 0.146823657
+Validation cost: 0.146315247
+Epoch: 1244 cost = 0.147867618
+Validation cost: 0.152428016
+Epoch: 1245 cost = 0.147401794
+Validation cost: 0.147819206
+Epoch: 1246 cost = 0.149897954
+Validation cost: 0.146942839
+Epoch: 1247 cost = 0.146581760
+Validation cost: 0.148299351
+Epoch: 1248 cost = 0.148521988
+Validation cost: 0.151231691
+Epoch: 1249 cost = 0.148061731
+Validation cost: 0.145199165
+Epoch: 1250 cost = 0.147512074
+Validation cost: 0.157461509
+Epoch: 1251 cost = 0.152569247
+Validation cost: 0.147179350
+Epoch: 1252 cost = 0.150230770
+Validation cost: 0.149160579
+Epoch: 1253 cost = 0.149129054
+Validation cost: 0.151312888
+Epoch: 1254 cost = 0.148158066
+Validation cost: 0.159808651
+Epoch: 1255 cost = 0.152588868
+Validation cost: 0.155445442
+Epoch: 1256 cost = 0.147508364
+Validation cost: 0.147791773
+Epoch: 1257 cost = 0.147548696
+Validation cost: 0.146742746
+Epoch: 1258 cost = 0.147075701
+Validation cost: 0.151812449
+Epoch: 1259 cost = 0.147866964
+Validation cost: 0.146867767
+Epoch: 1260 cost = 0.147714770
+Validation cost: 0.146275997
+Epoch: 1261 cost = 0.147101963
+Validation cost: 0.147520527
+Epoch: 1262 cost = 0.146835372
+Validation cost: 0.149003968
+Epoch: 1263 cost = 0.148292761
+Validation cost: 0.149840266
+Epoch: 1264 cost = 0.146014888
+Validation cost: 0.154280007
+Epoch: 1265 cost = 0.149002805
+Validation cost: 0.157996744
+Epoch: 1266 cost = 0.148334211
+Validation cost: 0.149321899
+Epoch: 1267 cost = 0.147141970
+Validation cost: 0.151850015
+Epoch: 1268 cost = 0.149059711
+Validation cost: 0.148373097
+Epoch: 1269 cost = 0.149877783
+Validation cost: 0.149819404
+Epoch: 1270 cost = 0.147676104
+Validation cost: 0.154315934
+Epoch: 1271 cost = 0.148118796
+Validation cost: 0.148361921
+Epoch: 1272 cost = 0.149776844
+Validation cost: 0.147086933
+Epoch: 1273 cost = 0.147080253
+Validation cost: 0.153733820
+Epoch: 1274 cost = 0.147537354
+Validation cost: 0.146843478
+Epoch: 1275 cost = 0.147139630
+Validation cost: 0.150496349
+Epoch: 1276 cost = 0.151017720
+Validation cost: 0.145748869
+Epoch: 1277 cost = 0.147590494
+Validation cost: 0.147673607
+Epoch: 1278 cost = 0.146683661
+Validation cost: 0.151646182
+Epoch: 1279 cost = 0.147967626
+Validation cost: 0.150505796
+Epoch: 1280 cost = 0.147262586
+Validation cost: 0.153069124
+Epoch: 1281 cost = 0.148971955
+Validation cost: 0.146429420
+Epoch: 1282 cost = 0.148601577
+Validation cost: 0.153011113
+Epoch: 1283 cost = 0.147529350
+Validation cost: 0.152978778
+Epoch: 1284 cost = 0.146483999
+Validation cost: 0.150638729
+Epoch: 1285 cost = 0.147203037
+Validation cost: 0.147290662
+Epoch: 1286 cost = 0.146395639
+Validation cost: 0.146237835
+Epoch: 1287 cost = 0.150994874
+Validation cost: 0.167441979
+Epoch: 1288 cost = 0.155077223
+Validation cost: 0.153204694
+Epoch: 1289 cost = 0.148304662
+Validation cost: 0.149168566
+Epoch: 1290 cost = 0.146409110
+Validation cost: 0.156830594
+Epoch: 1291 cost = 0.148503395
+Validation cost: 0.144843698
+Epoch: 1292 cost = 0.149338551
+Validation cost: 0.152379081
+Epoch: 1293 cost = 0.147010275
+Validation cost: 0.145254284
+Epoch: 1294 cost = 0.147384494
+Validation cost: 0.147858366
+Epoch: 1295 cost = 0.146805520
+Validation cost: 0.144576132
+Epoch: 1296 cost = 0.154802204
+Validation cost: 0.153666809
+Epoch: 1297 cost = 0.147555346
+Validation cost: 0.156895503
+Epoch: 1298 cost = 0.148693147
+Validation cost: 0.147498146
+Epoch: 1299 cost = 0.147389605
+Validation cost: 0.151038736
+Epoch: 1300 cost = 0.153980853
+Validation cost: 0.156887487
+Epoch: 1301 cost = 0.150619646
+Validation cost: 0.154468104
+Epoch: 1302 cost = 0.147871821
+Validation cost: 0.147111282
+Epoch: 1303 cost = 0.147646883
+Validation cost: 0.151614934
+Epoch: 1304 cost = 0.146717763
+Validation cost: 0.153293356
+Epoch: 1305 cost = 0.148444689
+Validation cost: 0.149126023
+Epoch: 1306 cost = 0.146819461
+Validation cost: 0.148021251
+Epoch: 1307 cost = 0.146663591
+Validation cost: 0.147305384
+Epoch: 1308 cost = 0.154283402
+Validation cost: 0.150394350
+Epoch: 1309 cost = 0.149190600
+Validation cost: 0.146559075
+Epoch: 1310 cost = 0.146880962
+Validation cost: 0.151568964
+Epoch: 1311 cost = 0.148138188
+Validation cost: 0.146085575
+Epoch: 1312 cost = 0.147352841
+Validation cost: 0.149304792
+Epoch: 1313 cost = 0.146871834
+Validation cost: 0.148295760
+Epoch: 1314 cost = 0.146212118
+Validation cost: 0.147716418
+Epoch: 1315 cost = 0.146311969
+Validation cost: 0.149638951
+Epoch: 1316 cost = 0.145990540
+Validation cost: 0.150950760
+Epoch: 1317 cost = 0.150695927
+Validation cost: 0.149397269
+Epoch: 1318 cost = 0.149359600
+Validation cost: 0.153431058
+Epoch: 1319 cost = 0.147802094
+Validation cost: 0.153114870
+Epoch: 1320 cost = 0.147675718
+Validation cost: 0.149562746
+Epoch: 1321 cost = 0.147756259
+Validation cost: 0.152892336
+Epoch: 1322 cost = 0.147453021
+Validation cost: 0.150104582
+Epoch: 1323 cost = 0.149099837
+Validation cost: 0.152808875
+Epoch: 1324 cost = 0.152527752
+Validation cost: 0.154185236
+Epoch: 1325 cost = 0.152577239
+Validation cost: 0.158604234
+Epoch: 1326 cost = 0.148983676
+Validation cost: 0.150967717
+Epoch: 1327 cost = 0.145823712
+Validation cost: 0.147208646
+Epoch: 1328 cost = 0.147460888
+Validation cost: 0.147840917
+Epoch: 1329 cost = 0.147508449
+Validation cost: 0.150240779
+Epoch: 1330 cost = 0.149881304
+Validation cost: 0.149444997
+Epoch: 1331 cost = 0.147066362
+Validation cost: 0.149919480
+Epoch: 1332 cost = 0.146416725
+Validation cost: 0.146220461
+Epoch: 1333 cost = 0.146435511
+Validation cost: 0.150400028
+Epoch: 1334 cost = 0.147476554
+Validation cost: 0.144066468
+Epoch: 1335 cost = 0.147400140
+Validation cost: 0.146372631
+Epoch: 1336 cost = 0.146861265
+Validation cost: 0.147624478
+Epoch: 1337 cost = 0.149012080
+Validation cost: 0.153824717
+Epoch: 1338 cost = 0.147684587
+Validation cost: 0.147374079
+Epoch: 1339 cost = 0.148783864
+Validation cost: 0.150262684
+Epoch: 1340 cost = 0.147334559
+Validation cost: 0.148938164
+Epoch: 1341 cost = 0.148194718
+Validation cost: 0.153046012
+Epoch: 1342 cost = 0.146481122
+Validation cost: 0.148084536
+Epoch: 1343 cost = 0.146783601
+Validation cost: 0.155018762
+Epoch: 1344 cost = 0.147917266
+Validation cost: 0.151637062
+Epoch: 1345 cost = 0.147206693
+Validation cost: 0.148658276
+Epoch: 1346 cost = 0.147027419
+Validation cost: 0.149863005
+Epoch: 1347 cost = 0.146907457
+Validation cost: 0.154732138
+Epoch: 1348 cost = 0.146432298
+Validation cost: 0.147354394
+Epoch: 1349 cost = 0.147093644
+Validation cost: 0.145206511
+Epoch: 1350 cost = 0.147831458
+Validation cost: 0.146651745
+Epoch: 1351 cost = 0.148150460
+Validation cost: 0.146910653
+Epoch: 1352 cost = 0.147025404
+Validation cost: 0.148410454
+Epoch: 1353 cost = 0.146940715
+Validation cost: 0.154710814
+Epoch: 1354 cost = 0.149706064
+Validation cost: 0.146314844
+Epoch: 1355 cost = 0.146771468
+Validation cost: 0.146623880
+Epoch: 1356 cost = 0.146941470
+Validation cost: 0.148066044
+Epoch: 1357 cost = 0.147485369
+Validation cost: 0.147103474
+Epoch: 1358 cost = 0.149618748
+Validation cost: 0.160078004
+Epoch: 1359 cost = 0.153076991
+Validation cost: 0.148615122
+Epoch: 1360 cost = 0.150027796
+Validation cost: 0.149230763
+Epoch: 1361 cost = 0.147825423
+Validation cost: 0.154692143
+Epoch: 1362 cost = 0.150504151
+Validation cost: 0.151509821
+Epoch: 1363 cost = 0.153038648
+Validation cost: 0.151725501
+Epoch: 1364 cost = 0.146156296
+Validation cost: 0.148149610
+Epoch: 1365 cost = 0.147027686
+Validation cost: 0.153824538
+Epoch: 1366 cost = 0.146725896
+Validation cost: 0.147748396
+Epoch: 1367 cost = 0.147938621
+Validation cost: 0.149730831
+Epoch: 1368 cost = 0.145517909
+Validation cost: 0.149244562
+Epoch: 1369 cost = 0.147604764
+Validation cost: 0.149324819
+Epoch: 1370 cost = 0.147681553
+Validation cost: 0.146414891
+Epoch: 1371 cost = 0.145724026
+Validation cost: 0.149115190
+Epoch: 1372 cost = 0.149490252
+Validation cost: 0.163287342
+Epoch: 1373 cost = 0.154112957
+Validation cost: 0.156571716
+Epoch: 1374 cost = 0.148544505
+Validation cost: 0.152260140
+Epoch: 1375 cost = 0.146969361
+Validation cost: 0.149508655
+Epoch: 1376 cost = 0.146422695
+Validation cost: 0.148836523
+Epoch: 1377 cost = 0.146706519
+Validation cost: 0.149636909
+Epoch: 1378 cost = 0.147806107
+Validation cost: 0.148888767
+Epoch: 1379 cost = 0.145412301
+Validation cost: 0.148047656
+Epoch: 1380 cost = 0.146376843
+Validation cost: 0.148100629
+Epoch: 1381 cost = 0.146751349
+Validation cost: 0.147344872
+Epoch: 1382 cost = 0.153895266
+Validation cost: 0.152068287
+Epoch: 1383 cost = 0.147943674
+Validation cost: 0.154907286
+Epoch: 1384 cost = 0.147485842
+Validation cost: 0.155515596
+Epoch: 1385 cost = 0.147808229
+Validation cost: 0.148830950
+Epoch: 1386 cost = 0.145747466
+Validation cost: 0.148587361
+Epoch: 1387 cost = 0.146243749
+Validation cost: 0.147636935
+Epoch: 1388 cost = 0.146751239
+Validation cost: 0.148862064
+Epoch: 1389 cost = 0.146907471
+Validation cost: 0.157409295
+Epoch: 1390 cost = 0.147925048
+Validation cost: 0.146347389
+Epoch: 1391 cost = 0.148616898
+Validation cost: 0.146411628
+Epoch: 1392 cost = 0.146831678
+Validation cost: 0.151374623
+Epoch: 1393 cost = 0.148117340
+Validation cost: 0.145624503
+Epoch: 1394 cost = 0.146684429
+Validation cost: 0.146332577
+Epoch: 1395 cost = 0.146076172
+Validation cost: 0.145565018
+Epoch: 1396 cost = 0.149225413
+Validation cost: 0.150382012
+Epoch: 1397 cost = 0.148220905
+Validation cost: 0.148548678
+Epoch: 1398 cost = 0.146337738
+Validation cost: 0.148443952
+Epoch: 1399 cost = 0.148402087
+Validation cost: 0.151578292
+Epoch: 1400 cost = 0.146347881
+Validation cost: 0.143820912
+Epoch: 1401 cost = 0.156310441
+Validation cost: 0.153687999
+Epoch: 1402 cost = 0.149572081
+Validation cost: 0.147818834
+Epoch: 1403 cost = 0.148399529
+Validation cost: 0.155256554
+Epoch: 1404 cost = 0.147728916
+Validation cost: 0.152553514
+Epoch: 1405 cost = 0.147659671
+Validation cost: 0.148346767
+Epoch: 1406 cost = 0.147965148
+Validation cost: 0.154423147
+Epoch: 1407 cost = 0.155255899
+Validation cost: 0.154665694
+Epoch: 1408 cost = 0.149364354
+Validation cost: 0.152579054
+Epoch: 1409 cost = 0.146343444
+Validation cost: 0.153711483
+Epoch: 1410 cost = 0.146901152
+Validation cost: 0.148284510
+Epoch: 1411 cost = 0.147950950
+Validation cost: 0.148561850
+Epoch: 1412 cost = 0.146124912
+Validation cost: 0.144304082
+Epoch: 1413 cost = 0.146791975
+Validation cost: 0.150560305
+Epoch: 1414 cost = 0.145446500
+Validation cost: 0.151350990
+Epoch: 1415 cost = 0.147171331
+Validation cost: 0.147073478
+Epoch: 1416 cost = 0.146313066
+Validation cost: 0.152261615
+Epoch: 1417 cost = 0.147377031
+Validation cost: 0.151400492
+Epoch: 1418 cost = 0.147624900
+Validation cost: 0.156316817
+Epoch: 1419 cost = 0.151824626
+Validation cost: 0.173699215
+Epoch: 1420 cost = 0.152343164
+Validation cost: 0.147182599
+Epoch: 1421 cost = 0.145710010
+Validation cost: 0.148857877
+Epoch: 1422 cost = 0.146316664
+Validation cost: 0.153661534
+Epoch: 1423 cost = 0.146405975
+Validation cost: 0.146125183
+Epoch: 1424 cost = 0.145392923
+Validation cost: 0.149304897
+Epoch: 1425 cost = 0.145599167
+Validation cost: 0.148413554
+Epoch: 1426 cost = 0.147207823
+Validation cost: 0.154625252
+Epoch: 1427 cost = 0.148471411
+Validation cost: 0.145867199
+Epoch: 1428 cost = 0.146383858
+Validation cost: 0.153108582
+Epoch: 1429 cost = 0.147244233
+Validation cost: 0.147819176
+Epoch: 1430 cost = 0.146727751
+Validation cost: 0.149872169
+Epoch: 1431 cost = 0.149038748
+Validation cost: 0.150129974
+Epoch: 1432 cost = 0.147868004
+Validation cost: 0.154257491
+Epoch: 1433 cost = 0.147305539
+Validation cost: 0.147322878
+Epoch: 1434 cost = 0.149514968
+Validation cost: 0.147256851
+Epoch: 1435 cost = 0.152122983
+Validation cost: 0.156704009
+Epoch: 1436 cost = 0.157215526
+Validation cost: 0.147180066
+Epoch: 1437 cost = 0.147863182
+Validation cost: 0.150688142
+Epoch: 1438 cost = 0.146654825
+Validation cost: 0.146604851
+Epoch: 1439 cost = 0.148522137
+Validation cost: 0.145738602
+Epoch: 1440 cost = 0.147132947
+Validation cost: 0.151825488
+Epoch: 1441 cost = 0.146912049
+Validation cost: 0.153684989
+Epoch: 1442 cost = 0.149670515
+Validation cost: 0.150936052
+Epoch: 1443 cost = 0.146076109
+Validation cost: 0.145209849
+Epoch: 1444 cost = 0.146844991
+Validation cost: 0.149413258
+Epoch: 1445 cost = 0.146028650
+Validation cost: 0.149605572
+Epoch: 1446 cost = 0.145701377
+Validation cost: 0.151420146
+Epoch: 1447 cost = 0.152029126
+Validation cost: 0.157069191
+Epoch: 1448 cost = 0.151173008
+Validation cost: 0.153158605
+Epoch: 1449 cost = 0.149265353
+Validation cost: 0.149367258
+Epoch: 1450 cost = 0.147561998
+Validation cost: 0.152058005
+Epoch: 1451 cost = 0.147894981
+Validation cost: 0.145691305
+Epoch: 1452 cost = 0.148566651
+Validation cost: 0.150219485
+Epoch: 1453 cost = 0.147316867
+Validation cost: 0.153587639
+Epoch: 1454 cost = 0.148112579
+Validation cost: 0.145354271
+Epoch: 1455 cost = 0.147662257
+Validation cost: 0.145149782
+Epoch: 1456 cost = 0.146448044
+Validation cost: 0.145366788
+Epoch: 1457 cost = 0.146374708
+Validation cost: 0.154433265
+Epoch: 1458 cost = 0.150843382
+Validation cost: 0.156131759
+Epoch: 1459 cost = 0.147067145
+Validation cost: 0.145582557
+Epoch: 1460 cost = 0.150950000
+Validation cost: 0.158572569
+Epoch: 1461 cost = 0.148972741
+Validation cost: 0.148007244
+Epoch: 1462 cost = 0.146502224
+Validation cost: 0.146795496
+Epoch: 1463 cost = 0.146225318
+Validation cost: 0.146337986
+Epoch: 1464 cost = 0.146069168
+Validation cost: 0.151689708
+Epoch: 1465 cost = 0.146910512
+Validation cost: 0.151966095
+Epoch: 1466 cost = 0.146896822
+Validation cost: 0.150111586
+Epoch: 1467 cost = 0.147459542
+Validation cost: 0.149205416
+Epoch: 1468 cost = 0.147211734
+Validation cost: 0.150372133
+Epoch: 1469 cost = 0.147736253
+Validation cost: 0.157362267
+Epoch: 1470 cost = 0.150668076
+Validation cost: 0.147422969
+Epoch: 1471 cost = 0.148945755
+Validation cost: 0.155925378
+Epoch: 1472 cost = 0.149303561
+Validation cost: 0.147195026
+Epoch: 1473 cost = 0.146253396
+Validation cost: 0.149802253
+Epoch: 1474 cost = 0.147247158
+Validation cost: 0.155017182
+Epoch: 1475 cost = 0.147545010
+Validation cost: 0.145919785
+Epoch: 1476 cost = 0.146130046
+Validation cost: 0.151912883
+Epoch: 1477 cost = 0.147694542
+Validation cost: 0.150163904
+Epoch: 1478 cost = 0.148140842
+Validation cost: 0.151340410
+Epoch: 1479 cost = 0.147043879
+Validation cost: 0.148009971
+Epoch: 1480 cost = 0.146524207
+Validation cost: 0.150778159
+Epoch: 1481 cost = 0.147072164
+Validation cost: 0.150530487
+Epoch: 1482 cost = 0.146179970
+Validation cost: 0.144630030
+Epoch: 1483 cost = 0.145957235
+Validation cost: 0.146311477
+Epoch: 1484 cost = 0.149091815
+Validation cost: 0.149235249
+Epoch: 1485 cost = 0.145822736
+Validation cost: 0.146599412
+Epoch: 1486 cost = 0.146080029
+Validation cost: 0.148283899
+Epoch: 1487 cost = 0.148710681
+Validation cost: 0.150965855
+Epoch: 1488 cost = 0.146305685
+Validation cost: 0.148563087
+Epoch: 1489 cost = 0.148981495
+Validation cost: 0.145623028
+Epoch: 1490 cost = 0.146312481
+Validation cost: 0.155142337
+Epoch: 1491 cost = 0.146645853
+Validation cost: 0.149458423
+Epoch: 1492 cost = 0.154350267
+Validation cost: 0.171134591
+Epoch: 1493 cost = 0.156112143
+Validation cost: 0.155097604
+Epoch: 1494 cost = 0.147081744
+Validation cost: 0.151273921
+Epoch: 1495 cost = 0.145302828
+Validation cost: 0.149163738
+Epoch: 1496 cost = 0.149869490
+Validation cost: 0.154915154
+Epoch: 1497 cost = 0.147276593
+Validation cost: 0.147656456
+Epoch: 1498 cost = 0.147743304
+Validation cost: 0.149633259
+Epoch: 1499 cost = 0.147012229
+Validation cost: 0.147138566
+Epoch: 1500 cost = 0.145918231
+Validation cost: 0.147382841
+Epoch: 1501 cost = 0.147291605
+Validation cost: 0.148918241
+Epoch: 1502 cost = 0.155946039
+Validation cost: 0.154028893
+Epoch: 1503 cost = 0.151372953
+Validation cost: 0.156265214
+Epoch: 1504 cost = 0.149541141
+Validation cost: 0.150828436
+Epoch: 1505 cost = 0.148172432
+Validation cost: 0.151243731
+Epoch: 1506 cost = 0.147758397
+Validation cost: 0.149219528
+Epoch: 1507 cost = 0.151502353
+Validation cost: 0.150854319
+Epoch: 1508 cost = 0.147395690
+Validation cost: 0.149003133
+Epoch: 1509 cost = 0.145783373
+Validation cost: 0.153015986
+Epoch: 1510 cost = 0.149417075
+Validation cost: 0.149969950
+Epoch: 1511 cost = 0.146479986
+Validation cost: 0.149834350
+Epoch: 1512 cost = 0.147905752
+Validation cost: 0.155024037
+Epoch: 1513 cost = 0.145679956
+Validation cost: 0.149417877
+Epoch: 1514 cost = 0.146568317
+Validation cost: 0.150310770
+Epoch: 1515 cost = 0.145259452
+Validation cost: 0.147589892
+Epoch: 1516 cost = 0.147841931
+Validation cost: 0.144348264
+Epoch: 1517 cost = 0.148372039
+Validation cost: 0.146695614
+Epoch: 1518 cost = 0.145900096
+Validation cost: 0.149445459
+Epoch: 1519 cost = 0.146979285
+Validation cost: 0.147904307
+Epoch: 1520 cost = 0.147832748
+Validation cost: 0.160089195
+Epoch: 1521 cost = 0.148701496
+Validation cost: 0.168467999
+Epoch: 1522 cost = 0.151764226
+Validation cost: 0.152662769
+Epoch: 1523 cost = 0.147587191
+Validation cost: 0.151133463
+Epoch: 1524 cost = 0.145845605
+Validation cost: 0.148596689
+Epoch: 1525 cost = 0.147035299
+Validation cost: 0.154584780
+Epoch: 1526 cost = 0.150495963
+Validation cost: 0.148161903
+Epoch: 1527 cost = 0.145965400
+Validation cost: 0.147799641
+Epoch: 1528 cost = 0.146808025
+Validation cost: 0.153358892
+Epoch: 1529 cost = 0.148130333
+Validation cost: 0.144542128
+Epoch: 1530 cost = 0.147204098
+Validation cost: 0.149460822
+Epoch: 1531 cost = 0.147019854
+Validation cost: 0.147509009
+Epoch: 1532 cost = 0.147088471
+Validation cost: 0.149555162
+Epoch: 1533 cost = 0.146605729
+Validation cost: 0.147079036
+Epoch: 1534 cost = 0.148042597
+Validation cost: 0.145598993
+Epoch: 1535 cost = 0.146718855
+Validation cost: 0.144590855
+Epoch: 1536 cost = 0.146334227
+Validation cost: 0.150029987
+Epoch: 1537 cost = 0.146495765
+Validation cost: 0.149837777
+Epoch: 1538 cost = 0.146124751
+Validation cost: 0.144699886
+Epoch: 1539 cost = 0.146310419
+Validation cost: 0.150490746
+Epoch: 1540 cost = 0.147236540
+Validation cost: 0.153380498
+Epoch: 1541 cost = 0.147846158
+Validation cost: 0.161716104
+Epoch: 1542 cost = 0.147808200
+Validation cost: 0.153595552
+Epoch: 1543 cost = 0.146695036
+Validation cost: 0.153668627
+Epoch: 1544 cost = 0.151140130
+Validation cost: 0.148717776
+Epoch: 1545 cost = 0.148325518
+Validation cost: 0.150109693
+Epoch: 1546 cost = 0.146572658
+Validation cost: 0.150225520
+Epoch: 1547 cost = 0.147103239
+Validation cost: 0.153472215
+Epoch: 1548 cost = 0.147371730
+Validation cost: 0.150303632
+Epoch: 1549 cost = 0.155177188
+Validation cost: 0.154229000
+Epoch: 1550 cost = 0.150124656
+Validation cost: 0.150683120
+Epoch: 1551 cost = 0.147753958
+Validation cost: 0.150854602
+Epoch: 1552 cost = 0.146102361
+Validation cost: 0.149319857
+Epoch: 1553 cost = 0.144556207
+Validation cost: 0.147758007
+Epoch: 1554 cost = 0.148480608
+Validation cost: 0.149363428
+Epoch: 1555 cost = 0.148077256
+Validation cost: 0.149987474
+Epoch: 1556 cost = 0.148366396
+Validation cost: 0.153550252
+Epoch: 1557 cost = 0.146059010
+Validation cost: 0.151458904
+Epoch: 1558 cost = 0.148023579
+Validation cost: 0.148805648
+Epoch: 1559 cost = 0.147410326
+Validation cost: 0.147796497
+Epoch: 1560 cost = 0.146945148
+Validation cost: 0.146870419
+Epoch: 1561 cost = 0.146884454
+Validation cost: 0.152774930
+Epoch: 1562 cost = 0.149198050
+Validation cost: 0.158452690
+Epoch: 1563 cost = 0.147542578
+Validation cost: 0.159069389
+Epoch: 1564 cost = 0.147149203
+Validation cost: 0.146742105
+Epoch: 1565 cost = 0.147141508
+Validation cost: 0.149244890
+Epoch: 1566 cost = 0.145871436
+Validation cost: 0.154026762
+Epoch: 1567 cost = 0.147238559
+Validation cost: 0.148982286
+Epoch: 1568 cost = 0.147624621
+Validation cost: 0.145202354
+Epoch: 1569 cost = 0.156833810
+Validation cost: 0.155146360
+Epoch: 1570 cost = 0.151359317
+Validation cost: 0.154415652
+Epoch: 1571 cost = 0.146284783
+Validation cost: 0.148105547
+Epoch: 1572 cost = 0.146988576
+Validation cost: 0.152783141
+Epoch: 1573 cost = 0.146091000
+Validation cost: 0.145062551
+Epoch: 1574 cost = 0.145862372
+Validation cost: 0.146729216
+Epoch: 1575 cost = 0.145108650
+Validation cost: 0.151561186
+Epoch: 1576 cost = 0.145776537
+Validation cost: 0.148243815
+Epoch: 1577 cost = 0.146654920
+Validation cost: 0.144792557
+Epoch: 1578 cost = 0.148736183
+Validation cost: 0.150516212
+Epoch: 1579 cost = 0.145684263
+Validation cost: 0.149148464
+Epoch: 1580 cost = 0.151256124
+Validation cost: 0.155918404
+Epoch: 1581 cost = 0.147034073
+Validation cost: 0.143411815
+Epoch: 1582 cost = 0.146421730
+Validation cost: 0.152051911
+Epoch: 1583 cost = 0.146724010
+Validation cost: 0.150864244
+Epoch: 1584 cost = 0.147623550
+Validation cost: 0.154731467
+Epoch: 1585 cost = 0.145827873
+Validation cost: 0.150329649
+Epoch: 1586 cost = 0.148785295
+Validation cost: 0.156247169
+Epoch: 1587 cost = 0.148228966
+Validation cost: 0.149685457
+Epoch: 1588 cost = 0.144455228
+Validation cost: 0.145465508
+Epoch: 1589 cost = 0.148525741
+Validation cost: 0.153739244
+Epoch: 1590 cost = 0.148689198
+Validation cost: 0.152954191
+Epoch: 1591 cost = 0.145559810
+Validation cost: 0.151228040
+Epoch: 1592 cost = 0.145835549
+Validation cost: 0.150546998
+Epoch: 1593 cost = 0.146568023
+Validation cost: 0.152089462
+Epoch: 1594 cost = 0.145368951
+Validation cost: 0.149236411
+Epoch: 1595 cost = 0.149316868
+Validation cost: 0.162120074
+Epoch: 1596 cost = 0.149211104
+Validation cost: 0.162999690
+Epoch: 1597 cost = 0.148631893
+Validation cost: 0.148951843
+Epoch: 1598 cost = 0.145996158
+Validation cost: 0.149210989
+Epoch: 1599 cost = 0.146427598
+Validation cost: 0.148799509
+Epoch: 1600 cost = 0.148819652
+Validation cost: 0.148262009
+Epoch: 1601 cost = 0.147816792
+Validation cost: 0.148840070
+Epoch: 1602 cost = 0.146574434
+Validation cost: 0.150424555
+Epoch: 1603 cost = 0.145385636
+Validation cost: 0.147743970
+Epoch: 1604 cost = 0.147050212
+Validation cost: 0.153806925
+Epoch: 1605 cost = 0.146734164
+Validation cost: 0.146379665
+Epoch: 1606 cost = 0.149398193
+Validation cost: 0.149303943
+Epoch: 1607 cost = 0.147321804
+Validation cost: 0.147956058
+Epoch: 1608 cost = 0.151628200
+Validation cost: 0.144585520
+Epoch: 1609 cost = 0.145849333
+Validation cost: 0.146255448
+Epoch: 1610 cost = 0.151572621
+Validation cost: 0.162494227
+Epoch: 1611 cost = 0.153679164
+Validation cost: 0.154648244
+Epoch: 1612 cost = 0.147071524
+Validation cost: 0.146688014
+Epoch: 1613 cost = 0.145953317
+Validation cost: 0.147063613
+Epoch: 1614 cost = 0.146228920
+Validation cost: 0.149405181
+Epoch: 1615 cost = 0.149580067
+Validation cost: 0.151814848
+Epoch: 1616 cost = 0.148974880
+Validation cost: 0.148377180
+Epoch: 1617 cost = 0.147989975
+Validation cost: 0.153954372
+Epoch: 1618 cost = 0.147483848
+Validation cost: 0.150920197
+Epoch: 1619 cost = 0.147633169
+Validation cost: 0.146745205
+Epoch: 1620 cost = 0.149182679
+Validation cost: 0.151318699
+Epoch: 1621 cost = 0.146309303
+Validation cost: 0.150576636
+Epoch: 1622 cost = 0.146849592
+Validation cost: 0.144523263
+Epoch: 1623 cost = 0.147685625
+Validation cost: 0.147566572
+Epoch: 1624 cost = 0.145569929
+Validation cost: 0.150923908
+Epoch: 1625 cost = 0.146020742
+Validation cost: 0.150437146
+Epoch: 1626 cost = 0.148331109
+Validation cost: 0.170314699
+Epoch: 1627 cost = 0.151124276
+Validation cost: 0.146572396
+Epoch: 1628 cost = 0.148368788
+Validation cost: 0.153581977
+Epoch: 1629 cost = 0.153048462
+Validation cost: 0.150380284
+Epoch: 1630 cost = 0.147372836
+Validation cost: 0.146927789
+Epoch: 1631 cost = 0.148917009
+Validation cost: 0.157846808
+Epoch: 1632 cost = 0.147043245
+Validation cost: 0.157509312
+Epoch: 1633 cost = 0.147283580
+Validation cost: 0.151889086
+Epoch: 1634 cost = 0.144559061
+Validation cost: 0.150496975
+Epoch: 1635 cost = 0.146417212
+Validation cost: 0.152447343
+Epoch: 1636 cost = 0.147939447
+Validation cost: 0.148751199
+Epoch: 1637 cost = 0.151120654
+Validation cost: 0.144322366
+Epoch: 1638 cost = 0.148786721
+Validation cost: 0.152610242
+Epoch: 1639 cost = 0.149374442
+Validation cost: 0.155850515
+Epoch: 1640 cost = 0.146306445
+Validation cost: 0.148911104
+Epoch: 1641 cost = 0.145283825
+Validation cost: 0.151598021
+Epoch: 1642 cost = 0.147868442
+Validation cost: 0.148776621
+Epoch: 1643 cost = 0.145982374
+Validation cost: 0.152747214
+Epoch: 1644 cost = 0.145916725
+Validation cost: 0.152132556
+Epoch: 1645 cost = 0.150084242
+Validation cost: 0.152274311
+Epoch: 1646 cost = 0.152687842
+Validation cost: 0.161735550
+Epoch: 1647 cost = 0.150379860
+Validation cost: 0.154733926
+Epoch: 1648 cost = 0.147638591
+Validation cost: 0.147738144
+Epoch: 1649 cost = 0.146904178
+Validation cost: 0.149218872
+Epoch: 1650 cost = 0.146076104
+Validation cost: 0.152221456
+Epoch: 1651 cost = 0.148083159
+Validation cost: 0.147586107
+Epoch: 1652 cost = 0.145503015
+Validation cost: 0.147687227
+Epoch: 1653 cost = 0.150713448
+Validation cost: 0.150380686
+Epoch: 1654 cost = 0.150721846
+Validation cost: 0.145292982
+Epoch: 1655 cost = 0.145692530
+Validation cost: 0.147913098
+Epoch: 1656 cost = 0.149124440
+Validation cost: 0.152244285
+Epoch: 1657 cost = 0.147688008
+Validation cost: 0.149919495
+Epoch: 1658 cost = 0.146119226
+Validation cost: 0.150087908
+Epoch: 1659 cost = 0.145774326
+Validation cost: 0.156089231
+Epoch: 1660 cost = 0.150957162
+Validation cost: 0.159054637
+Epoch: 1661 cost = 0.152375519
+Validation cost: 0.151096553
+Epoch: 1662 cost = 0.150907047
+Validation cost: 0.147236630
+Epoch: 1663 cost = 0.147502917
+Validation cost: 0.151884347
+Epoch: 1664 cost = 0.148558646
+Validation cost: 0.145921126
+Epoch: 1665 cost = 0.146251827
+Validation cost: 0.150346190
+Epoch: 1666 cost = 0.148940280
+Validation cost: 0.158097699
+Epoch: 1667 cost = 0.146889283
+Validation cost: 0.149915457
+Epoch: 1668 cost = 0.147030954
+Validation cost: 0.152955204
+Epoch: 1669 cost = 0.147050869
+Validation cost: 0.148223147
+Epoch: 1670 cost = 0.149774428
+Validation cost: 0.165741131
+Epoch: 1671 cost = 0.152534525
+Validation cost: 0.153618991
+Epoch: 1672 cost = 0.148456627
+Validation cost: 0.152548224
+Epoch: 1673 cost = 0.145925342
+Validation cost: 0.146256819
+Epoch: 1674 cost = 0.146306591
+Validation cost: 0.149588913
+Epoch: 1675 cost = 0.147332128
+Validation cost: 0.149273917
+Epoch: 1676 cost = 0.148227777
+Validation cost: 0.150211573
+Epoch: 1677 cost = 0.147340722
+Validation cost: 0.157063752
+Epoch: 1678 cost = 0.149663765
+Validation cost: 0.156218082
+Epoch: 1679 cost = 0.147240077
+Validation cost: 0.149539366
+Epoch: 1680 cost = 0.145485958
+Validation cost: 0.147707656
+Epoch: 1681 cost = 0.147486887
+Validation cost: 0.152391061
+Epoch: 1682 cost = 0.145214603
+Validation cost: 0.150969326
+Epoch: 1683 cost = 0.146403960
+Validation cost: 0.145031020
+Epoch: 1684 cost = 0.147070399
+Validation cost: 0.151024818
+Epoch: 1685 cost = 0.147642136
+Validation cost: 0.150078118
+Epoch: 1686 cost = 0.145970479
+Validation cost: 0.155825153
+Epoch: 1687 cost = 0.145534473
+Validation cost: 0.147688732
+Epoch: 1688 cost = 0.148222648
+Validation cost: 0.153913215
+Epoch: 1689 cost = 0.148864012
+Validation cost: 0.147582546
+Epoch: 1690 cost = 0.146884785
+Validation cost: 0.144893572
+Epoch: 1691 cost = 0.146128959
+Validation cost: 0.151260555
+Epoch: 1692 cost = 0.146213407
+Validation cost: 0.146497369
+Epoch: 1693 cost = 0.146791599
+Validation cost: 0.147588417
+Epoch: 1694 cost = 0.145951191
+Validation cost: 0.149148509
+Epoch: 1695 cost = 0.148010302
+Validation cost: 0.149193257
+Epoch: 1696 cost = 0.146820472
+Validation cost: 0.149531707
+Epoch: 1697 cost = 0.145747856
+Validation cost: 0.152186736
+Epoch: 1698 cost = 0.146567001
+Validation cost: 0.156441778
+Epoch: 1699 cost = 0.147472171
+Validation cost: 0.154299885
+Epoch: 1700 cost = 0.148008133
+Validation cost: 0.150967792
+Epoch: 1701 cost = 0.145989344
+Validation cost: 0.153865308
+Epoch: 1702 cost = 0.149890285
+Validation cost: 0.151115835
+Epoch: 1703 cost = 0.147535581
+Validation cost: 0.151830837
+Epoch: 1704 cost = 0.151299483
+Validation cost: 0.146898791
+Epoch: 1705 cost = 0.147208725
+Validation cost: 0.153313950
+Epoch: 1706 cost = 0.145363767
+Validation cost: 0.149893329
+Epoch: 1707 cost = 0.146138397
+Validation cost: 0.150648490
+Epoch: 1708 cost = 0.147436256
+Validation cost: 0.154035464
+Epoch: 1709 cost = 0.148569743
+Validation cost: 0.144058689
+Epoch: 1710 cost = 0.148223759
+Validation cost: 0.152246863
+Epoch: 1711 cost = 0.147597952
+Validation cost: 0.144131541
+Epoch: 1712 cost = 0.146136012
+Validation cost: 0.147525713
+Epoch: 1713 cost = 0.145805739
+Validation cost: 0.153115228
+Epoch: 1714 cost = 0.149535383
+Validation cost: 0.160645410
+Epoch: 1715 cost = 0.149049889
+Validation cost: 0.148154944
+Epoch: 1716 cost = 0.146379293
+Validation cost: 0.146952450
+Epoch: 1717 cost = 0.146366469
+Validation cost: 0.146063387
+Epoch: 1718 cost = 0.149656177
+Validation cost: 0.171587616
+Epoch: 1719 cost = 0.149921769
+Validation cost: 0.146198943
+Epoch: 1720 cost = 0.145753389
+Validation cost: 0.147862241
+Epoch: 1721 cost = 0.151069229
+Validation cost: 0.150257021
+Epoch: 1722 cost = 0.147709417
+Validation cost: 0.151526168
+Epoch: 1723 cost = 0.146779848
+Validation cost: 0.152392685
+Epoch: 1724 cost = 0.146510256
+Validation cost: 0.154942170
+Epoch: 1725 cost = 0.145806376
+Validation cost: 0.151278913
+Epoch: 1726 cost = 0.147052039
+Validation cost: 0.154288262
+Epoch: 1727 cost = 0.150669618
+Validation cost: 0.159960389
+Epoch: 1728 cost = 0.155481455
+Validation cost: 0.157243341
+Epoch: 1729 cost = 0.148733165
+Validation cost: 0.151155204
+Epoch: 1730 cost = 0.148557433
+Validation cost: 0.146308854
+Epoch: 1731 cost = 0.146245890
+Validation cost: 0.146192759
+Epoch: 1732 cost = 0.148672596
+Validation cost: 0.150733903
+Epoch: 1733 cost = 0.146225578
+Validation cost: 0.149438426
+Epoch: 1734 cost = 0.144436975
+Validation cost: 0.148129284
+Epoch: 1735 cost = 0.145759089
+Validation cost: 0.148603693
+Epoch: 1736 cost = 0.146657578
+Validation cost: 0.145558700
+Epoch: 1737 cost = 0.148806822
+Validation cost: 0.147977918
+Epoch: 1738 cost = 0.147462174
+Validation cost: 0.148200482
+Epoch: 1739 cost = 0.145689933
+Validation cost: 0.146084249
+Epoch: 1740 cost = 0.149240463
+Validation cost: 0.152686939
+Epoch: 1741 cost = 0.148226492
+Validation cost: 0.145910949
+Epoch: 1742 cost = 0.145875786
+Validation cost: 0.148539945
+Epoch: 1743 cost = 0.146096602
+Validation cost: 0.149759874
+Epoch: 1744 cost = 0.148032000
+Validation cost: 0.153191805
+Epoch: 1745 cost = 0.147022611
+Validation cost: 0.150150031
+Epoch: 1746 cost = 0.144383492
+Validation cost: 0.147271410
+Epoch: 1747 cost = 0.146027348
+Validation cost: 0.156196833
+Epoch: 1748 cost = 0.148755911
+Validation cost: 0.148039877
+Epoch: 1749 cost = 0.146672548
+Validation cost: 0.153445721
+Epoch: 1750 cost = 0.146295976
+Validation cost: 0.149185807
+Epoch: 1751 cost = 0.148773004
+Validation cost: 0.147637606
+Epoch: 1752 cost = 0.145222114
+Validation cost: 0.150452644
+Epoch: 1753 cost = 0.147228399
+Validation cost: 0.148391902
+Epoch: 1754 cost = 0.147115585
+Validation cost: 0.146506503
+Epoch: 1755 cost = 0.147493758
+Validation cost: 0.144907042
+Epoch: 1756 cost = 0.145589878
+Validation cost: 0.147576034
+Epoch: 1757 cost = 0.146969866
+Validation cost: 0.143871650
+Epoch: 1758 cost = 0.146461733
+Validation cost: 0.151554823
+Epoch: 1759 cost = 0.147666129
+Validation cost: 0.148417443
+Epoch: 1760 cost = 0.145428906
+Validation cost: 0.147454038
+Epoch: 1761 cost = 0.146108152
+Validation cost: 0.145034239
+Epoch: 1762 cost = 0.145444227
+Validation cost: 0.146827340
+Epoch: 1763 cost = 0.147777413
+Validation cost: 0.149595931
+Epoch: 1764 cost = 0.147657499
+Validation cost: 0.147729531
+Epoch: 1765 cost = 0.146389509
+Validation cost: 0.156251773
+Epoch: 1766 cost = 0.150761144
+Validation cost: 0.155256912
+Epoch: 1767 cost = 0.146402235
+Validation cost: 0.154517353
+Epoch: 1768 cost = 0.147263243
+Validation cost: 0.148682117
+Epoch: 1769 cost = 0.146799762
+Validation cost: 0.143503591
+Epoch: 1770 cost = 0.154525986
+Validation cost: 0.155425742
+Epoch: 1771 cost = 0.150070506
+Validation cost: 0.149387926
+Epoch: 1772 cost = 0.147186085
+Validation cost: 0.145891026
+Epoch: 1773 cost = 0.146583967
+Validation cost: 0.147380069
+Epoch: 1774 cost = 0.146049227
+Validation cost: 0.147556156
+Epoch: 1775 cost = 0.145370042
+Validation cost: 0.158185497
+Epoch: 1776 cost = 0.146683760
+Validation cost: 0.146402806
+Epoch: 1777 cost = 0.146875729
+Validation cost: 0.148343146
+Epoch: 1778 cost = 0.149162075
+Validation cost: 0.170556068
+Epoch: 1779 cost = 0.152704619
+Validation cost: 0.160101831
+Epoch: 1780 cost = 0.149111019
+Validation cost: 0.146470279
+Epoch: 1781 cost = 0.150832275
+Validation cost: 0.147645086
+Epoch: 1782 cost = 0.146008080
+Validation cost: 0.153027475
+Epoch: 1783 cost = 0.145970545
+Validation cost: 0.148315772
+Epoch: 1784 cost = 0.146063488
+Validation cost: 0.146417409
+Epoch: 1785 cost = 0.147212017
+Validation cost: 0.164559901
+Epoch: 1786 cost = 0.148618238
+Validation cost: 0.149149746
+Epoch: 1787 cost = 0.148870743
+Validation cost: 0.150230989
+Epoch: 1788 cost = 0.146615889
+Validation cost: 0.147740543
+Epoch: 1789 cost = 0.148916345
+Validation cost: 0.150465325
+Epoch: 1790 cost = 0.147354952
+Validation cost: 0.147051543
+Epoch: 1791 cost = 0.145236417
+Validation cost: 0.153995425
+Epoch: 1792 cost = 0.149395009
+Validation cost: 0.147078201
+Epoch: 1793 cost = 0.147549037
+Validation cost: 0.152855322
+Epoch: 1794 cost = 0.143878143
+Validation cost: 0.147456452
+Epoch: 1795 cost = 0.145704285
+Validation cost: 0.145599246
+Epoch: 1796 cost = 0.147951173
+Validation cost: 0.149179935
+Epoch: 1797 cost = 0.151094704
+Validation cost: 0.152834371
+Epoch: 1798 cost = 0.150149818
+Validation cost: 0.145991996
+Epoch: 1799 cost = 0.147710537
+Validation cost: 0.144637883
+Epoch: 1800 cost = 0.148577085
+Validation cost: 0.159063175
+Epoch: 1801 cost = 0.146388668
+Validation cost: 0.144027621
+Epoch: 1802 cost = 0.146870045
+Validation cost: 0.144723132
+Epoch: 1803 cost = 0.150262803
+Validation cost: 0.153892606
+Epoch: 1804 cost = 0.152465148
+Validation cost: 0.150001869
+Epoch: 1805 cost = 0.147535860
+Validation cost: 0.166621253
+Epoch: 1806 cost = 0.152965958
+Validation cost: 0.154445425
+Epoch: 1807 cost = 0.147475584
+Validation cost: 0.149802819
+Epoch: 1808 cost = 0.148356450
+Validation cost: 0.146638215
+Epoch: 1809 cost = 0.145252773
+Validation cost: 0.144597948
+Epoch: 1810 cost = 0.146972234
+Validation cost: 0.152169243
+Epoch: 1811 cost = 0.148727095
+Validation cost: 0.148250684
+Epoch: 1812 cost = 0.146606599
+Validation cost: 0.144567087
+Epoch: 1813 cost = 0.152530330
+Validation cost: 0.164363101
+Epoch: 1814 cost = 0.154020576
+Validation cost: 0.161631167
+Epoch: 1815 cost = 0.151552850
+Validation cost: 0.155337319
+Epoch: 1816 cost = 0.151178689
+Validation cost: 0.146716222
+Epoch: 1817 cost = 0.148744935
+Validation cost: 0.150269046
+Epoch: 1818 cost = 0.148158061
+Validation cost: 0.153691322
+Epoch: 1819 cost = 0.148203336
+Validation cost: 0.147824273
+Epoch: 1820 cost = 0.147719304
+Validation cost: 0.147458076
+Epoch: 1821 cost = 0.147236578
+Validation cost: 0.150134206
+Epoch: 1822 cost = 0.148371892
+Validation cost: 0.146254286
+Epoch: 1823 cost = 0.146832164
+Validation cost: 0.149155021
+Epoch: 1824 cost = 0.149000226
+Validation cost: 0.153677732
+Epoch: 1825 cost = 0.147390282
+Validation cost: 0.146820128
+Epoch: 1826 cost = 0.145629309
+Validation cost: 0.143620223
+Epoch: 1827 cost = 0.145688234
+Validation cost: 0.149802446
+Epoch: 1828 cost = 0.150941834
+Validation cost: 0.153864071
+Epoch: 1829 cost = 0.146195198
+Validation cost: 0.147761136
+Epoch: 1830 cost = 0.146255888
+Validation cost: 0.150778785
+Epoch: 1831 cost = 0.145471770
+Validation cost: 0.148389101
+Epoch: 1832 cost = 0.145465884
+Validation cost: 0.150281131
+Epoch: 1833 cost = 0.146924707
+Validation cost: 0.145143449
+Epoch: 1834 cost = 0.150118915
+Validation cost: 0.148712516
+Epoch: 1835 cost = 0.150869209
+Validation cost: 0.154728711
+Epoch: 1836 cost = 0.147780148
+Validation cost: 0.150176167
+Epoch: 1837 cost = 0.150742206
+Validation cost: 0.152211159
+Epoch: 1838 cost = 0.150126197
+Validation cost: 0.149520606
+Epoch: 1839 cost = 0.149772071
+Validation cost: 0.147714823
+Epoch: 1840 cost = 0.146390816
+Validation cost: 0.147723213
+Epoch: 1841 cost = 0.147007366
+Validation cost: 0.147999555
+Epoch: 1842 cost = 0.148582758
+Validation cost: 0.152689993
+Epoch: 1843 cost = 0.146315333
+Validation cost: 0.151406839
+Epoch: 1844 cost = 0.145974501
+Validation cost: 0.148883507
+Epoch: 1845 cost = 0.146695365
+Validation cost: 0.148123607
+Epoch: 1846 cost = 0.147767209
+Validation cost: 0.149800256
+Epoch: 1847 cost = 0.147346391
+Validation cost: 0.148478299
+Epoch: 1848 cost = 0.146273125
+Validation cost: 0.151004374
+Epoch: 1849 cost = 0.147472587
+Validation cost: 0.146950364
+Epoch: 1850 cost = 0.146786986
+Validation cost: 0.157332554
+Epoch: 1851 cost = 0.152465035
+Validation cost: 0.152311563
+Epoch: 1852 cost = 0.149558747
+Validation cost: 0.149919912
+Epoch: 1853 cost = 0.149384355
+Validation cost: 0.161329493
+Epoch: 1854 cost = 0.148271922
+Validation cost: 0.146868914
+Epoch: 1855 cost = 0.147507678
+Validation cost: 0.150882229
+Epoch: 1856 cost = 0.145071835
+Validation cost: 0.148744285
+Epoch: 1857 cost = 0.146782961
+Validation cost: 0.147760913
+Epoch: 1858 cost = 0.163513768
+Validation cost: 0.157791212
+Epoch: 1859 cost = 0.150196915
+Validation cost: 0.150428534
+Epoch: 1860 cost = 0.149294901
+Validation cost: 0.145542771
+Epoch: 1861 cost = 0.146500666
+Validation cost: 0.147729695
+Epoch: 1862 cost = 0.146158391
+Validation cost: 0.145473450
+Epoch: 1863 cost = 0.146219510
+Validation cost: 0.145116687
+Epoch: 1864 cost = 0.146050809
+Validation cost: 0.150691226
+Epoch: 1865 cost = 0.158378541
+Validation cost: 0.167356789
+Epoch: 1866 cost = 0.157852820
+Validation cost: 0.151922792
+Epoch: 1867 cost = 0.149123225
+Validation cost: 0.152312160
+Epoch: 1868 cost = 0.148282756
+Validation cost: 0.145862699
+Epoch: 1869 cost = 0.147956383
+Validation cost: 0.150901780
+Epoch: 1870 cost = 0.147908972
+Validation cost: 0.158642679
+Epoch: 1871 cost = 0.148775223
+Validation cost: 0.148641363
+Epoch: 1872 cost = 0.146411156
+Validation cost: 0.147454947
+Epoch: 1873 cost = 0.147395230
+Validation cost: 0.146104082
+Epoch: 1874 cost = 0.147762308
+Validation cost: 0.149258077
+Epoch: 1875 cost = 0.147956831
+Validation cost: 0.144831255
+Epoch: 1876 cost = 0.146089171
+Validation cost: 0.148645505
+Epoch: 1877 cost = 0.146103050
+Validation cost: 0.147515252
+Epoch: 1878 cost = 0.146421161
+Validation cost: 0.153849229
+Epoch: 1879 cost = 0.149443031
+Validation cost: 0.157759368
+Epoch: 1880 cost = 0.153704050
+Validation cost: 0.148899466
+Epoch: 1881 cost = 0.150048520
+Validation cost: 0.149727494
+Epoch: 1882 cost = 0.148987641
+Validation cost: 0.158042639
+Epoch: 1883 cost = 0.147642846
+Validation cost: 0.148610517
+Epoch: 1884 cost = 0.146942878
+Validation cost: 0.150669709
+Epoch: 1885 cost = 0.154706585
+Validation cost: 0.148814470
+Epoch: 1886 cost = 0.158258576
+Validation cost: 0.149156034
+Epoch: 1887 cost = 0.148807539
+Validation cost: 0.146082237
+Epoch: 1888 cost = 0.147004810
+Validation cost: 0.156090856
+Epoch: 1889 cost = 0.152497014
+Validation cost: 0.153521329
+Epoch: 1890 cost = 0.147094446
+Validation cost: 0.149931386
+Epoch: 1891 cost = 0.147102316
+Validation cost: 0.146808013
+Epoch: 1892 cost = 0.146700481
+Validation cost: 0.145149425
+Epoch: 1893 cost = 0.148307348
+Validation cost: 0.146166295
+Epoch: 1894 cost = 0.146525231
+Validation cost: 0.158044636
+Epoch: 1895 cost = 0.147828638
+Validation cost: 0.154432848
+Epoch: 1896 cost = 0.145742910
+Validation cost: 0.143821344
+Epoch: 1897 cost = 0.145715902
+Validation cost: 0.154299125
+Epoch: 1898 cost = 0.148269437
+Validation cost: 0.150862023
+Epoch: 1899 cost = 0.151328002
+Validation cost: 0.150933236
+Epoch: 1900 cost = 0.146053227
+Validation cost: 0.146196276
+Epoch: 1901 cost = 0.147432158
+Validation cost: 0.150796548
+Epoch: 1902 cost = 0.145584004
+Validation cost: 0.149314493
+Epoch: 1903 cost = 0.147076728
+Validation cost: 0.150677845
+Epoch: 1904 cost = 0.148209312
+Validation cost: 0.147804022
+Epoch: 1905 cost = 0.150299791
+Validation cost: 0.150730759
+Epoch: 1906 cost = 0.149495226
+Validation cost: 0.150954813
+Epoch: 1907 cost = 0.145424834
+Validation cost: 0.147181153
+Epoch: 1908 cost = 0.146385595
+Validation cost: 0.149840802
+Epoch: 1909 cost = 0.151561455
+Validation cost: 0.147900850
+Epoch: 1910 cost = 0.147652505
+Validation cost: 0.157825857
+Epoch: 1911 cost = 0.150589684
+Validation cost: 0.156638488
+Epoch: 1912 cost = 0.149616578
+Validation cost: 0.148553535
+Epoch: 1913 cost = 0.148457981
+Validation cost: 0.150497496
+Epoch: 1914 cost = 0.151554155
+Validation cost: 0.160609379
+Epoch: 1915 cost = 0.149116390
+Validation cost: 0.148339197
+Epoch: 1916 cost = 0.146166741
+Validation cost: 0.147824049
+Epoch: 1917 cost = 0.148165541
+Validation cost: 0.147389084
+Epoch: 1918 cost = 0.145217478
+Validation cost: 0.148031235
+Epoch: 1919 cost = 0.148651986
+Validation cost: 0.146896526
+Epoch: 1920 cost = 0.147413128
+Validation cost: 0.148330033
+Epoch: 1921 cost = 0.152625552
+Validation cost: 0.151119277
+Epoch: 1922 cost = 0.144519552
+Validation cost: 0.145518348
+Epoch: 1923 cost = 0.146693114
+Validation cost: 0.150777236
+Epoch: 1924 cost = 0.148251071
+Validation cost: 0.196142182
+Epoch: 1925 cost = 0.162736040
+Validation cost: 0.155557156
+Epoch: 1926 cost = 0.150195339
+Validation cost: 0.151027381
+Epoch: 1927 cost = 0.148864626
+Validation cost: 0.164086729
+Epoch: 1928 cost = 0.149364788
+Validation cost: 0.148077130
+Epoch: 1929 cost = 0.147214530
+Validation cost: 0.149472699
+Epoch: 1930 cost = 0.145419937
+Validation cost: 0.148959517
+Epoch: 1931 cost = 0.145229292
+Validation cost: 0.148155868
+Epoch: 1932 cost = 0.147382321
+Validation cost: 0.144814283
+Epoch: 1933 cost = 0.146202007
+Validation cost: 0.146392763
+Epoch: 1934 cost = 0.145993137
+Validation cost: 0.145320222
+Epoch: 1935 cost = 0.147883850
+Validation cost: 0.152316138
+Epoch: 1936 cost = 0.146650931
+Validation cost: 0.147024065
+Epoch: 1937 cost = 0.148173941
+Validation cost: 0.149725363
+Epoch: 1938 cost = 0.148475453
+Validation cost: 0.160860837
+Epoch: 1939 cost = 0.149470779
+Validation cost: 0.146638229
+Epoch: 1940 cost = 0.146126722
+Validation cost: 0.151460230
+Epoch: 1941 cost = 0.147404644
+Validation cost: 0.153604180
+Epoch: 1942 cost = 0.152401531
+Validation cost: 0.153195262
+Epoch: 1943 cost = 0.149912808
+Validation cost: 0.150593057
+Epoch: 1944 cost = 0.146760014
+Validation cost: 0.149550214
+Epoch: 1945 cost = 0.153228186
+Validation cost: 0.151122704
+Epoch: 1946 cost = 0.157149581
+Validation cost: 0.157756880
+Epoch: 1947 cost = 0.151970850
+Validation cost: 0.154511288
+Epoch: 1948 cost = 0.148665144
+Validation cost: 0.149924159
+Epoch: 1949 cost = 0.146305796
+Validation cost: 0.155879170
+Epoch: 1950 cost = 0.147346440
+Validation cost: 0.151432112
+Epoch: 1951 cost = 0.148405469
+Validation cost: 0.149522051
+Epoch: 1952 cost = 0.151259981
+Validation cost: 0.146231264
+Epoch: 1953 cost = 0.147973531
+Validation cost: 0.149115294
+Epoch: 1954 cost = 0.146712841
+Validation cost: 0.153833732
+Epoch: 1955 cost = 0.147288128
+Validation cost: 0.154398337
+Epoch: 1956 cost = 0.147989965
+Validation cost: 0.163079605
+Epoch: 1957 cost = 0.149658160
+Validation cost: 0.148503661
+Epoch: 1958 cost = 0.146046963
+Validation cost: 0.150105506
+Epoch: 1959 cost = 0.146726158
+Validation cost: 0.149363175
+Epoch: 1960 cost = 0.148322461
+Validation cost: 0.153794408
+Epoch: 1961 cost = 0.146536661
+Validation cost: 0.161537319
+Epoch: 1962 cost = 0.153813204
+Validation cost: 0.149103671
+Epoch: 1963 cost = 0.149306076
+Validation cost: 0.154016972
+Epoch: 1964 cost = 0.152425029
+Validation cost: 0.150266454
+Epoch: 1965 cost = 0.146512883
+Validation cost: 0.145416513
+Epoch: 1966 cost = 0.145789791
+Validation cost: 0.160026357
+Epoch: 1967 cost = 0.145979682
+Validation cost: 0.145278960
+Epoch: 1968 cost = 0.146613537
+Validation cost: 0.153235376
+Epoch: 1969 cost = 0.145639276
+Validation cost: 0.146790892
+Epoch: 1970 cost = 0.147284173
+Validation cost: 0.153642878
+Epoch: 1971 cost = 0.145074954
+Validation cost: 0.145091459
+Epoch: 1972 cost = 0.154104987
+Validation cost: 0.143524662
+Epoch: 1973 cost = 0.145466845
+Validation cost: 0.146339253
+Epoch: 1974 cost = 0.146113855
+Validation cost: 0.154826149
+Epoch: 1975 cost = 0.145891858
+Validation cost: 0.142226309
+Epoch: 1976 cost = 0.145413772
+Validation cost: 0.147993699
+Epoch: 1977 cost = 0.146558930
+Validation cost: 0.147983432
+Epoch: 1978 cost = 0.154269824
+Validation cost: 0.149809465
+Epoch: 1979 cost = 0.147544769
+Validation cost: 0.144306660
+Epoch: 1980 cost = 0.146255002
+Validation cost: 0.152220309
+Epoch: 1981 cost = 0.149899700
+Validation cost: 0.154209062
+Epoch: 1982 cost = 0.147802921
+Validation cost: 0.165479556
+Epoch: 1983 cost = 0.150296582
+Validation cost: 0.154902607
+Epoch: 1984 cost = 0.151475540
+Validation cost: 0.154563814
+Epoch: 1985 cost = 0.145480311
+Validation cost: 0.147682860
+Epoch: 1986 cost = 0.147021249
+Validation cost: 0.155821219
+Epoch: 1987 cost = 0.151257724
+Validation cost: 0.150235415
+Epoch: 1988 cost = 0.146316061
+Validation cost: 0.147055194
+Epoch: 1989 cost = 0.145753618
+Validation cost: 0.147759452
+Epoch: 1990 cost = 0.148856309
+Validation cost: 0.147596419
+Epoch: 1991 cost = 0.145642292
+Validation cost: 0.145395041
+Epoch: 1992 cost = 0.148413131
+Validation cost: 0.151939571
+Epoch: 1993 cost = 0.151889794
+Validation cost: 0.150233835
+Epoch: 1994 cost = 0.146284816
+Validation cost: 0.148094043
+Epoch: 1995 cost = 0.145450864
+Validation cost: 0.147030950
+Epoch: 1996 cost = 0.147736598
+Validation cost: 0.144809738
+Epoch: 1997 cost = 0.146196254
+Validation cost: 0.145423084
+Epoch: 1998 cost = 0.149745584
+Validation cost: 0.146888867
+Epoch: 1999 cost = 0.146796998
+Validation cost: 0.152032003
+Epoch: 2000 cost = 0.146331727
+Validation cost: 0.148165122
+Learning Finished!
+Test Error:  0.13158497
+1506.9519867897034

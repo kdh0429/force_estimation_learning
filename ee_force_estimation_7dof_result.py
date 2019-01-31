@@ -7,6 +7,7 @@ from sklearn import preprocessing
 # parameters
 num_input = 28
 num_output = 6
+output_idx = 6
 
 # raw data
 f = open('raw_data_.csv', 'r', encoding='utf-8')
@@ -20,10 +21,10 @@ for line in rdr:
     t.append(line[0])
     x_data_raw.append(line[1:num_input+1])
     y_data_raw.append(line[-num_output:])
+    #y_data_raw.append(line[-output_idx])
 
 t = np.reshape(t,(-1,1))
 x_data_raw = np.reshape(x_data_raw, (-1, num_input))
-#x_data_raw = preprocessing.scale(x_data_raw)
 y_data_raw = np.reshape(y_data_raw, (-1, num_output))
 
 tf.reset_default_graph()
@@ -45,6 +46,14 @@ res_idx = 0
 mean_error = np.mean(np.abs(y_data_raw[:,res_idx]-hypo[:,res_idx]))
 print("Mean error : %f" % mean_error)
  
+
+# plt.plot(t,y_data_raw[:,res_idx], 'r', label='real')
+# plt.plot(t,hypo[:,res_idx], 'b', label='prediction')
+# plt.xlabel('time')
+# plt.ylabel('Fx')
+# plt.legend()
+# plt.show()
+
 
 plt.subplot(3,1,1)
 plt.plot(t,y_data_raw[:,res_idx], 'r', label='real')
