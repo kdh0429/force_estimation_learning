@@ -1,78 +1,40 @@
-2019-02-01 09:43:45,298 DEBUG   MainThread:4453 [wandb_config.py:_load_defaults():64] no defaults not found in config-defaults.yaml
-2019-02-01 09:43:45,301 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:45,304 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:45,306 DEBUG   MainThread:4453 [run_manager.py:__init__():452] Initialized sync for dusan_ws/x5sboonz
 2019-02-01 09:43:45,308 WARNING MainThread:4453 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
-2019-02-01 09:43:45,310 DEBUG   MainThread:4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
-2019-02-01 09:43:45,644 DEBUG   MainThread:4453 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 29830
-2019-02-01 09:43:45,710 DEBUG   MainThread:4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
 2019-02-01 09:43:46,305 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 09:43:46,306 DEBUG   MainThread:4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 346
-2019-02-01 09:43:46,307 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:46,310 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:46,313 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:46,323 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'version'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
-2019-02-01 09:43:46,336 DEBUG   MainThread:4453 [cmd.py:execute():722] Popen(['git', 'merge-base', 'HEAD', 'ed2cece4ae18e145629b5283148e0b0be76b2e18'], cwd=/home/kim/dusan_ws/force_estimation_learning, universal_newlines=False, shell=None)
 2019-02-01 09:43:47,301 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/diff.patch
 2019-02-01 09:43:47,301 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/config.yaml
-2019-02-01 09:43:47,306 DEBUG   Thread-2  :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 09:43:47,886 DEBUG   Thread-2  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 774
-2019-02-01 09:43:47,895 DEBUG   Thread-13 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 09:43:50,197 DEBUG   Thread-6  :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 09:43:53,387 DEBUG   Thread-13 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 743
-2019-02-01 09:43:53,389 DEBUG   Thread-13 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 09:43:54,036 DEBUG   Thread-13 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/config.yaml?Expires=1548981893&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=JHJPNPezFgOYh8ny0Om1aWm93RgLeuQpa4kuO%2BtxJ4POSqMyl%2FHvN5dAeKck4biB8znLOK2dC8y%2FnB5H%2BhP%2BmOdKRwXF9YNj0Zj9VF0vARw0jZjfuPgjsgY1Clr3fVdUrCrNEP8tKnDgyNP5sXhvv0wXvNvKUsGy1rs4Lo%2BqDxxYF35cxYz445ktHHrR03U9B49eyqPzuXapeP2z4lncOPquB3V2JPehdd0xtcHYvSpwssGtfBChE7EdJUY1oD%2FnAb5sVo2NNfdCuMp6F%2BN9wbpc58E5JLNmGbcv3mqGJUOBw50zhfL0LK3rsrtjaqfALjxoItl3wpJN9nvzMxREKQ%3D%3D HTTP/1.1" 200 0
-2019-02-01 09:43:55,656 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
-2019-02-01 09:43:58,963 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:43:59,303 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:43:59,304 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 09:43:59,304 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:01,640 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:02,304 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:02,304 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:44:02,304 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:04,628 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:05,305 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:05,305 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:07,639 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:08,305 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:08,306 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:10,646 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:12,306 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:12,307 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:12,659 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:14,307 INFO    Thread-2  :4453 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:44:15,067 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:15,307 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:15,307 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:17,654 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:18,308 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:18,308 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:44:18,308 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:20,672 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:21,309 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:21,309 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:23,687 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:24,310 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:24,310 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:26,680 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:28,311 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:28,317 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:28,706 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
-2019-02-01 09:44:30,824 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:31,311 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:31,311 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:33,655 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:34,312 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:34,312 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:44:34,313 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:36,713 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:37,313 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:37,313 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:39,661 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:40,314 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:40,314 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:42,671 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:43,314 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:43,315 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:44:44,315 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
@@ -81,7 +43,6 @@
 2019-02-01 09:44:50,316 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:50,317 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:44:50,317 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:44:53,054 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:44:53,317 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:44:53,317 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:44:56,318 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -93,7 +54,6 @@
 2019-02-01 09:45:02,320 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:05,320 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:05,320 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:05,553 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:45:06,320 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:45:09,321 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:09,322 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -102,7 +62,6 @@
 2019-02-01 09:45:14,323 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:45:15,323 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:15,323 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:15,685 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:45:18,324 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:18,324 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:21,324 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -112,14 +71,12 @@
 2019-02-01 09:45:24,326 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:27,326 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:27,327 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:27,596 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:45:31,327 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:31,327 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:34,328 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:34,328 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:37,329 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:37,329 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:37,677 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:45:38,329 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:45:40,330 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:40,330 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -128,7 +85,6 @@
 2019-02-01 09:45:44,331 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:45:47,331 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:47,332 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:47,664 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:45:50,332 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:50,333 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:53,333 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -138,7 +94,6 @@
 2019-02-01 09:45:56,334 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:45:59,335 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:45:59,335 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:45:59,558 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:03,336 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:03,336 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:06,337 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -146,7 +101,6 @@
 2019-02-01 09:46:06,337 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:09,337 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:09,338 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:46:09,702 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:10,338 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:46:12,338 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:12,339 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -155,7 +109,6 @@
 2019-02-01 09:46:15,339 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:19,340 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:19,341 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:46:19,656 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:22,341 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:22,344 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:25,342 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -165,14 +118,12 @@
 2019-02-01 09:46:28,343 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:31,343 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:31,344 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:46:31,509 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:35,344 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:35,345 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:38,345 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:38,345 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:41,346 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:41,346 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:46:41,667 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:42,346 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:46:44,347 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:44,347 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
@@ -183,7 +134,6 @@
 2019-02-01 09:46:50,349 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:53,349 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:53,349 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:46:53,611 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:46:57,350 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:46:57,350 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:46:58,351 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -191,7 +141,6 @@
 2019-02-01 09:47:00,351 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:03,352 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:03,352 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:47:03,675 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:47:06,353 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:06,353 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:09,353 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -201,7 +150,6 @@
 2019-02-01 09:47:12,354 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:14,355 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:47:14,355 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 09:47:14,828 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:47:16,355 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:16,356 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:19,356 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -210,7 +158,6 @@
 2019-02-01 09:47:22,357 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:25,358 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:25,358 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:47:25,361 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:47:28,358 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:28,359 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:30,359 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -218,7 +165,6 @@
 2019-02-01 09:47:31,359 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:34,360 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:34,360 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:47:37,798 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:47:38,361 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:38,361 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:41,362 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -229,14 +175,12 @@
 2019-02-01 09:47:46,363 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:47:47,363 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:47,364 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:47:47,863 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:47:50,364 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:50,364 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:54,365 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:54,365 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:47:57,366 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:47:57,366 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:47:57,882 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:48:00,367 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:00,367 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:48:02,367 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -246,7 +190,6 @@
 2019-02-01 09:48:06,369 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:48:09,369 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:09,369 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:48:09,532 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:48:12,370 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:12,370 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 09:48:12,370 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -256,7 +199,6 @@
 2019-02-01 09:48:18,371 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:48:19,372 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:19,378 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:48:19,710 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:48:22,372 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:22,373 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:48:25,373 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -265,7 +207,6 @@
 2019-02-01 09:48:28,374 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:48:31,375 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:31,375 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:48:31,471 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:48:34,376 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:34,376 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:48:34,376 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -273,7 +214,6 @@
 2019-02-01 09:48:38,377 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:48:41,377 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:41,378 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:48:41,691 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:48:44,378 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:48:44,378 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:48:44,379 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -295,7 +235,6 @@
 2019-02-01 09:49:06,384 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:49:09,384 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:49:09,385 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:49:12,342 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:49:12,385 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:49:12,385 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:49:14,386 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
@@ -322,7 +261,6 @@
 2019-02-01 09:49:40,393 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:49:43,393 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:49:43,394 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:49:43,629 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:49:45,394 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:49:47,394 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:49:47,395 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -344,7 +282,6 @@
 2019-02-01 09:50:10,400 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:50:12,401 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:50:12,401 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:50:14,885 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:50:15,402 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:50:15,402 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:50:15,402 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -369,7 +306,6 @@
 2019-02-01 09:50:42,409 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:50:43,409 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:50:43,409 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:50:45,198 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:50:45,410 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:50:46,410 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:50:46,410 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -393,7 +329,6 @@
 2019-02-01 09:51:14,417 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:51:14,417 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:51:14,418 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:51:15,050 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:51:15,417 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:51:17,418 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:51:17,418 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -415,7 +350,6 @@
 2019-02-01 09:51:40,424 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:51:43,424 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:51:43,425 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:51:45,172 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:51:45,425 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:51:46,425 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:51:46,426 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -437,7 +371,6 @@
 2019-02-01 09:52:09,431 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:52:12,432 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:52:12,432 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:52:15,130 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:52:15,433 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:52:15,433 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:52:15,433 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -462,7 +395,6 @@
 2019-02-01 09:52:40,439 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:52:44,440 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:52:44,446 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:52:45,184 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:52:45,440 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:52:47,441 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:52:47,441 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -484,7 +416,6 @@
 2019-02-01 09:53:09,447 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:53:12,447 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:53:12,447 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:53:15,231 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:53:15,448 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:53:15,448 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:53:15,448 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -510,7 +441,6 @@
 2019-02-01 09:53:44,455 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:53:44,461 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:53:45,456 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:53:46,245 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:53:47,456 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:53:47,456 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:53:50,457 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -534,7 +464,6 @@
 2019-02-01 09:54:15,463 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:54:15,463 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 09:54:15,464 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 09:54:16,254 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:54:19,464 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:54:19,465 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:54:22,465 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -557,7 +486,6 @@
 2019-02-01 09:54:44,471 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:54:44,472 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:54:45,472 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:54:46,312 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:54:47,472 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:54:47,472 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:54:50,473 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -579,7 +507,6 @@
 2019-02-01 09:55:13,479 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:55:14,479 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:55:15,479 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:55:16,304 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:55:16,479 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:55:16,480 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:55:19,480 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -603,7 +530,6 @@
 2019-02-01 09:55:44,486 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:55:44,487 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:55:45,487 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:55:46,374 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:55:46,487 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:55:48,487 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:55:48,488 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -625,7 +551,6 @@
 2019-02-01 09:56:13,494 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:56:13,494 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:56:15,495 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:56:16,380 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:56:16,495 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:56:16,495 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:56:18,495 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -650,7 +575,6 @@
 2019-02-01 09:56:44,502 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:56:44,505 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:56:45,502 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:56:46,443 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:56:47,503 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:56:47,503 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:56:50,504 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -672,7 +596,6 @@
 2019-02-01 09:57:13,510 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:57:13,510 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:57:15,510 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:57:16,420 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:57:16,510 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:57:16,511 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:57:19,511 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -697,7 +620,6 @@
 2019-02-01 09:57:44,518 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:57:44,518 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:57:45,518 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:57:46,514 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:57:47,518 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:57:47,519 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:57:50,519 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -719,7 +641,6 @@
 2019-02-01 09:58:12,525 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:58:12,525 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:58:15,526 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:58:16,490 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:58:16,526 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:58:16,526 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:58:19,527 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -744,7 +665,6 @@
 2019-02-01 09:58:44,533 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:58:44,533 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:58:45,533 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:58:46,579 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:58:47,534 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:58:47,534 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:58:50,535 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -768,7 +688,6 @@
 2019-02-01 09:59:15,541 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:59:15,542 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:59:16,542 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:59:16,564 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:59:19,542 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:59:19,543 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:59:22,543 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -789,7 +708,6 @@
 2019-02-01 09:59:44,549 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 09:59:44,549 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 09:59:46,549 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 09:59:46,585 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 09:59:47,549 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 09:59:47,549 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 09:59:47,550 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -814,7 +732,6 @@
 2019-02-01 10:00:15,556 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:00:15,557 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:00:16,557 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:00:16,665 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:00:18,557 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:00:18,557 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:00:19,557 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -836,7 +753,6 @@
 2019-02-01 10:00:43,563 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:00:43,564 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:00:46,564 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:00:46,674 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:00:47,564 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:00:47,565 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:00:50,565 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -861,7 +777,6 @@
 2019-02-01 10:01:15,572 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:01:15,572 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:01:16,572 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:01:16,704 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:01:18,572 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:01:18,573 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:01:21,573 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -885,7 +800,6 @@
 2019-02-01 10:01:46,579 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:01:46,580 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:01:46,580 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:01:46,695 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:01:50,580 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:01:50,581 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:01:53,581 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -908,7 +822,6 @@
 2019-02-01 10:02:15,587 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:02:15,587 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:02:16,587 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:02:16,770 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:02:18,588 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:02:18,588 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:02:21,589 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -932,7 +845,6 @@
 2019-02-01 10:02:46,595 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:02:46,595 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:02:46,595 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:02:46,801 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:02:50,596 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:02:50,596 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:02:53,597 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -955,7 +867,6 @@
 2019-02-01 10:03:15,602 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:03:15,603 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:03:16,602 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:03:16,866 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:03:18,603 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:03:18,603 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:03:21,604 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -978,7 +889,6 @@
 2019-02-01 10:03:46,610 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:03:46,610 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:03:46,610 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:03:46,821 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:03:47,610 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:03:50,611 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:03:50,611 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1001,7 +911,6 @@
 2019-02-01 10:04:15,617 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:04:15,618 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:04:16,618 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:04:16,896 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:04:18,618 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:04:18,618 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:04:19,618 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1026,7 +935,6 @@
 2019-02-01 10:04:46,625 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:04:46,626 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:04:46,626 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:04:47,011 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:04:50,626 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:04:50,627 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:04:51,627 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1049,7 +957,6 @@
 2019-02-01 10:05:15,633 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:05:15,633 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:05:16,633 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:05:16,956 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:05:18,634 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:05:18,634 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:05:21,634 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1073,7 +980,6 @@
 2019-02-01 10:05:46,640 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:05:46,641 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:05:46,641 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:05:46,953 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:05:49,641 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:05:49,642 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:05:52,642 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1096,7 +1002,6 @@
 2019-02-01 10:06:14,648 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:06:14,648 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:06:16,648 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:06:17,011 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:06:17,648 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:06:17,649 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:06:21,649 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1120,7 +1025,6 @@
 2019-02-01 10:06:46,656 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:06:46,656 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:06:46,656 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:06:47,030 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:06:49,656 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:06:49,657 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:06:52,657 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1143,7 +1047,6 @@
 2019-02-01 10:07:14,663 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:07:15,663 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:07:16,663 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:07:17,198 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:07:17,664 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:07:17,664 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:07:21,665 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1166,7 +1069,6 @@
 2019-02-01 10:07:46,671 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:07:46,671 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:07:46,672 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:07:47,068 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:07:47,671 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:07:49,672 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:07:49,672 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1189,7 +1091,6 @@
 2019-02-01 10:08:14,678 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:08:14,679 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:08:16,679 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:08:17,133 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:08:17,679 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:08:17,679 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:08:19,680 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1212,7 +1113,6 @@
 2019-02-01 10:08:43,686 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:08:46,687 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:08:46,687 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:08:47,135 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:08:47,687 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:08:49,687 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:08:49,688 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1235,7 +1135,6 @@
 2019-02-01 10:09:14,694 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:09:14,694 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:09:14,694 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:09:17,210 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:09:17,694 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:09:17,695 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:09:17,695 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1261,7 +1160,6 @@
 2019-02-01 10:09:46,702 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:09:46,702 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:09:47,702 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:09:48,143 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:09:49,703 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:09:49,703 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:09:52,703 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1283,7 +1181,6 @@
 2019-02-01 10:10:11,709 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:10:14,709 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:10:14,709 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:10:17,226 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:10:17,710 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:10:17,710 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:10:17,710 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1309,7 +1206,6 @@
 2019-02-01 10:10:46,717 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:10:46,717 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:10:47,717 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:10:48,298 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:10:49,718 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:10:49,718 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:10:52,719 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1333,7 +1229,6 @@
 2019-02-01 10:11:17,725 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:11:17,726 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:11:17,726 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:11:18,284 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:11:21,726 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:11:21,727 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:11:21,727 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1356,7 +1251,6 @@
 2019-02-01 10:11:46,733 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:11:47,733 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:11:47,733 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 10:11:48,355 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:11:49,734 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:11:49,734 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:11:52,735 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1377,7 +1271,6 @@
 2019-02-01 10:12:14,740 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:12:14,740 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:12:17,741 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:12:18,341 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:12:18,741 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:12:18,741 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:12:19,741 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1402,7 +1295,6 @@
 2019-02-01 10:12:46,748 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:12:46,749 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:12:47,748 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:12:48,419 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:12:49,749 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:12:49,749 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:12:51,749 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1426,7 +1318,6 @@
 2019-02-01 10:13:17,756 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:13:17,756 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:13:17,756 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:13:18,415 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:13:20,757 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:13:20,757 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:13:23,757 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1449,7 +1340,6 @@
 2019-02-01 10:13:46,763 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:13:46,764 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:13:47,764 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:13:48,476 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:13:49,764 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:13:49,764 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:13:52,765 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1471,7 +1361,6 @@
 2019-02-01 10:14:15,771 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:14:15,771 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:14:17,771 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:14:18,457 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:14:18,771 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:14:18,772 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:14:21,772 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1496,7 +1385,6 @@
 2019-02-01 10:14:46,779 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:14:46,779 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:14:47,779 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:14:48,536 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:14:49,780 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:14:49,780 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:14:52,780 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1518,7 +1406,6 @@
 2019-02-01 10:15:15,786 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:15:15,787 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:15:17,787 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:15:18,590 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:15:18,787 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:15:18,787 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:15:21,788 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1543,7 +1430,6 @@
 2019-02-01 10:15:46,795 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:15:47,794 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:15:47,795 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 10:15:48,591 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:15:49,795 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:15:49,795 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:15:52,796 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1564,7 +1450,6 @@
 2019-02-01 10:16:14,801 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:16:14,802 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:16:17,802 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:16:18,581 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:16:18,802 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:16:18,803 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:16:19,803 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1589,7 +1474,6 @@
 2019-02-01 10:16:46,810 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:16:46,810 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:16:47,810 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:16:48,667 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:16:49,810 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:16:49,811 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:16:51,811 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1613,7 +1497,6 @@
 2019-02-01 10:17:17,818 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:17:17,818 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:17:17,818 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:17:18,670 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:17:20,818 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:17:20,819 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:17:23,819 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1636,7 +1519,6 @@
 2019-02-01 10:17:46,825 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:17:46,825 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:17:47,825 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:17:48,726 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:17:49,826 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:17:49,826 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:17:52,826 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1659,7 +1541,6 @@
 2019-02-01 10:18:14,832 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:18:17,833 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:18:17,833 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:18:18,702 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:18:18,833 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:18:21,834 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:18:21,834 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1682,7 +1563,6 @@
 2019-02-01 10:18:43,841 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:18:46,840 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:18:46,841 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:18:48,808 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:18:48,841 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:18:49,841 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:18:49,842 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1706,7 +1586,6 @@
 2019-02-01 10:19:16,848 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:19:17,848 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:19:17,848 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:19:18,794 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:19:18,848 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:19:20,849 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:19:20,849 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1733,7 +1612,6 @@
 2019-02-01 10:19:46,856 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:19:48,856 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:19:48,856 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 10:19:48,869 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:19:49,857 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:19:49,857 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:19:52,857 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1755,7 +1633,6 @@
 2019-02-01 10:20:14,863 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:20:17,864 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:20:17,864 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:20:18,836 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:20:18,864 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:20:20,865 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:20:20,865 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1778,7 +1655,6 @@
 2019-02-01 10:20:46,871 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:20:46,872 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:20:48,872 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:20:49,033 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:20:49,872 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:20:49,872 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:20:49,872 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -1803,7 +1679,6 @@
 2019-02-01 10:21:17,879 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:21:17,879 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:21:18,879 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:21:19,020 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:21:21,880 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:21:21,880 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:21:24,881 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1825,7 +1700,6 @@
 2019-02-01 10:21:46,886 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:21:46,887 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:21:48,887 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:21:48,993 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:21:49,887 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:21:49,888 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:21:52,888 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1850,7 +1724,6 @@
 2019-02-01 10:22:17,894 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:22:17,895 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:22:18,895 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:22:19,000 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:22:20,895 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:22:20,895 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:22:23,896 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1872,7 +1745,6 @@
 2019-02-01 10:22:45,901 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:22:45,902 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:22:48,902 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:22:48,981 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:22:49,902 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:22:49,903 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:22:52,903 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1897,7 +1769,6 @@
 2019-02-01 10:23:17,910 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:23:17,910 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:23:18,910 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:23:19,069 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:23:20,910 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:23:20,911 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:23:23,911 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1921,7 +1792,6 @@
 2019-02-01 10:23:48,917 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:23:48,918 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:23:48,918 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:23:49,058 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:23:51,918 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:23:51,918 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:23:54,919 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -1943,7 +1813,6 @@
 2019-02-01 10:24:16,924 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:24:16,925 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:24:18,925 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:24:19,132 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:24:19,925 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:24:19,925 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:24:20,925 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1967,7 +1836,6 @@
 2019-02-01 10:24:48,933 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:24:48,933 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:24:48,933 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:24:49,105 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:24:51,933 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:24:51,934 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:24:52,934 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
@@ -1990,7 +1858,6 @@
 2019-02-01 10:25:16,940 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:25:16,940 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:25:18,940 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:25:19,193 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:25:19,941 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:25:19,941 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:25:23,942 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2014,7 +1881,6 @@
 2019-02-01 10:25:48,948 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:25:48,948 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:25:48,949 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:25:49,164 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:25:51,949 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:25:51,949 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:25:55,950 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2037,7 +1903,6 @@
 2019-02-01 10:26:17,955 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:26:17,956 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:26:18,956 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:26:19,243 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:26:20,956 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:26:20,957 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:26:24,957 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2059,7 +1924,6 @@
 2019-02-01 10:26:46,963 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:26:46,963 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:26:48,963 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:26:49,228 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:26:49,964 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:26:49,964 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:26:52,964 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2084,7 +1948,6 @@
 2019-02-01 10:27:18,971 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:27:18,971 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:27:18,973 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:27:19,332 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:27:21,972 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:27:21,972 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:27:24,972 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2108,7 +1971,6 @@
 2019-02-01 10:27:49,979 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:27:49,979 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:27:49,979 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:27:50,029 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:27:52,980 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:27:52,980 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:27:56,980 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2130,7 +1992,6 @@
 2019-02-01 10:28:18,986 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:28:18,992 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:28:19,986 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:28:20,487 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:28:20,986 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:28:21,987 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:28:21,987 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2154,7 +2015,6 @@
 2019-02-01 10:28:49,994 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:28:49,994 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:28:49,994 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:28:50,371 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:28:52,995 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:28:52,995 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:28:52,995 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2177,7 +2037,6 @@
 2019-02-01 10:29:19,001 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:29:19,007 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:29:20,001 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:29:20,431 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:29:22,002 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:29:22,002 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:29:25,003 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2201,7 +2060,6 @@
 2019-02-01 10:29:50,009 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:29:50,010 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:29:50,010 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:29:50,427 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:29:53,010 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:29:53,010 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:29:56,011 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2224,7 +2082,6 @@
 2019-02-01 10:30:18,017 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:30:18,017 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:30:20,017 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:30:20,515 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:30:22,017 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:30:22,017 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:30:25,018 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2248,7 +2105,6 @@
 2019-02-01 10:30:50,025 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:30:50,025 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:30:50,025 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:30:50,543 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:30:53,025 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:30:53,026 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:30:56,026 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2270,7 +2126,6 @@
 2019-02-01 10:31:19,032 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:31:19,032 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:31:20,032 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:31:20,508 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:31:22,033 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:31:22,033 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb.h5
 2019-02-01 10:31:22,033 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2295,7 +2150,6 @@
 2019-02-01 10:31:50,040 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:31:50,040 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:31:50,040 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:31:50,586 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:31:53,041 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:31:53,041 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:31:56,041 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2316,7 +2170,6 @@
 2019-02-01 10:32:18,047 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:32:18,047 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:32:20,048 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:32:20,618 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:32:21,048 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:32:22,048 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:32:22,048 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2341,7 +2194,6 @@
 2019-02-01 10:32:50,055 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:32:50,055 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:32:50,056 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:32:50,691 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:32:53,056 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:32:53,056 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:32:53,056 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2363,7 +2215,6 @@
 2019-02-01 10:33:18,062 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:33:18,062 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:33:20,063 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:33:20,647 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:33:21,063 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:33:21,063 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:33:24,064 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2391,7 +2242,6 @@
 2019-02-01 10:33:49,070 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:33:49,070 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:33:50,070 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:33:50,723 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:33:52,071 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:33:52,071 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:33:56,072 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2413,7 +2263,6 @@
 2019-02-01 10:34:18,078 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:34:18,078 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:34:20,078 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:34:20,690 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:34:21,078 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:34:21,079 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:34:24,079 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2438,7 +2287,6 @@
 2019-02-01 10:34:49,085 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:34:49,086 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:34:50,086 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:34:50,782 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:34:52,086 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:34:52,087 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:34:56,087 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2460,7 +2308,6 @@
 2019-02-01 10:35:18,093 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:35:18,093 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:35:20,094 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:35:20,785 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:35:21,094 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:35:21,094 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:35:24,095 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2485,7 +2332,6 @@
 2019-02-01 10:35:50,101 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:35:50,102 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:35:50,102 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
-2019-02-01 10:35:50,971 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:35:53,102 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:35:53,103 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:35:56,103 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
@@ -2506,7 +2352,6 @@
 2019-02-01 10:36:18,109 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:36:18,109 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:36:20,109 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:36:20,962 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:36:21,109 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:36:22,110 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:36:22,110 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
@@ -2518,40 +2363,9 @@
 2019-02-01 10:36:31,112 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:36:34,113 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-summary.json
 2019-02-01 10:36:34,113 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/config.yaml
-2019-02-01 10:36:34,118 DEBUG   Thread-2  :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:36:49,707 DEBUG   Thread-2  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 840
 2019-02-01 10:36:49,712 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-history.jsonl
 2019-02-01 10:36:49,713 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 10:36:49,720 DEBUG   Thread-16 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
 2019-02-01 10:36:50,125 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
-2019-02-01 10:36:50,206 DEBUG   Thread-16 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 782
-2019-02-01 10:36:50,216 DEBUG   Thread-16 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:36:50,860 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
 2019-02-01 10:36:53,127 INFO    Thread-2  :4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
 2019-02-01 10:37:01,130 INFO    MainThread:4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-events.jsonl
 2019-02-01 10:37:01,131 INFO    MainThread:4453 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190201_004344-x5sboonz/wandb-metadata.json
-2019-02-01 10:37:01,170 DEBUG   MainThread:4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:01,171 DEBUG   Thread-18 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:01,175 DEBUG   Thread-17 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:01,618 DEBUG   Thread-18 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 747
-2019-02-01 10:37:01,628 DEBUG   Thread-18 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:37:02,084 DEBUG   MainThread:4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 840
-2019-02-01 10:37:02,095 DEBUG   Thread-19 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:02,097 DEBUG   Thread-20 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:02,527 DEBUG   Thread-19 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 763
-2019-02-01 10:37:02,537 DEBUG   Thread-19 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:37:03,184 DEBUG   Thread-19 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/wandb-summary.json?Expires=1548985082&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=CILAupsg86n8d5X0HS5nuADE3eC%2Bqvc7OauivtWa%2Bn9GyAZh1qohi0VdBgzE%2Ft6WFepyAH0viOFVofqG7HGHsUwk1%2FnVVzvPKao8BRQJjgnp4IX2HV4bkSk2HSLZ4KUhibuGV8GPvj13egbyGGhHdoMHZuNOGHYp7t0OjADZXrqR1o720KquKuehDbGHmdFgRGlKNwuIQUcehbn25IanwEUbDzjUt%2FKm2VNjHVgwhQfiZ5qLKvuK8g48MZrwEu6%2FfQMKHIV2QhYgjpplr6JqLXaBOgHVud%2FH5P1QYWDc4cus%2FobuIDA%2FDMRXjMZoDuayRyJOI5O2c3ZN%2Ft5vDSx%2F3w%3D%3D HTTP/1.1" 200 0
-2019-02-01 10:37:03,877 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 312
-2019-02-01 10:37:04,199 DEBUG   Thread-6  :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /kdh93429/dusan_ws/x5sboonz/file_stream HTTP/1.1" 200 309
-2019-02-01 10:37:05,941 DEBUG   Thread-16 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/config.yaml?Expires=1548985070&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Yl1NK%2BXt%2B%2BvmJtCmZ%2BwCnxKb1q6BoEyZKAncoqxX4To7M9Wybvy1qwDyCayDB%2B%2BHw00Ta%2BPp%2BO67V0CWxXz00CSlD4aBQdqE8U9f4hhp4r6rNCXunrWgdJlV6lAKzYGjfVEIXayLGMRheOV0IL5D1NCyok6Tis%2BVMZRvzO3UT%2FqF41ciaG3spq%2FSykJ3%2BeD07qsjm213a4syF%2Fwe11zVD5o93EXhtg5fatc5mJsnI%2B9QYSAf72h%2BtvZteGaQbI%2FENtGU27bfyYLMt%2F8TGyQ9C%2FLXqNuG0edtwmH9SrS9U6rpie%2F6stTjbYGLCTX1YYtKnWH2bO3j5RDNMe8EHwLh0g%3D%3D HTTP/1.1" 200 0
-2019-02-01 10:37:05,955 DEBUG   Thread-21 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
-2019-02-01 10:37:06,385 DEBUG   Thread-21 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 756
-2019-02-01 10:37:06,395 DEBUG   Thread-21 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:37:06,690 DEBUG   Thread-17 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 767
-2019-02-01 10:37:06,696 DEBUG   Thread-17 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:37:07,400 DEBUG   Thread-17 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/wandb-metadata.json?Expires=1548985086&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=D2%2FZLP%2FiyigasbLfiVmZ6cNjxyeXyjg2%2FH9onpFm09uQGqOAOjc2I2s3imiSuv3OqSva3z%2FhC9NgxIjJC6UYstAymB8BNIl%2BwCldLg0WAnBFNnFkwNbssYwsPCXvWP6d6gR%2FxLVVFJmL58pHzhkCf%2BAukwUuk8%2FuRHY9VPsVaOV7f7BOytz3J1Cb4PBCRO2jzxFv4LLGAxjeANFg7eX%2B2Pw0ZvxPjJcQ3pAJSBPUhAqqBHp17FYQ50xqAyXbK7UhfPQrJ%2B4dvjvbnn063rzWSSKY4ZOa5Qdjyy06xn59Rk%2FySXkkAKY7r8D9xSTuKeiQkHiVK5ba5njOEs5q%2Brhquw%3D%3D HTTP/1.1" 200 0
-2019-02-01 10:37:12,675 DEBUG   Thread-18 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/diff.patch?Expires=1548985081&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=Tf6ibO6r4Gn7Jg%2FTqtfeVgb%2FXACnWXDTsVMN%2FBRkUc6Sw%2F1s1I2%2Fw%2BgSYYt7gMghm8tuzfKWW772dFbogS9IImqZGrdRQsTwdXdm2vKIeUMJ5MREMfAaybSrA3qxmllTLlGUkQZVdHisDQ7VHsLPCjFUyLD%2BGbXvAf6ZLwuBkBAL36h4tG1CCOLSfI%2BOnBB%2Fx4cx9uqFvyhfzJ0XiCWSGXCLjiW9ADilwZbj7DsNFmtOKcmGba5gzFGGM3XVZLOKSdDVcWCl4rjcoVhH5B1HiELLom5XK603GliWjBkEKx6%2BSEwOEZnFYw95wO3tSONMAUaxPkXr8ozkZDSRbe%2Fhpg%3D%3D HTTP/1.1" 200 0
-2019-02-01 10:37:17,568 DEBUG   Thread-20 :4453 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 727
-2019-02-01 10:37:17,578 DEBUG   Thread-20 :4453 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
-2019-02-01 10:37:23,272 DEBUG   Thread-20 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/wandb.h5?Expires=1548985097&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=J1uBkYFkv2pnJ%2BfU0Hqbc3U82XQTEQWDtgHWsM2KyqNzePDZOu9KC2aPBhEn7anpzfPfhql4etP6MstTXYke8WJodL4qenVcCMzwzXVCM8P4zA75L3BBDZyqQzwsGdxzXiPLy2L5ZSPXhzqN0%2FLbbdU1DwuBD5a8wiTPJieWmxRglhASR0zM1Q5rMf%2BURaqgNdDt826uwf0baLxSzHIupCNBPNpErWGV66olPFqGRc0MQVm1pZorayKO20frkypRQg3hyowfl1AMAj5h2ukXlqpJ4nq4uSp5C3HsI0PGpgf50s4AiWPH1sU3Gr3Qnrzaj40j1fwWSN2J4rCmroa8jA%3D%3D HTTP/1.1" 200 0
-2019-02-01 10:37:27,082 DEBUG   Thread-21 :4453 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/kdh93429/dusan_ws/x5sboonz/config.yaml?Expires=1548985086&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=LozT8XbUkUQpLxWABOABhb%2BOxtBtJmhZYsNJ1WiX1UFFnss1il4siRCiE59NAhPxryCVOiu1E8YDn8bLzZlHKLj7VpBjRIBt%2BAX%2F1fiQIgEmKW7cGb5tdkrxO5%2F1m40Z7O6%2FTOvc0yYAfzO3agFp8O1yxFT9YIqPlng93kovn9jSd5Pybe76zHMFoSuYwHvYf0FgquBsyGsa0P82OtuAixSmtPTgsw1P9e7EcDhIz0y270UqfOA7k6gmnMm8jIqmanSbjrjzi21WWdnJpy3kZj9xnIerDmf8o9zlY5aNsxhfas%2BwrzNG9vS36UlBGjM2SS1qcAGYj26pqwNTjP4Jcg%3D%3D HTTP/1.1" 200 0

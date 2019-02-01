@@ -32,29 +32,29 @@ class Model:
             W1 = tf.get_variable("W1", shape=[num_input, 10], initializer=tf.contrib.layers.xavier_initializer())
             b1 = tf.Variable(tf.random_normal([10]), name='b1')
             L1 = tf.matmul(self.X, W1) +b1
-            #L1 = tf.nn.relu(L1)
-            L1 = tf.nn.sigmoid(L1)
+            L1 = tf.nn.relu(L1)
+            #L1 = tf.nn.sigmoid(L1)
             L1 = tf.nn.dropout(L1, keep_prob=self.keep_prob)
 
             W2 = tf.get_variable("W2", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b2 = tf.Variable(tf.random_normal([10]), name='b2')
             L2 = tf.matmul(L1, W2) +b2
-            #L2 = tf.nn.relu(L2)
-            L2 = tf.nn.sigmoid(L2)
+            L2 = tf.nn.relu(L2)
+            #L2 = tf.nn.sigmoid(L2)
             L2 = tf.nn.dropout(L2, keep_prob=self.keep_prob)
 
             W3 = tf.get_variable("W3", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b3 = tf.Variable(tf.random_normal([10]), name='b3')
             L3 = tf.matmul(L2, W3) +b3
-            #L3 = tf.nn.relu(L3)
-            L3 = tf.nn.sigmoid(L3)
+            L3 = tf.nn.relu(L3)
+            #L3 = tf.nn.sigmoid(L3)
             L3 = tf.nn.dropout(L3, keep_prob=self.keep_prob)
 
             W4 = tf.get_variable("W4", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b4 = tf.Variable(tf.random_normal([10]), name='b4')
             L4 = tf.matmul(L3, W4) +b4
-            #L4 = tf.nn.relu(L4)
-            L4 = tf.nn.sigmoid(L4)
+            L4 = tf.nn.relu(L4)
+            #L4 = tf.nn.sigmoid(L4)
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
 
             W5 = tf.get_variable("W5", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
@@ -127,9 +127,9 @@ y_data_val = np.reshape(y_data_val, (-1, num_output))
 
 # parameters
 learning_rate = 0.005
-training_epochs = 2000
+training_epochs = 1000
 batch_size = 100
-total_batch = int(np.shape(x_data_test)[0]/batch_size*5)
+total_batch = int(np.shape(x_data_test)[0]/batch_size*7)
 drop_out = 1.0
 
 if wandb_use == True:
@@ -139,7 +139,9 @@ if wandb_use == True:
     wandb.config.drop_out = drop_out
     wandb.config.num_input = num_input
     wandb.config.num_output = num_output
-    wandb.config.activation_function = "Sigmoid"
+    wandb.config.total_batch = total_batch
+    wandb.config.activation_function = "ReLU"
+    wandb.config.training_episode = 440
 
 # initialize
 sess = tf.Session()
