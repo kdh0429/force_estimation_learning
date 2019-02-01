@@ -1,2 +1,0 @@
-torque_estimation/wandb/
-torque_estimation/.vscode

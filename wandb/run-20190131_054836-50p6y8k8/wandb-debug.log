@@ -1,5 +1,0 @@
-2019-01-31 14:48:36,817 WARNING MainThread:29784 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
-2019-01-31 14:48:37,814 INFO    Thread-2  :29784 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190131_054836-50p6y8k8/wandb-metadata.json
-2019-01-31 14:48:43,813 INFO    Thread-2  :29784 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190131_054836-50p6y8k8/diff.patch
-2019-01-31 14:48:51,816 INFO    MainThread:29784 [run_manager.py:_on_file_modified():588] file/dir modified: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190131_054836-50p6y8k8/wandb-metadata.json
-2019-01-31 14:48:51,817 INFO    MainThread:29784 [run_manager.py:_on_file_created():577] file/dir created: /home/kim/dusan_ws/force_estimation_learning/wandb/run-20190131_054836-50p6y8k8/wandb-events.jsonl
