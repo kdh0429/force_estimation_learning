@@ -57,23 +57,9 @@ class Model:
             #L4 = tf.nn.sigmoid(L4)
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
 
-            W5 = tf.get_variable("W5", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b5 = tf.Variable(tf.random_normal([10]), name='b5')
-            L5 = tf.matmul(L4, W5) +b5
-            L5 = tf.nn.relu(L5)
-            #L3 = tf.nn.sigmoid(L3)
-            L5 = tf.nn.dropout(L5, keep_prob=self.keep_prob)
-
-            W6 = tf.get_variable("W6", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
-            b6 = tf.Variable(tf.random_normal([10]), name='b6')
-            L6 = tf.matmul(L5, W6) +b6
-            L6 = tf.nn.relu(L6)
-            #L6 = tf.nn.sigmoid(L4)
-            L6 = tf.nn.dropout(L6, keep_prob=self.keep_prob)
-
-            W7 = tf.get_variable("W7", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
-            b7 = tf.Variable(tf.random_normal([num_output]), name='b7')
-            self.hypothesis = tf.matmul(L6, W7) + b7
+            W5 = tf.get_variable("W5", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
+            b5 = tf.Variable(tf.random_normal([num_output]), name='b5')
+            self.hypothesis = tf.matmul(L4, W5) + b5
             self.hypothesis = tf.identity(self.hypothesis, "hypothesis")
 
             # define cost/loss & optimizer
@@ -97,7 +83,7 @@ class Model:
         for line in data:
             line = [float(i) for i in line]
             x_batch.append(line[1:num_input+1])
-            y_batch.append(line[-num_output:])
+            y_batch.append(line[-13])
             #y_batch.append(line[-output_idx])
             i = i+1
 
@@ -106,7 +92,7 @@ class Model:
         return [np.asarray(np.reshape(x_batch, (-1, num_input))), np.asarray(np.reshape(y_batch,(-1,num_output)))]
 # input/output number
 num_input = 28
-num_output = 6
+num_output = 1
 output_idx = 6
 # loading testing data
 f = open('testing_data_.csv', 'r', encoding='utf-8')
@@ -119,8 +105,8 @@ for line in rdr:
     line = [float(i) for i in line]
     t.append(line[0])
     x_data_test.append(line[1:num_input+1])
-    y_data_test.append(line[-num_output:])
-    #y_data_test.append(line[-output_idx])
+    #y_data_test.append(line[-num_output:])
+    y_data_test.append(line[-13])
 
 t = np.reshape(t,(-1,1))
 x_data_test = np.reshape(x_data_test, (-1, num_input))
@@ -134,8 +120,8 @@ y_data_val = []
 for line in rdr:
     line = [float(i) for i in line]
     x_data_val.append(line[1:num_input+1])
-    y_data_val.append(line[-num_output:])
-    #y_data_val.append(line[-output_idx])
+    #y_data_val.append(line[-num_output:])
+    y_data_val.append(line[-13])
 x_data_val = np.reshape(x_data_val, (-1, num_input))
 y_data_val = np.reshape(y_data_val, (-1, num_output))
 
@@ -156,7 +142,6 @@ if wandb_use == True:
     wandb.config.total_batch = total_batch
     wandb.config.activation_function = "ReLU"
     wandb.config.training_episode = 440
-    wandb.config.hidden_layer = 5
 
 # initialize
 sess = tf.Session()
