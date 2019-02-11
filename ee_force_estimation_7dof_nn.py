@@ -7,7 +7,7 @@ import time
 import wandb
 import os
 
-wandb_use = True
+wandb_use = False
 start_time = time.time()
 if wandb_use == True:
     wandb.init(project="dusan_ws", tensorboard=False)
@@ -57,13 +57,28 @@ class Model:
             #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
 
-            W5 = tf.get_variable("W6", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
-            b5 = tf.Variable(tf.random_normal([num_output]))
-            self.hypothesis = tf.matmul(L4, W5) + b5
+            W5 = tf.get_variable("W5", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
+            b5 = tf.Variable(tf.random_normal([10]))
+            L5 = tf.matmul(L4, W5) +b5
+            L5 = tf.nn.relu(L5)
+            #L3 = tf.nn.relu(tf.sigmoid(L2, W3) + b3)
+            L5 = tf.nn.dropout(L5, keep_prob=self.keep_prob)
+
+            W6 = tf.get_variable("W6", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
+            b6 = tf.Variable(tf.random_normal([10]))
+            L6 = tf.matmul(L5, W6) +b6
+            L6 = tf.nn.relu(L6)
+            #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
+            L6 = tf.nn.dropout(L6, keep_prob=self.keep_prob)
+
+            W7 = tf.get_variable("W7", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
+            b7 = tf.Variable(tf.random_normal([num_output]))
+            self.hypothesis = tf.matmul(L6, W7) + b7
             self.hypothesis = tf.identity(self.hypothesis, "hypothesis")
 
             # define cost/loss & optimizer
-            self.cost = tf.reduce_mean(tf.abs(self.hypothesis - self.Y))
+            l2_reg = tf.nn.l2_loss(W1) + tf.nn.l2_loss(W2) + tf.nn.l2_loss(W3) + tf.nn.l2_loss(W4) + tf.nn.l2_loss(W5)+ tf.nn.l2_loss(W6)+ tf.nn.l2_loss(W7)
+            self.cost = tf.reduce_mean(tf.abs(self.hypothesis - self.Y)) + 0.001*l2_reg
             #self.cost = tf.reduce_mean(tf.reduce_mean(tf.square(self.hypothesis - self.Y)))
             self.optimizer = tf.train.AdamOptimizer(learning_rate= learning_rate).minimize(self.cost)
 
@@ -131,7 +146,7 @@ y_data_val = np.reshape(y_data_val, (-1, num_output))
 learning_rate = 0.005
 training_epochs = 1000
 batch_size = 100
-total_batch = int(np.shape(x_data_test)[0]/batch_size*7)
+total_batch = int(np.shape(x_data_test)[0]/batch_size*8)
 drop_out = 1.0
 
 if wandb_use == True:
@@ -143,8 +158,9 @@ if wandb_use == True:
     wandb.config.num_output = num_output
     wandb.config.total_batch = total_batch
     wandb.config.activation_function = "ReLU"
-    wandb.config.training_episode = 440
-    wandb.config.hidden_layers = 3
+    wandb.config.training_episode = 1200
+    wandb.config.hidden_layers = 5
+    wandb.config.L2_regularization = 0.001
 
 # initialize
 sess = tf.Session()
