@@ -41,10 +41,15 @@ hypothesis = graph.get_tensor_by_name("m1/hypothesis:0")
 
 hypo = sess.run(hypothesis, feed_dict={x: x_data_raw, keep_prob: 1.0})
 
-
 res_idx = 0
-mean_error = np.mean(np.abs(y_data_raw[:,res_idx]-hypo[:,res_idx]))
-print("Mean error : %f" % mean_error)
+mean_error_x = np.mean(np.abs(y_data_raw[:,0]-hypo[:,0]))
+mean_error_y = np.mean(np.abs(y_data_raw[:,1]-hypo[:,1]))
+mean_error_z = np.mean(np.abs(y_data_raw[:,2]-hypo[:,2]))
+
+print("X Mean error : %f" % mean_error_x)
+print("Y Mean error : %f" % mean_error_y)
+print("Z Mean error : %f" % mean_error_z)
+ 
  
 
 # plt.plot(t,y_data_raw[:,res_idx], 'r', label='real')
