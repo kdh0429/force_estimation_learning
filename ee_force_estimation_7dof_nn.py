@@ -4,8 +4,13 @@ import csv
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
 import time
+import wandb
+import os
 
+wandb_use = True
 start_time = time.time()
+if wandb_use == True:
+    wandb.init(project="dusan_ws", tensorboard=False)
 
 class Model:
 
@@ -27,7 +32,6 @@ class Model:
             W1 = tf.get_variable("W1", shape=[num_input, 10], initializer=tf.contrib.layers.xavier_initializer())
             b1 = tf.Variable(tf.random_normal([10]))
             L1 = tf.matmul(self.X, W1) +b1
-            #L1 = tf.layers.batch_normalization(L1, center=True, scale=True, training=1)
             L1 = tf.nn.relu(L1)
             #L1 = tf.nn.sigmoid(tf.matmul(self.X, W1) + b1)
             L1 = tf.nn.dropout(L1, keep_prob=self.keep_prob)
@@ -35,7 +39,6 @@ class Model:
             W2 = tf.get_variable("W2", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b2 = tf.Variable(tf.random_normal([10]))
             L2 = tf.matmul(L1, W2) +b2
-            #L2 = tf.layers.batch_normalization(L2, center=True, scale=True, training=1)
             L2 = tf.nn.relu(L2)
             #L2 = tf.nn.sigmoid(tf.matmul(L1, W2) + b2)
             L2 = tf.nn.dropout(L2, keep_prob=self.keep_prob)
@@ -43,7 +46,6 @@ class Model:
             W3 = tf.get_variable("W3", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b3 = tf.Variable(tf.random_normal([10]))
             L3 = tf.matmul(L2, W3) +b3
-            #L3 = tf.layers.batch_normalization(L3, center=True, scale=True, training=1)
             L3 = tf.nn.relu(L3)
             #L3 = tf.nn.relu(tf.sigmoid(L2, W3) + b3)
             L3 = tf.nn.dropout(L3, keep_prob=self.keep_prob)
@@ -51,7 +53,6 @@ class Model:
             W4 = tf.get_variable("W4", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
             b4 = tf.Variable(tf.random_normal([10]))
             L4 = tf.matmul(L3, W4) +b4
-            #L4 = tf.layers.batch_normalization(L4, center=True, scale=True, training=1)
             L4 = tf.nn.relu(L4)
             #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
             L4 = tf.nn.dropout(L4, keep_prob=self.keep_prob)
@@ -133,7 +134,17 @@ batch_size = 100
 total_batch = int(np.shape(x_data_test)[0]/batch_size*7)
 drop_out = 1.0
 
-
+if wandb_use == True:
+    wandb.config.epoch = training_epochs
+    wandb.config.batch_size = batch_size
+    wandb.config.learning_rate = learning_rate
+    wandb.config.drop_out = drop_out
+    wandb.config.num_input = num_input
+    wandb.config.num_output = num_output
+    wandb.config.total_batch = total_batch
+    wandb.config.activation_function = "ReLU"
+    wandb.config.training_episode = 440
+    wandb.config.hidden_layers = 3
 
 # initialize
 sess = tf.Session()
@@ -163,6 +174,15 @@ for epoch in range(training_epochs):
     train_mse[epoch] = avg_cost
     validation_mse[epoch] = cost
 
+    if wandb_use == True:
+        wandb.log({'training cost': avg_cost, 'validation cost': cost})
+
+        if epoch % 20 ==0:
+            for var in tf.trainable_variables():
+                name = var.name
+                wandb.log({name: sess.run(var)})
+
+
 print('Learning Finished!')
 
 
@@ -170,11 +190,16 @@ print('Learning Finished!')
 # print('Error: ', error,"\n x_data: ", x_test,"\nHypothesis: ", hypo, "\n y_data: ", y_test)
 print('Test Error: ', error)
 
-saver = tf.train.Saver()
-saver.save(sess,'model/model.ckpt')
 
 elapsed_time = time.time() - start_time
 print(elapsed_time)
+
+saver = tf.train.Saver()
+saver.save(sess,'model/model.ckpt')
+
+if wandb_use == True:
+    wandb.save(os.path.join(wandb.run.dir, 'model/model.ckpt'))
+    wandb.config.elapsed_time = elapsed_time
 
 epoch = np.arange(training_epochs)
 plt.plot(epoch, train_mse, 'r', label='train')
