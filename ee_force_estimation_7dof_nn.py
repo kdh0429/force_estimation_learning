@@ -7,7 +7,7 @@ import time
 import wandb
 import os
 
-wandb_use = False
+wandb_use = True
 start_time = time.time()
 if wandb_use == True:
     wandb.init(project="dusan_ws", tensorboard=False)
@@ -71,21 +71,36 @@ class Model:
             #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
             L6 = tf.nn.dropout(L6, keep_prob=self.keep_prob)
 
-            W7 = tf.get_variable("W7", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
-            b7 = tf.Variable(tf.random_normal([num_output]))
-            self.hypothesis = tf.matmul(L6, W7) + b7
+            W7 = tf.get_variable("W7", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
+            b7 = tf.Variable(tf.random_normal([10]))
+            L7 = tf.matmul(L6, W7) +b7
+            L7 = tf.nn.relu(L7)
+            #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
+            L7 = tf.nn.dropout(L7, keep_prob=self.keep_prob)
+
+            W8 = tf.get_variable("W8", shape=[10, 10], initializer=tf.contrib.layers.xavier_initializer())
+            b8 = tf.Variable(tf.random_normal([10]))
+            L8 = tf.matmul(L7, W8) +b8
+            L8 = tf.nn.relu(L8)
+            #L4 = tf.nn.relu(tf.sigmoid(L3, W4) + b4)
+            L8 = tf.nn.dropout(L8, keep_prob=self.keep_prob)
+
+            W9 = tf.get_variable("W9", shape=[10, num_output], initializer=tf.contrib.layers.xavier_initializer())
+            b9 = tf.Variable(tf.random_normal([num_output]))
+            self.hypothesis = tf.matmul(L8, W9) + b9
             self.hypothesis = tf.identity(self.hypothesis, "hypothesis")
 
             # define cost/loss & optimizer
-            l2_reg = tf.nn.l2_loss(W1) + tf.nn.l2_loss(W2) + tf.nn.l2_loss(W3) + tf.nn.l2_loss(W4) + tf.nn.l2_loss(W5)+ tf.nn.l2_loss(W6)+ tf.nn.l2_loss(W7)
-            self.cost = tf.reduce_mean(tf.abs(self.hypothesis - self.Y)) + 0.001*l2_reg
+            self.l2_reg = tf.nn.l2_loss(W1) + tf.nn.l2_loss(W2) + tf.nn.l2_loss(W3) + tf.nn.l2_loss(W4) + tf.nn.l2_loss(W5)+ tf.nn.l2_loss(W6)+ tf.nn.l2_loss(W7) + tf.nn.l2_loss(W8)+ tf.nn.l2_loss(W9)
+            self.l2_reg = 0.00005* self.l2_reg
+            self.cost = tf.reduce_mean(tf.abs(self.hypothesis - self.Y))
             #self.cost = tf.reduce_mean(tf.reduce_mean(tf.square(self.hypothesis - self.Y)))
-            self.optimizer = tf.train.AdamOptimizer(learning_rate= learning_rate).minimize(self.cost)
+            self.optimizer = tf.train.AdamOptimizer(learning_rate= learning_rate).minimize(self.cost + self.l2_reg)
 
         self.mean_error = tf.reduce_mean(tf.abs(self.Y-self.hypothesis))
 
     def get_mean_error_hypothesis(self, x_test, y_test, keep_prop=1.0):
-        return self.sess.run([self.mean_error, self.hypothesis, self.X, self.Y], feed_dict={self.X: x_test, self.Y: y_test, self.keep_prob: keep_prop})
+        return self.sess.run([self.mean_error, self.hypothesis, self.X, self.Y, self.l2_reg], feed_dict={self.X: x_test, self.Y: y_test, self.keep_prob: keep_prop})
 
     def train(self, x_data, y_data, keep_prop=1.0):
         return self.sess.run([self.mean_error, self.optimizer], feed_dict={
@@ -146,7 +161,7 @@ y_data_val = np.reshape(y_data_val, (-1, num_output))
 learning_rate = 0.005
 training_epochs = 1000
 batch_size = 100
-total_batch = int(np.shape(x_data_test)[0]/batch_size*8)
+total_batch = int(np.shape(x_data_test)[0]/batch_size*4)
 drop_out = 1.0
 
 if wandb_use == True:
@@ -159,8 +174,8 @@ if wandb_use == True:
     wandb.config.total_batch = total_batch
     wandb.config.activation_function = "ReLU"
     wandb.config.training_episode = 1200
-    wandb.config.hidden_layers = 5
-    wandb.config.L2_regularization = 0.001
+    wandb.config.hidden_layers = 7
+    wandb.config.L2_regularization = 0.0005
 
 # initialize
 sess = tf.Session()
@@ -184,14 +199,16 @@ for epoch in range(training_epochs):
 
     print('Epoch:', '%04d' % (epoch + 1), 'cost =', '{:.9f}'.format(avg_cost))
 
-    [cost, hypo, x_test, y_test] = m1.get_mean_error_hypothesis(x_data_val, y_data_val)
+
+    [cost, hypo, x_val, y_val, l2_reg_val] = m1.get_mean_error_hypothesis(x_data_val, y_data_val)
     print('Validation cost:', '{:.9f}'.format(cost))
+    print('Validation l2 regularization:', '{:.9f}'.format(l2_reg_val))
 
     train_mse[epoch] = avg_cost
     validation_mse[epoch] = cost
 
     if wandb_use == True:
-        wandb.log({'training cost': avg_cost, 'validation cost': cost})
+        wandb.log({'training cost': avg_cost, 'validation cost': cost, 'validation l2_reg': l2_reg_val})
 
         if epoch % 20 ==0:
             for var in tf.trainable_variables():
@@ -202,9 +219,10 @@ for epoch in range(training_epochs):
 print('Learning Finished!')
 
 
-[error, hypo, x_test, y_test] = m1.get_mean_error_hypothesis(x_data_test, y_data_test)
+[error, hypo, x_test, y_test, l2_reg_test] = m1.get_mean_error_hypothesis(x_data_test, y_data_test)
 # print('Error: ', error,"\n x_data: ", x_test,"\nHypothesis: ", hypo, "\n y_data: ", y_test)
 print('Test Error: ', error)
+print('Test l2 regularization:', l2_reg_test)
 
 
 elapsed_time = time.time() - start_time

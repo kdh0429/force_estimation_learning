@@ -49,6 +49,22 @@ mean_error_z = np.mean(np.abs(y_data_raw[:,2]-hypo[:,2]))
 print("X Mean error : %f" % mean_error_x)
 print("Y Mean error : %f" % mean_error_y)
 print("Z Mean error : %f" % mean_error_z)
+
+max_error_x = np.max(np.abs(y_data_raw[:,0]-hypo[:,0]))
+max_error_y = np.max(np.abs(y_data_raw[:,1]-hypo[:,1]))
+max_error_z = np.max(np.abs(y_data_raw[:,2]-hypo[:,2]))
+
+print("X Max error : %f" % max_error_x)
+print("Y Max error : %f" % max_error_y)
+print("Z Max error : %f" % max_error_z)
+
+max_error_x_idx = np.argmax(np.abs(y_data_raw[:,0]-hypo[:,0]))
+max_error_y_idx = np.argmax(np.abs(y_data_raw[:,1]-hypo[:,1]))
+max_error_z_idx = np.argmax(np.abs(y_data_raw[:,2]-hypo[:,2]))
+
+print("X Max error time : %f" % t[max_error_x_idx])
+print("Y Max error time : %f" % t[max_error_y_idx])
+print("Z Max error time : %f" % t[max_error_z_idx])
  
  
 
