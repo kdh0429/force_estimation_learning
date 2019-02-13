@@ -41,6 +41,14 @@ hypothesis = graph.get_tensor_by_name("m1/hypothesis:0")
 
 hypo = sess.run(hypothesis, feed_dict={x: x_data_raw, keep_prob: 1.0})
 
+# mean_error = graph.get_tensor_by_name("mean_error:0")
+# for op in graph.get_operations():
+#     print(op.name)
+
+# mean_error_test = sess.run(mean_error, feed_dict={x: x_data_raw, y: y_data_raw, keep_prob: 1.0})
+# print(mean_error_test)
+# print(np.mean(np.abs(y_data_raw - hypo)))
+
 res_idx = 0
 mean_error_x = np.mean(np.abs(y_data_raw[:,0]-hypo[:,0]))
 mean_error_y = np.mean(np.abs(y_data_raw[:,1]-hypo[:,1]))
