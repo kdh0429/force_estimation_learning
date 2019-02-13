@@ -189,12 +189,12 @@ for epoch in range(training_epochs):
         avg_cost += c / total_batch
         avg_reg_cost += reg_c / total_batch
 
-    print('Epoch:', '%04d' % (epoch + 1), 'cost =', '{:.9f}'.format(avg_cost))
-
+    print('Epoch:', '%04d' % (epoch + 1))
+    print('Train cost =', '{:.9f}'.format(avg_cost), 'Train l2 reg cost =', '{:.9f}'.format(avg_reg_cost))
 
     [cost, hypo, x_val, y_val, l2_reg_val] = m1.get_mean_error_hypothesis(x_data_val, y_data_val)
-    print('Validation cost:', '{:.9f}'.format(cost))
-    print('Validation l2 regularization:', '{:.9f}'.format(l2_reg_val))
+    print('Validation cost:', '{:.9f}'.format(cost), 'Validation l2 regularization:', '{:.9f}'.format(l2_reg_val))
+    
 
     train_mse[epoch] = avg_cost
     validation_mse[epoch] = cost
